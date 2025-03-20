@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0068)lec13.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 13</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><!-- META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META NAME="Generator" CONTENT="Microsoft Word 97" -->
+<META content=D:\SOFT\OFFICE97\OFFICE\html.dot name=Template>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#800080 aLink=#0000ff link=blue bgColor=#c7d4ea><FONT
+face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 13</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Недетерминированное программирование.</I></B>
+      </FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT>
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание </FONT></H2>
+<DL>
+  <DD><FONT face="Arial Cyr"><IMG src="lec13.files/blueball.gif"><A
+  href="lec13.htm#Введение"><FONT
+  face="Arial Cyr"> 1. Введение</FONT></A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec13.files/blueball.gif"></FONT><A
+  href="lec13.htm#Пример"><FONT
+  face="Arial Cyr"> 2. Раскрашивание плоской карты</FONT></A></FONT> </DD></DL>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec13.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center>1. Введ<A name=Введение></A>ение</H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec13.files/saqual.gif" width="80%"></FONT></P><FONT face="Arial Cyr">
+<P align=justify>Одним из отличий вычислительной модели логического
+программирования от моделей обычного программирования является недетерминизм.
+<FONT color=#800080><B>Недетерминизм</B></FONT> - это техническое понятие,
+используемое для сжатого определения абстрактных моделей вычислений. Однако
+недетерминизм не только мощная теоретическая идея, но и полезное средство
+описания и реализации алгоритмов. </P>
+<P align=justify>Интуитивно ясно, что недетерминированная машина, перед которой
+возникло несколько альтернативных путей решения, осуществляет корректный выбор
+очередного действия. Подлинно недетерминированную машину реализовать нельзя,
+однако ее можно моделировать или аппроксимировать. В частности,
+Пролог-интерпритатор аппроксимирует недетерминированное поведение интерпретатора
+абстрактных логических программ с применением механизма последовательного поиска
+и возвратов. Однако тот факт, что детерминизм только "моделируется", но "реально
+не присутствует", для недетерминированного мышления во многих случаях не
+существенен, точно также как несущественны для символьного мышления детали
+обработки указателей в процессе унификации.</P></FONT><FONT face="Arial Cyr"
+color=#800080><B>
+<CENTER>Метод "образовать и проверить"</FONT></B></CENTER><FONT
+face="Arial Cyr">
+<P align=justify>Метод "образовать и проверить" - общий прием, используемый при
+проектировании алгоритмов и программ. Суть его состоит в том, что один процесс
+или программа генерирует множество предполагаемых решений задачи, а другой
+процесс или программа проверяет эти предполагаемые решения, пытаясь найти те из
+них, которые действительно являются решениями задачи.</P>
+<P align=justify>Обычно программы, реализующие метод "образовать и проверить",
+конструировать проще, чем программы, в которых решение находится
+непосредственно, однако они менее эффективны. Стандартный прием оптимизации
+программ типа "образовать и проверить" заключается в стремлении погрузить
+программу проверки в программу генерации предполагаемых решений настолько
+глубоко, насколько это возможно. В пределе программа проверки полностью
+переплетается с программой генерации предполагаемых решений, которая начинает
+порождать только корректные решения.</P>
+<P align=justify>Используя вычислительную модель Пролога, легко создавать
+логические программы, реализующие метод "образовать и проверить". Обычно такие
+программы содержат конъюнкцию двух целей, одна из которых действует как
+генератор предполагаемых решений, а вторая проверяет, являются ли эти решения
+приемлемыми:</P></FONT><FONT face="Arial Cyr"><B>find(X) <FONT
+face=Symbol>-</FONT> generate(X), test (X).
+<P></P></B></FONT><FONT face="Arial Cyr">Эта Пролог-программа действует подобно
+обычной процедурной программе, выполняющей генерацию вариантов и их проверку.
+Если при решении вопроса <B>find(X)</B><FONT face="Arial Cyr">? Успешно
+выполняется цель </FONT><B>generate(X)</B><FONT face="Arial Cyr"> с выдачей
+некоторого </FONT><B>X</B><FONT face="Arial Cyr">, то затем выполняется проверка
+</FONT><B>test(X)</B><FONT face="Arial Cyr">. Если проверка завершается отказом,
+то производится возвращение к цели </FONT><B>generate</B><FONT
+face="Arial Cyr">, с помощью которой генерируется следующий элемент. Процесс
+продолжается итерационно до тех пор, пока при успешной проверке не будет найдено
+решение с характерными свойствами или генератор не исчерпает все альтернативные
+решения.
+<P></P>
+<P align=justify>Однако программисту нет необходимости интересоваться циклом
+"образовать и проверить". Он Может рассматривать этот метод более абстрактно,
+как пример недетерминированного программирования. В этой недетерминированной
+программе генератор вносит о некотором элементе из области возможных
+решений,</FONT> <FONT face="Arial Cyr">а затем просто проверяется, корректно ли
+данное предположение генератора.</P>
+<P align=justify>В качестве генератора обычно используется программа для
+предиката </FONT><B>member</B><FONT face="Arial Cyr"> (программа 3.12),
+порождающая множество решений. На вопрос </FONT><B>member(X,[a,b,c])</B><FONT
+face="Arial Cyr">? Будут даны в требуемой последовательности решения X = a, X =
+b, X = c. Таким образом, предикат </FONT><B>member</B><FONT face="Arial Cyr">
+можно использовать в программах, реализующих метод "образовать и проверить" для
+недетерминированного выбора корректного элемента из некоторого
+списка.</P></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec13.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center>2. Раскрашива<A name=Пример></A>ние плоской карты</H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec13.files/saqual.gif" width="80%"></FONT></P><IMG height=123 hspace=12
+src="lec13.files/card.gif" width=177 align=left> <FONT face="Arial Cyr">
+<P align=justify>Следующая задача состоит в раскрашивании плоской карты так,
+чтобы никакие две смежные области на ней не были раскрашены в одинаковый цвет.
+Эта знаменитая задача, известная уже сотни лет, была решена в 1976 году, когда
+было доказано, что для раскрашивания любой плоской достаточно использовать
+четыре краски. На рисунке показана простая карта, для корректного раскрашивания
+которой требуется четыре цвета. Это можно доказать путем перечисления всех
+возможных вариантов раскраски. Следовательно, для решения для решения задачи
+использование четырех красок является необходимым и
+достаточным.</P></FONT><B><FONT
+face="Arial Cyr"><BR>color_map([Region|Regions],Colors) :-
+<BR>color_region(Region,Colors), <BR>color_map(Regions,Colors).
+<BR>color_map([],Colors). <BR>&nbsp;
+<BR>color_region(region(Name,Color,Neighbors),Colors) :-
+<BR>select(Color,Colors,Colors1), <BR>members(Neighbors,Colors1). <BR>&nbsp;
+<BR>select(X,[X|Xs],Xs). <BR>select(X,[Y|Ys],[Y|Zs]) :- select(X,Ys,Zs).
+<BR>&nbsp; <BR>members([X|Xs],Ys) :- member(X,Ys), members(Xs,Ys).
+<BR>members([],Ys). <BR>&nbsp; <BR>test_color(Name,Map) :- <BR>map(Name,Map),
+<BR>colors(Name,Colors), <BR>color_map(Map,Colors). <BR>&nbsp;
+<BR>map(test,[region(a,A,[B,C,D]), region(b,B,[A,C,E]),
+<BR>region(c,C,[A,B,D,E,F]), region(d,D,[A,C,F]), <BR>region(e,E,[B,C,F]),
+region(f,F,[C,D,E])]). <BR>&nbsp; <BR>map(west_europe, <BR>[
+region(portugal,P,[E]), region(spain,E,[F,P]),
+<BR>region(france,F,[E,I,S,B,WG,L]), region(belgium,B,[F,H,L,WG]),
+<BR>region(holland,H,[B,WG]), region(west_germany,WG,[F,A,S,H,B,L]),
+<BR>region(luxembourg,L,[F,B,WG]), region(italy,I,[F,A,S]),
+<BR>region(switzerland,S,[F,I,A,WG]), region(austria,A,[I,S,WG])]). <BR>&nbsp;
+<BR>colors(X,[red,yellow,blue,white]). </B></FONT><FONT face="Arial Cyr">
+<P>В программе , предназначенной для решения задачи о раскрашивании карты, также
+использован принцип "образовать и проверить". Программа реализует следующий
+недетерминированный алгоритм:</P>
+<P align=justify>для каждой области карты</P>
+<P align=justify>- выбрать цвет,</P>
+<P align=justify>- выбрать из оставшихся цветов (или проверить) цвета соседних
+областей</P>
+<P align=justify>Для реализации алгоритма необходимо выбрать подходящие
+структуры данных. Карта представляется списком областей, каждая из которых имеет
+имя, цвет и список цветов, в которые окрашены смежные области. Например Карта
+изображенная на рисунке представляется списком</P></FONT><B><BR>region(a, A, [B,
+C, D]), region(b, B, [A, C, E]), <BR>region(c, C, [A, B, D, E, F]), region(d, D,
+[A, C, F]), <BR>region(e, E, [B, C, F]), region(f, F, [C, D, E]). </B><FONT
+face="Arial Cyr">
+<P align=justify>Для того чтобы избежать раскраски одной и той же области в
+разные цвета на разных интерпретациях алгоритма, используются общие
+переменные.</P>
+<P align=justify>Отношение верхнего уровня рассматриваемой программы является
+</FONT><B>color_map(Map,Color)</B><FONT face="Arial Cyr">, где
+</FONT><B>Map</B><FONT face="Arial Cyr"> - карта, представляемая описанным выше
+способом, </FONT><B>Colors</B><FONT face="Arial Cyr"> - список цветов,
+используемых для раскрашивания карты. Выберем цвета: красный, желтый, голубой и
+белый. Ядро алгоритма - определение отношения </FONT><B>color_region(Region,
+Colors):</P>
+<P align=justify>color_region(region(Name, Color, Neighbors), Colors) <FONT
+face=Symbol>-</FONT> </P>
+<P align=justify>select(Color, Coors, Colors1),</P>
+<P align=justify>member(Neighbors, Colors1).</P></B><FONT face="Arial Cyr">
+<P align=justify>Цели </FONT><B>select</B><FONT face="Arial Cyr"> и
+</FONT><B>members</B><FONT face="Arial Cyr"> в зависимости от того,
+конкретизированы или нет их аргументы, могут либо производить генерацию
+вариантов, либо выполнять проверку.</P><IMG height=123 hspace=12
+src="lec13.files/card2.gif" width=177 align=left>
+<P align=justify>Итогом выполнения программы о раскрашивании карты является
+конкретизация структуры данных - карты. Вызовы предикатов
+</FONT><B>select</B><FONT face="Arial Cyr"> и </FONT><B>members</B><FONT
+face="Arial Cyr"> могут рассматриваться как описания локальных ограничений.
+Предикаты либо генерируют предполагаемое решение посредством конкретизации
+элементов структуры, либо проверяют, удовлетворяют ли конкретизированные
+значения локальным ограничениям.</P></FONT>
+<P>
+<HR align=left width="75%" noShade SIZE=1>
+</BODY></HTML>

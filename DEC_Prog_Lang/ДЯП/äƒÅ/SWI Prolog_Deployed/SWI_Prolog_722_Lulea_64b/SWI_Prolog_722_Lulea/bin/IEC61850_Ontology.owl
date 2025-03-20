@@ -1,0 +1,3408 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY IEC61850_Ontology "http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/cheyan/ontologies/2014/6/untitled-ontology-33#"
+     xml:base="http://www.semanticweb.org/cheyan/ontologies/2014/6/untitled-ontology-33"
+     xmlns:IEC61850_Ontology="http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_AccessPoint -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_AccessPoint">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;IED"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Address -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_Address">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;Address"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_BDA -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_BDA">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;BDA"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DAType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Communication -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_Communication">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;Communication"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SCL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_ConnectedAP -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_ConnectedAP">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SubNetwork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DA -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DA">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DA"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DOType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DAI -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DAI">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DAI"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DOI"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SDI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DAType -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DAType">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DAType"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DataTypeTemplates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DO -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DO">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DO"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;LNodeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DOI -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DOI">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;AnyLN"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DOI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DOType -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DOType">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DOType"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DataTypeTemplates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DataSet -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DataSet">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;AnyLN"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DataSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_DataTypeTemplates -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_DataTypeTemplates">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;DataTypeTemplates"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SCL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_EnumType -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_EnumType">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DataTypeTemplates"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;EnumType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_EnumVal -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_EnumVal">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;EnumType"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;EnumVal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_FCDA -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_FCDA">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;FCDA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Header -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_Header">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;Header"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SCL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_IED -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_IED">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;IED"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SCL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_LDevice -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_LDevice">
+        <rdfs:range rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;Server"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_LN -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_LN">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;LN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_LN0 -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_LN0">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;LN0"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_LNConnections -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_LNConnections">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;LN"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;LNConnections"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_LNodeType -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_LNodeType">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DataTypeTemplates"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;LNodeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_P -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_P">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;Address"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;P"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_SD -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_SD">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SDI"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;SDI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_SDI -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_SDI">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DOI"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;SDI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_SDO -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_SDO">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;DOType"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;SDO"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Server -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_Server">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;Server"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Services -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_Services">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;IED"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;Services"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_SubNetwork -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_SubNetwork">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;Communication"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;SubNetwork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Substation -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_Substation">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;SCL"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;Substation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Val -->
+
+    <owl:ObjectProperty rdf:about="&IEC61850_Ontology;has_Val">
+        <rdfs:domain rdf:resource="&IEC61850_Ontology;AbstractDataAttribute"/>
+        <rdfs:range rdf:resource="&IEC61850_Ontology;Val"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_from -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;LNC_from">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_name -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;LNC_name">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_to -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;LNC_to">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_type -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;LNC_type">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#from_DA -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;from_DA">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#from_DO -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;from_DO">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_Value -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_Value">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_apName -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_apName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_bType -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_bType">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_cdc -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_cdc">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_configVersion -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_configVersion">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_daName -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_daName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_doName -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_doName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_fc -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_fc">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_id -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_id">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_iedName -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_iedName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_inst -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_inst">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_ldInst -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_ldInst">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_ldName -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_ldName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_lnClass -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_lnClass">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_lnInst -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_lnInst">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_lnType -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_lnType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_manufacturer -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_manufacturer">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_name -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_name">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_ord -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_ord">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_prefix -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_prefix">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_revision -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_revision">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_type -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_type">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#has_version -->
+
+    <owl:DatatypeProperty rdf:about="&IEC61850_Ontology;has_version">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#AbstractDataAttribute -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;AbstractDataAttribute">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;BDA"/>
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;UnNaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#AccessPoint -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;AccessPoint">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_LN"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;LN"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_Server"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;Server"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Address -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Address">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&owl;Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_P"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;P"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#AnyLN -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;AnyLN">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DOI"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;DOI"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DataSet"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;DataSet"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_LNConnections"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;LNConnections"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#BDA -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;BDA">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;AbstractDataAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Communication -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Communication">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_SubNetwork"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;SubNetwork"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ConnectedAP -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;ConnectedAP">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_Address"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;Address"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DA -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DA">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;AbstractDataAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DAI -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DAI">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_Val"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;Val"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DAType -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DAType">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;IDNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_BDA"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;BDA"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DO -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DO">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;UnNaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DOI -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DOI">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DAI"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;DAI"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_SDI"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;SDI"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DOType -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DOType">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;IDNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DA"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;DA"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_SDO"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;SDO"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DataSet -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DataSet">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_FCDA"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;FCDA"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DataTypeTemplates -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;DataTypeTemplates">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&owl;Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DOType"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;DOType"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_LNodeType"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;LNodeType"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DAType"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;DAType"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_EnumType"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;EnumType"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#EnumType -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;EnumType">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;IDNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_EnumVal"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;EnumVal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#EnumVal -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;EnumVal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#FCDA -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;FCDA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Header -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Header"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IDNaming -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;IDNaming"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IED -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;IED">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_AccessPoint"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_Services"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;Services"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LDevice -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;LDevice">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_LN"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;LN"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_LN0"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;LN0"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LN -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;LN">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;AnyLN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LN0 -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;LN0">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;AnyLN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNConnections -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;LNConnections"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNodeType -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;LNodeType">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;IDNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DO"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;DO"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Naming -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Naming"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#P -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;P">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;PAddr"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#PAddr -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;PAddr"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#SCL -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;SCL">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&owl;Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_IED"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;IED"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_Substation"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;Substation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_Header"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;Header"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_Communication"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;Communication"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DataTypeTemplates"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;DataTypeTemplates"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#SDI -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;SDI">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_DAI"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;DAI"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_SDI"/>
+                        <owl:onClass rdf:resource="&IEC61850_Ontology;SDI"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#SDO -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;SDO">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;UnNaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Server -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Server">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;UnNaming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_LDevice"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;LDevice"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Services -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Services">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;UnNaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#SubNetwork -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;SubNetwork">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&IEC61850_Ontology;Naming"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&IEC61850_Ontology;has_ConnectedAP"/>
+                        <owl:someValuesFrom rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Substation -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Substation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#UnNaming -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;UnNaming">
+        <rdfs:subClassOf rdf:resource="&IEC61850_Ontology;AbstractDataAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Val -->
+
+    <owl:Class rdf:about="&IEC61850_Ontology;Val"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ACT_1_Tr_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ACT_1_Tr_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DOType"/>
+        <IEC61850_Ontology:has_cdc rdf:datatype="&xsd;string">ACT</IEC61850_Ontology:has_cdc>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">ACT_1_Tr</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DA rdf:resource="&IEC61850_Ontology;ACT_1_Tr_1_DA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ACT_1_Tr_1_DA1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ACT_1_Tr_1_DA1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DA"/>
+        <IEC61850_Ontology:from_DA rdf:datatype="&xsd;string">ACT_1_Tr_1_DA1</IEC61850_Ontology:from_DA>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:has_type>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#AnalogueValue_1_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;AnalogueValue_1_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DAType"/>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">AnalogueValue_1</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_BDA rdf:resource="&IEC61850_Ontology;AnalogueValue_1_BDA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#AnalogueValue_1_BDA1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;AnalogueValue_1_BDA1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;BDA"/>
+        <IEC61850_Ontology:has_bType rdf:datatype="&xsd;string">FLOAT32</IEC61850_Ontology:has_bType>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">f</IEC61850_Ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#AnalogueValue_1_BDA2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;AnalogueValue_1_BDA2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;BDA"/>
+        <IEC61850_Ontology:has_bType rdf:datatype="&xsd;string">INT32</IEC61850_Ontology:has_bType>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">i</IEC61850_Ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Beh_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Beh_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumType"/>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">Beh</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Beh_1_EnumVal1"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Beh_1_EnumVal2"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Beh_1_EnumVal3"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Beh_1_EnumVal4"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Beh_1_EnumVal5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Beh_1_EnumVal1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Beh_1_EnumVal1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">1</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Beh_1_EnumVal2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Beh_1_EnumVal2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">2</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Beh_1_EnumVal3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Beh_1_EnumVal3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">3</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Beh_1_EnumVal4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Beh_1_EnumVal4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">4</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Beh_1_EnumVal5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Beh_1_EnumVal5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">5</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DPC_1_Pos_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;DPC_1_Pos_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DOType"/>
+        <IEC61850_Ontology:has_cdc rdf:datatype="&xsd;string">DPC</IEC61850_Ontology:has_cdc>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">DPC_1_Pos</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DA rdf:resource="&IEC61850_Ontology;DPC_1_Pos_1_DA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DPC_1_Pos_1_DA1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;DPC_1_Pos_1_DA1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DA"/>
+        <IEC61850_Ontology:has_bType rdf:datatype="&xsd;string">Dbpos</IEC61850_Ontology:has_bType>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">stVal</IEC61850_Ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DPL_1_PhyNam_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;DPL_1_PhyNam_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DOType"/>
+        <IEC61850_Ontology:has_cdc rdf:datatype="&xsd;string">DPL</IEC61850_Ontology:has_cdc>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">DPL_1_PhyNam</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DA rdf:resource="&IEC61850_Ontology;DPL_1_PhyNam_1_DA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#DPL_1_PhyNam_1_DA1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;DPL_1_PhyNam_1_DA1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DA"/>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">DC</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_bType rdf:datatype="&xsd;string">VisString255</IEC61850_Ontology:has_bType>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">vendor</IEC61850_Ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_1_AP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_1_AP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">accessPoint1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_Server rdf:resource="&IEC61850_Ontology;F1_1_Server_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_1_LDevice_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_1_LDevice_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F1_1_LDevice_1_iPIOC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F1_1_LDevice_1_iPTRC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F1_1_LDevice_1_iTCTR_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F1_1_LDevice_1_iXCBR_1"/>
+        <IEC61850_Ontology:has_LN0 rdf:resource="&IEC61850_Ontology;F1_LLN01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_1_LDevice_1_iPIOC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_1_LDevice_1_iPIOC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPIOC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F1_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_6"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_6"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_6"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F1_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_1_LDevice_1_iPTRC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_1_LDevice_1_iPTRC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPTRC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F1_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_1_LDevice_1_iTCTR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_1_LDevice_1_iTCTR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">TCTR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iTCTR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F1_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_1_LDevice_1_iXCBR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_1_LDevice_1_iXCBR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">XCBR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iXCBR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_1_Server_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_1_Server_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Server"/>
+        <IEC61850_Ontology:has_LDevice rdf:resource="&IEC61850_Ontology;F1_1_LDevice_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_Address_1_P_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_Address_1_P_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;P"/>
+        <IEC61850_Ontology:has_Value rdf:datatype="&xsd;string">192.168.1.1</IEC61850_Ontology:has_Value>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">IP</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_ConnectedAP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_ConnectedAP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+        <IEC61850_Ontology:has_iedName rdf:datatype="&xsd;string">IED1_D3_Q1</IEC61850_Ontology:has_iedName>
+        <IEC61850_Ontology:has_Address rdf:resource="&IEC61850_Ontology;F1_ConnectedAP_1_Address_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_ConnectedAP_1_Address_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_ConnectedAP_1_Address_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Address"/>
+        <IEC61850_Ontology:has_P rdf:resource="&IEC61850_Ontology;F1_Address_1_P_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_DataSet_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_DataSet_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">FeederTrip</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;F1_FeederTrip_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_FeederTrip_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_FeederTrip_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F1_LLN01 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F1_LLN01">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN0"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LLN0</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">LLN01</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_DataSet rdf:resource="&IEC61850_Ontology;F1_DataSet_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_1_AP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_1_AP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">accessPoint1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_Server rdf:resource="&IEC61850_Ontology;F2_1_Server_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_1_LDevice_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_1_LDevice_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F2_1_LDevice_1_iPIOC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F2_1_LDevice_1_iPTRC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F2_1_LDevice_1_iTCTR_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F2_1_LDevice_1_iXCBR_1"/>
+        <IEC61850_Ontology:has_LN0 rdf:resource="&IEC61850_Ontology;F2_LLN01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_1_LDevice_1_iPIOC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_1_LDevice_1_iPIOC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F2</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPIOC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F2_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_6"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F2_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_1_LDevice_1_iPTRC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_1_LDevice_1_iPTRC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F2</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPTRC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F2_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_1_LDevice_1_iTCTR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_1_LDevice_1_iTCTR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F2</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">TCTR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iTCTR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F2_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_1_LDevice_1_iXCBR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_1_LDevice_1_iXCBR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F2</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">XCBR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iXCBR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_1_Server_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_1_Server_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Server"/>
+        <IEC61850_Ontology:has_LDevice rdf:resource="&IEC61850_Ontology;F2_1_LDevice_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_Address_1_P_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_Address_1_P_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;P"/>
+        <IEC61850_Ontology:has_Value rdf:datatype="&xsd;string">192.168.1.1</IEC61850_Ontology:has_Value>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">IP</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_ConnectedAP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_ConnectedAP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+        <IEC61850_Ontology:has_iedName rdf:datatype="&xsd;string">IED2_D3_Q2</IEC61850_Ontology:has_iedName>
+        <IEC61850_Ontology:has_Address rdf:resource="&IEC61850_Ontology;F2_ConnectedAP_1_Address_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_ConnectedAP_1_Address_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_ConnectedAP_1_Address_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Address"/>
+        <IEC61850_Ontology:has_P rdf:resource="&IEC61850_Ontology;F2_Address_1_P_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_DataSet_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_DataSet_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">FeederTrip</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;F2_FeederTrip_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_FeederTrip_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_FeederTrip_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F2</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F2_LLN01 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F2_LLN01">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN0"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LLN0</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">LLN01</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_DataSet rdf:resource="&IEC61850_Ontology;F2_DataSet_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_1_AP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_1_AP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">accessPoint1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_Server rdf:resource="&IEC61850_Ontology;F3_1_Server_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_1_LDevice_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_1_LDevice_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F3_1_LDevice_1_iPIOC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F3_1_LDevice_1_iPTRC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F3_1_LDevice_1_iTCTR_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F3_1_LDevice_1_iXCBR_1"/>
+        <IEC61850_Ontology:has_LN0 rdf:resource="&IEC61850_Ontology;F3_LLN01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_1_LDevice_1_iPIOC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_1_LDevice_1_iPIOC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F3</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPIOC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F3_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_6"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F3_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_1_LDevice_1_iPTRC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_1_LDevice_1_iPTRC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F3</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPTRC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F3_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_1_LDevice_1_iTCTR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_1_LDevice_1_iTCTR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F3</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">TCTR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iTCTR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F3_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_1_LDevice_1_iXCBR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_1_LDevice_1_iXCBR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F3</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">XCBR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iXCBR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_1_Server_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_1_Server_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Server"/>
+        <IEC61850_Ontology:has_LDevice rdf:resource="&IEC61850_Ontology;F3_1_LDevice_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_Address_1_P_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_Address_1_P_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;P"/>
+        <IEC61850_Ontology:has_Value rdf:datatype="&xsd;string">192.168.1.1</IEC61850_Ontology:has_Value>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">IP</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_ConnectedAP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_ConnectedAP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+        <IEC61850_Ontology:has_iedName rdf:datatype="&xsd;string">IED3_D3_Q3</IEC61850_Ontology:has_iedName>
+        <IEC61850_Ontology:has_Address rdf:resource="&IEC61850_Ontology;F3_ConnectedAP_1_Address_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_ConnectedAP_1_Address_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_ConnectedAP_1_Address_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Address"/>
+        <IEC61850_Ontology:has_P rdf:resource="&IEC61850_Ontology;F3_Address_1_P_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_DataSet_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_DataSet_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">FeederTrip</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;F3_FeederTrip_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_FeederTrip_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_FeederTrip_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F3</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F3_LLN01 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F3_LLN01">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN0"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LLN0</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">LLN01</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_DataSet rdf:resource="&IEC61850_Ontology;F3_DataSet_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_1_AP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_1_AP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">accessPoint1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_Server rdf:resource="&IEC61850_Ontology;F4_1_Server_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_1_LDevice_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_1_LDevice_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F4_1_LDevice_1_iPIOC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F4_1_LDevice_1_iPTRC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F4_1_LDevice_1_iTCTR_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F4_1_LDevice_1_iXCBR_1"/>
+        <IEC61850_Ontology:has_LN0 rdf:resource="&IEC61850_Ontology;F4_LLN01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_1_LDevice_1_iPIOC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_1_LDevice_1_iPIOC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F4</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPIOC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F4_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F4_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_1_LDevice_1_iPTRC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_1_LDevice_1_iPTRC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F4</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPTRC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F4_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_1_LDevice_1_iTCTR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_1_LDevice_1_iTCTR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F4</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">TCTR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iTCTR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F4_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_1_LDevice_1_iXCBR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_1_LDevice_1_iXCBR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F4</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">XCBR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iXCBR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_1_Server_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_1_Server_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Server"/>
+        <IEC61850_Ontology:has_LDevice rdf:resource="&IEC61850_Ontology;F4_1_LDevice_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_Address_1_P_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_Address_1_P_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;P"/>
+        <IEC61850_Ontology:has_Value rdf:datatype="&xsd;string">192.168.1.1</IEC61850_Ontology:has_Value>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">IP</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_ConnectedAP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_ConnectedAP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+        <IEC61850_Ontology:has_iedName rdf:datatype="&xsd;string">IED4_D3_Q4</IEC61850_Ontology:has_iedName>
+        <IEC61850_Ontology:has_Address rdf:resource="&IEC61850_Ontology;F4_ConnectedAP_1_Address_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_ConnectedAP_1_Address_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_ConnectedAP_1_Address_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Address"/>
+        <IEC61850_Ontology:has_P rdf:resource="&IEC61850_Ontology;F4_Address_1_P_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_DataSet_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_DataSet_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">FeederTrip</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;F4_FeederTrip_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_FeederTrip_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_FeederTrip_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F4</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F4_LLN01 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F4_LLN01">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN0"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LLN0</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">LLN01</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_DataSet rdf:resource="&IEC61850_Ontology;F4_DataSet_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_1_AP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_1_AP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">accessPoint1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_Server rdf:resource="&IEC61850_Ontology;F5_1_Server_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_1_LDevice_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_1_LDevice_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F5_1_LDevice_1_iPIOC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F5_1_LDevice_1_iPTRC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F5_1_LDevice_1_iTCTR_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F5_1_LDevice_1_iXCBR_1"/>
+        <IEC61850_Ontology:has_LN0 rdf:resource="&IEC61850_Ontology;F5_LLN01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_1_LDevice_1_iPIOC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_1_LDevice_1_iPIOC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F5</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPIOC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F5_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F5_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_1_LDevice_1_iPTRC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_1_LDevice_1_iPTRC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F5</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPTRC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_F5_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_1_LDevice_1_iTCTR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_1_LDevice_1_iTCTR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F5</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">TCTR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iTCTR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_F5_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_1_LDevice_1_iXCBR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_1_LDevice_1_iXCBR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F5</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">XCBR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iXCBR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_1_Server_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_1_Server_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Server"/>
+        <IEC61850_Ontology:has_LDevice rdf:resource="&IEC61850_Ontology;F5_1_LDevice_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_Address_1_P_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_Address_1_P_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;P"/>
+        <IEC61850_Ontology:has_Value rdf:datatype="&xsd;string">192.168.1.1</IEC61850_Ontology:has_Value>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">IP</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_ConnectedAP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_ConnectedAP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+        <IEC61850_Ontology:has_iedName rdf:datatype="&xsd;string">IED5_D3_Q5</IEC61850_Ontology:has_iedName>
+        <IEC61850_Ontology:has_Address rdf:resource="&IEC61850_Ontology;F5_ConnectedAP_1_Address_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_ConnectedAP_1_Address_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_ConnectedAP_1_Address_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Address"/>
+        <IEC61850_Ontology:has_P rdf:resource="&IEC61850_Ontology;F5_Address_1_P_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_DataSet_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_DataSet_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">FeederTrip</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;F5_FeederTrip_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_FeederTrip_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_FeederTrip_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F5</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#F5_LLN01 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;F5_LLN01">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN0"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LLN0</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">LLN01</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_DataSet rdf:resource="&IEC61850_Ontology;F5_DataSet_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Health_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Health_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumType"/>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">Health</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Health_1_EnumVal1"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Health_1_EnumVal2"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Health_1_EnumVal3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Health_1_EnumVal1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Health_1_EnumVal1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">1</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Health_1_EnumVal2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Health_1_EnumVal2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">2</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Health_1_EnumVal3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Health_1_EnumVal3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">3</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IED_Feeder_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;IED_Feeder_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;IED"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">IED1_D3_Q1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_AccessPoint rdf:resource="&IEC61850_Ontology;F1_1_AP_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IED_Feeder_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;IED_Feeder_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;IED"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">IED2_D3_Q2</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_AccessPoint rdf:resource="&IEC61850_Ontology;F2_1_AP_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IED_Feeder_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;IED_Feeder_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;IED"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">IED3_D3_Q3</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_AccessPoint rdf:resource="&IEC61850_Ontology;F3_1_AP_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IED_Feeder_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;IED_Feeder_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;IED"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">IED4_D3_Q4</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_AccessPoint rdf:resource="&IEC61850_Ontology;F4_1_AP_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IED_Feeder_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;IED_Feeder_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;IED"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">IED5_D3_Q5</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;F5_1_AP_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#IED_Transformer_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;IED_Transformer_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;IED"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">TransformerIED</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_AccessPoint rdf:resource="&IEC61850_Ontology;Tr_1_AP_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LLN01_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LLN01_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNodeType"/>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LLN0</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">LLN01</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DO rdf:resource="&IEC61850_Ontology;LLN01_1_DO1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LLN01_1_DO1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LLN01_1_DO1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DO"/>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">ENC_1_Mod</IEC61850_Ontology:has_type>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">Mod</IEC61850_Ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPIOC_F1_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPIOC_F1_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPIOC_F1</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPIOC_F1_Op_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPTRC_F1</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPIOC_F2_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPIOC_F2_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPIOC_F2</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPIOC_F2_Op_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPTRC_F2</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPIOC_F3_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPIOC_F3_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPIOC_F3</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPIOC_F3_Op_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPTRC_F3</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPIOC_F4_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPIOC_F4_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPIOC_F4</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPIOC_F4_Op_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPTRC_F4</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPIOC_F5_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPIOC_F5_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPIOC_F5</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPIOC_F5_Op_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPTRC_F5</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPIOC_T_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPIOC_T_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPIOC_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPIOC_T_Op_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPTRC_T</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F1_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F1_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F1</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPTRC_F1_Tr_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F1</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F1_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F1_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F1_iPIOC_T</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_T</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F1</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F1_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F1_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F1_iPIOC_F4</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F4</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F1</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F1_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F1_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F1_iPIOC_F4</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F5</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F1</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F1_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F1_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F1_iPIOC_F3</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F3</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F1</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F1_6 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F1_6">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F1_iPIOC_F2</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F2</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F1</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F2_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F2_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F2</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPTRC_F2_Tr_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F2</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F2_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F2_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F2_iPIOC_T</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_T</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F2</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F2_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F2_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F2_iPIOC_F4</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F4</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F2</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F2_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F2_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F2_iPIOC_F3</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F3</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F2</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F2_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F2_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F2_iPIOC_F5</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F5</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F2</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F2_6 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F2_6">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F2_iPIOC_F1</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F1</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F2</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F3_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F3_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F3</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPTRC_F3_Tr_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F3</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F3_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F3_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F3_iPIOC_T</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_T</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F3</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F3_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F3_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F3_iPIOC_F4</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F4</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F3</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F3_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F3_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F3_iPIOC_F5</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F5</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F3</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F3_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F3_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F3_iPIOC_F2</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F2</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F3</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F3_6 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F3_6">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F3_iPIOC_F1</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_1</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F3</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F4_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F4_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F4</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPTRC_F4_Tr_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F4</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F4_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F4_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F4_iPIOC_T</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_T</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F4</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F4_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F4_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F4_iPIOC_F1</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F1</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F4</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F4_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F4_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F4_iPIOC_F2</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F2</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F4</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F4_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F4_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F4_iPIOC_F5</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F5</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F4</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F4_6 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F4_6">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F4_iPIOC_F3</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F3</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F4</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F5_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F5_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F5</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPTRC_F5_Tr_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F5</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F5_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F5_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F5_iPIOC_T</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_T</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F5</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F5_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F5_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F5_iPIOC_F4</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F4</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F5</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F5_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F5_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F5_iPIOC_F3</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F3</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F5</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F5_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F5_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F5_iPIOC_F2</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F2</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F5</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_F5_6 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_F5_6">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_F5_iPIOC_F1</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F1</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_F5</IEC61850_Ontology:LNC_from>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_T_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_T_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iPTRC_T_Tr_general</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_T</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_T_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_T_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_T_iXCBR_F1</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F1</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_T_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_T_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_T_iXCBR_F2</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F2</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_T_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_T_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_T_iXCBR_F3</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F3</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_T_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_T_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_T_iXCBR_F4</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F4</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iPTRC_T_6 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iPTRC_T_6">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">BOOLEAN</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">Tr_general_iPTRC_T_iXCBR_F5</IEC61850_Ontology:LNC_name>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iPTRC_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iXCBR_F5</IEC61850_Ontology:LNC_to>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iTCTR_F1_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iTCTR_F1_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">REAL</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F1</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iTCTR_F1</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iTCTR_F1_AmpSv_instMag</IEC61850_Ontology:LNC_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iTCTR_F2_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iTCTR_F2_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">REAL</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F2</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iTCTR_F2</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iTCTR_F2_AmpSv_instMag</IEC61850_Ontology:LNC_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iTCTR_F3_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iTCTR_F3_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">REAL</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F3</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iTCTR_F3</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iTCTR_F3_AmpSv_instMag</IEC61850_Ontology:LNC_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iTCTR_F4_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iTCTR_F4_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">REAL</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F4</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iTCTR_F4</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iTCTR_F4_AmpSv_instMag</IEC61850_Ontology:LNC_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iTCTR_F5_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iTCTR_F5_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">REAL</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_F5</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iTCTR_F5</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iTCTR_F5_AmpSv_instMag</IEC61850_Ontology:LNC_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LNC_iTCTR_T_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LNC_iTCTR_T_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNConnections"/>
+        <IEC61850_Ontology:LNC_type rdf:datatype="&xsd;string">REAL</IEC61850_Ontology:LNC_type>
+        <IEC61850_Ontology:LNC_to rdf:datatype="&xsd;string">iPIOC_T</IEC61850_Ontology:LNC_to>
+        <IEC61850_Ontology:LNC_from rdf:datatype="&xsd;string">iTCTR_T</IEC61850_Ontology:LNC_from>
+        <IEC61850_Ontology:LNC_name rdf:datatype="&xsd;string">iTCTR_T_AmpSv_instMag</IEC61850_Ontology:LNC_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LPHD1_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LPHD1_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNodeType"/>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LPHD</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">LPHD1</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DO rdf:resource="&IEC61850_Ontology;LPHD1_1_DO1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#LPHD1_1_DO1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;LPHD1_1_DO1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DO"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">Beh</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">ENS_1_Beh</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Mod_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Mod_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumType"/>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">Mod</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Mod_1_EnumVal1"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Mod_1_EnumVal2"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Mod_1_EnumVal3"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Mod_1_EnumVal4"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;Mod_1_EnumVal5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Mod_1_EnumVal1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Mod_1_EnumVal1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">1</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Mod_1_EnumVal2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Mod_1_EnumVal2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">2</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Mod_1_EnumVal3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Mod_1_EnumVal3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">3</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Mod_1_EnumVal4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Mod_1_EnumVal4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">4</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Mod_1_EnumVal5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Mod_1_EnumVal5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">5</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#PhyHealth_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;PhyHealth_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumType"/>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">PhyHealth</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;PhyHealth_1_EnumVal1"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;PhyHealth_1_EnumVal2"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;PhyHealth_1_EnumVal3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#PhyHealth_1_EnumVal1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;PhyHealth_1_EnumVal1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">1</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#PhyHealth_1_EnumVal2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;PhyHealth_1_EnumVal2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">2</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#PhyHealth_1_EnumVal3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;PhyHealth_1_EnumVal3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">3</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#SAV_1_AmpSV_1_DA1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;SAV_1_AmpSV_1_DA1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DA"/>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">AnalogueValue_1
+</IEC61850_Ontology:has_type>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">MX</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">instMag</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_BDA rdf:resource="&IEC61850_Ontology;AnalogueValue_1_BDA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#SAV_1_AmpSv_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;SAV_1_AmpSv_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DOType"/>
+        <IEC61850_Ontology:has_cdc rdf:datatype="&xsd;string">SAV</IEC61850_Ontology:has_cdc>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">SAV_1_AmpSv</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DA rdf:resource="&IEC61850_Ontology;SAV_1_AmpSV_1_DA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#SubNetwork_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;SubNetwork_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;SubNetwork"/>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">8-MMS</IEC61850_Ontology:has_type>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">subnetwork1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_ConnectedAP rdf:resource="&IEC61850_Ontology;F1_ConnectedAP_1"/>
+        <IEC61850_Ontology:has_ConnectedAP rdf:resource="&IEC61850_Ontology;F2_ConnectedAP_1"/>
+        <IEC61850_Ontology:has_ConnectedAP rdf:resource="&IEC61850_Ontology;Tr_ConnectedAP_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_1_AP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_1_AP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;AccessPoint"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">accessPoint1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_Server rdf:resource="&IEC61850_Ontology;Tr_1_Server_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_1_LDevice_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_1_LDevice_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LDevice"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;Tr_1_LDevice_1_iPIOC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;Tr_1_LDevice_1_iPTRC_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;Tr_1_LDevice_1_iTCTR_1"/>
+        <IEC61850_Ontology:has_LN rdf:resource="&IEC61850_Ontology;Tr_1_LDevice_1_iXCBR_1"/>
+        <IEC61850_Ontology:has_LN0 rdf:resource="&IEC61850_Ontology;Tr_LLN01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_1_LDevice_1_iPIOC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_1_LDevice_1_iPIOC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">TIED1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPIOC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_T_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F1_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F2_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F3_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F4_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_F5_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_T_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_1_LDevice_1_iPTRC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_1_LDevice_1_iPTRC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">TIED1
+</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iPTRC</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPIOC_T_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_1"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_2"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_3"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_4"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_5"/>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_1_LDevice_1_iTCTR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_1_LDevice_1_iTCTR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">TCTR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">TIED1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iTCTR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iTCTR_T_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_1_LDevice_1_iXCBR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_1_LDevice_1_iXCBR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">TIED1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">XCBR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">iXCBR</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_LNConnections rdf:resource="&IEC61850_Ontology;LNC_iPTRC_T_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_1_Server_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_1_Server_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Server"/>
+        <IEC61850_Ontology:has_LDevice rdf:resource="&IEC61850_Ontology;Tr_1_LDevice_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_Address_1_P_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_Address_1_P_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;P"/>
+        <IEC61850_Ontology:has_Value rdf:datatype="&xsd;string">192.168.1.1</IEC61850_Ontology:has_Value>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">IP</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_ConnectedAP_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_ConnectedAP_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;ConnectedAP"/>
+        <IEC61850_Ontology:has_iedName rdf:datatype="&xsd;string">TransformerIED</IEC61850_Ontology:has_iedName>
+        <IEC61850_Ontology:has_apName rdf:datatype="&xsd;string">accessPoint1</IEC61850_Ontology:has_apName>
+        <IEC61850_Ontology:has_Address rdf:resource="&IEC61850_Ontology;Tr_ConnectedAP_1_Address_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_ConnectedAP_1_Address_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_ConnectedAP_1_Address_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;Address"/>
+        <IEC61850_Ontology:has_P rdf:resource="&IEC61850_Ontology;Tr_Address_1_P_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_DataSet_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_DataSet_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">FeederTrip</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;Tr_FeederTrip_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_DataSet_2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_DataSet_2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">TripF1</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;Tr_TripF1_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_DataSet_3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_DataSet_3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">TripF2</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;Tr_TripF2_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_DataSet_4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_DataSet_4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">TripF3</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;Tr_TripF3_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_DataSet_5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_DataSet_5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">TripF4</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;Tr_TripF4_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_DataSet_6 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_DataSet_6">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DataSet"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">TripF5</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_FCDA rdf:resource="&IEC61850_Ontology;Tr_TripF5_FCDA_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_FeederTrip_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_FeederTrip_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">TIED1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_LLN01 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_LLN01">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LN0"/>
+        <IEC61850_Ontology:has_inst rdf:datatype="&xsd;string">1</IEC61850_Ontology:has_inst>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">LLN0</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_lnType rdf:datatype="&xsd;string">LLN01</IEC61850_Ontology:has_lnType>
+        <IEC61850_Ontology:has_DataSet rdf:resource="&IEC61850_Ontology;Tr_DataSet_1"/>
+        <IEC61850_Ontology:has_DataSet rdf:resource="&IEC61850_Ontology;Tr_DataSet_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_TripF1_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_TripF1_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">2</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F1</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_TripF2_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_TripF2_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">3</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F2</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_TripF3_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_TripF3_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">4</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F3</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_TripF4_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_TripF4_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">5</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F4</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#Tr_TripF5_FCDA_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;Tr_TripF5_FCDA_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;FCDA"/>
+        <IEC61850_Ontology:has_lnInst rdf:datatype="&xsd;string">6</IEC61850_Ontology:has_lnInst>
+        <IEC61850_Ontology:has_prefix rdf:datatype="&xsd;string">F5</IEC61850_Ontology:has_prefix>
+        <IEC61850_Ontology:has_ldInst rdf:datatype="&xsd;string">LD1</IEC61850_Ontology:has_ldInst>
+        <IEC61850_Ontology:has_doName rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_doName>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_fc rdf:datatype="&xsd;string">ST</IEC61850_Ontology:has_fc>
+        <IEC61850_Ontology:has_daName rdf:datatype="&xsd;string">general</IEC61850_Ontology:has_daName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ctlModel_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ctlModel_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumType"/>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">ctlModel</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;ctlModel_1_EnumVal1"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;ctlModel_1_EnumVal2"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;ctlModel_1_EnumVal3"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;ctlModel_1_EnumVal4"/>
+        <IEC61850_Ontology:has_EnumVal rdf:resource="&IEC61850_Ontology;ctlModel_1_EnumVal5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ctlModel_1_EnumVal1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ctlModel_1_EnumVal1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">0</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ctlModel_1_EnumVal2 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ctlModel_1_EnumVal2">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">1</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ctlModel_1_EnumVal3 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ctlModel_1_EnumVal3">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">2</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ctlModel_1_EnumVal4 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ctlModel_1_EnumVal4">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">3</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#ctlModel_1_EnumVal5 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;ctlModel_1_EnumVal5">
+        <rdf:type rdf:resource="&IEC61850_Ontology;EnumVal"/>
+        <IEC61850_Ontology:has_ord rdf:datatype="&xsd;integer">4</IEC61850_Ontology:has_ord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iPIOC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iPIOC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNodeType"/>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PIOC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">iPIOC</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DO rdf:resource="&IEC61850_Ontology;iPIOC_1_DO1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iPIOC_1_DO1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iPIOC_1_DO1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DO"/>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">ACT_1_Tr</IEC61850_Ontology:has_type>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">Tr</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:from_DO rdf:datatype="&xsd;string">iPIOC_1_DO1</IEC61850_Ontology:from_DO>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iPTRC_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iPTRC_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNodeType"/>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">PTRC</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">iPTRC</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DO rdf:resource="&IEC61850_Ontology;iPTRC_1_DO1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iPTRC_1_DO1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iPTRC_1_DO1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DO"/>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">ACT_1_Tr</IEC61850_Ontology:has_type>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">Op</IEC61850_Ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iTCTR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iTCTR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNodeType"/>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">TCTR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">iTCTR</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DO rdf:resource="&IEC61850_Ontology;iTCTR_1_DO1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iTCTR_1_DO1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iTCTR_1_DO1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DO"/>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">AmpSv</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">SAV_1_AmpSv</IEC61850_Ontology:has_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iXCBR_1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iXCBR_1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;LNodeType"/>
+        <IEC61850_Ontology:has_lnClass rdf:datatype="&xsd;string">XCBR</IEC61850_Ontology:has_lnClass>
+        <IEC61850_Ontology:has_id rdf:datatype="&xsd;string">iXCBR</IEC61850_Ontology:has_id>
+        <IEC61850_Ontology:has_DO rdf:resource="&IEC61850_Ontology;iXCBR_1_DO1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cheyan/ontologies/2014/6/IEC61850_Ontology#iXCBR_1_DO1 -->
+
+    <owl:NamedIndividual rdf:about="&IEC61850_Ontology;iXCBR_1_DO1">
+        <rdf:type rdf:resource="&IEC61850_Ontology;DO"/>
+        <IEC61850_Ontology:has_type rdf:datatype="&xsd;string">DPC_1_Pos</IEC61850_Ontology:has_type>
+        <IEC61850_Ontology:has_name rdf:datatype="&xsd;string">Mod</IEC61850_Ontology:has_name>
+        <IEC61850_Ontology:has_DO rdf:resource="&IEC61850_Ontology;iXCBR_1_DO1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

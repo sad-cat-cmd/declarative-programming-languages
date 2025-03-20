@@ -1,0 +1,1325 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY _d 'http://x.org#'>
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+]>
+
+<rdf:RDF
+    xmlns:_d="&_d;"
+    xmlns:owl="&owl;"
+    xmlns:rdf="&rdf;"
+>
+<_d:EventOutput rdf:about="i196">
+  <_d:e_connect_to rdf:resource="i197"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventOutput>
+
+<_d:FunctionBlock rdf:about="i47">
+  <_d:hasName rdf:resource="fb_iPTRC_F3_1"/>
+  <_d:has_FB_type rdf:resource="iPTRC_F3_1"/>
+  <_d:is_mapped_to rdf:resource="i17"/>
+</_d:FunctionBlock>
+
+<_d:EventInput rdf:about="i31">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i29"/>
+</_d:EventInput>
+
+<_d:FunctionBlock rdf:about="i32">
+  <_d:hasName rdf:resource="fb_iPIOC_F2_1"/>
+  <_d:has_FB_type rdf:resource="iPIOC_F2_1"/>
+  <_d:is_mapped_to rdf:resource="i16"/>
+</_d:FunctionBlock>
+
+<_d:InputVariable rdf:about="i127">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+  <_d:is_with_event rdf:resource="i125"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i111">
+  <_d:hasName rdf:resource="iPIOC_F2_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+  <_d:is_with_event rdf:resource="i109"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i183">
+  <_d:hasName rdf:resource="iPTRC_F4_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i65"/>
+  <_d:is_with_event rdf:resource="i181"/>
+</_d:InputVariable>
+
+<_d:OutputVariable rdf:about="i82">
+  <_d:d_connect_to rdf:resource="i83"/>
+  <_d:hasName rdf:resource="iPIOC_F1_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+  <_d:is_with_event rdf:resource="i80"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i149">
+  <_d:hasName rdf:resource="iPTRC_F3_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i53"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i72">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventOutput>
+
+<_d:FunctionBlock rdf:about="i77">
+  <_d:hasName rdf:resource="fb_iXCBR_Tr_1"/>
+  <_d:has_FB_type rdf:resource="iXCBR_Tr_1"/>
+  <_d:is_mapped_to rdf:resource="i19"/>
+</_d:FunctionBlock>
+
+<_d:InputVariable rdf:about="i107">
+  <_d:hasName rdf:resource="iTCTR_F1_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+  <_d:is_with_event rdf:resource="i105"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i153">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i186">
+  <_d:d_connect_to rdf:resource="i187"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+  <_d:is_with_event rdf:resource="i184"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i46">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i85">
+  <_d:hasName rdf:resource="iPTRC_F1_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i29"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i104">
+  <_d:e_connect_to rdf:resource="i105"/>
+  <_d:hasName rdf:resource="iTCTR_F1_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i26"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i122">
+  <_d:d_connect_to rdf:resource="i123"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+  <_d:is_with_event rdf:resource="i120"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i22">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i136">
+  <_d:e_connect_to rdf:resource="i137"/>
+  <_d:hasName rdf:resource="iPIOC_F3_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+</_d:EventOutput>
+
+<_d:StructureTypeVariable rdf:about="i5">
+  <_d:hasName rdf:resource="general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+</_d:StructureTypeVariable>
+
+<_d:OutputVariable rdf:about="i94">
+  <_d:d_connect_to rdf:resource="i95"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+  <_d:is_with_event rdf:resource="i92"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i117">
+  <_d:hasName rdf:resource="iPTRC_F2_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i41"/>
+</_d:EventInput>
+
+<_d:FunctionBlock rdf:about="i38">
+  <_d:hasName rdf:resource="fb_iTCTR_F2_1"/>
+  <_d:has_FB_type rdf:resource="iTCTR_F2_1"/>
+  <_d:is_mapped_to rdf:resource="i16"/>
+</_d:FunctionBlock>
+
+<_d:EventInput rdf:about="i161">
+  <_d:hasName rdf:resource="iTCTR_F3_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i129">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i197">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i29"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i157">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i33">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i177">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+</_d:EventInput>
+
+<_d:FunctionBlock rdf:about="i29">
+  <_d:hasName rdf:resource="fb_iXCBR_F1_1"/>
+  <_d:has_FB_type rdf:resource="iXCBR_F1_1"/>
+  <_d:is_mapped_to rdf:resource="i15"/>
+</_d:FunctionBlock>
+
+<_d:EventOutput rdf:about="i21">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+</_d:EventOutput>
+
+<owl:Ontology rdf:about="http://example.org"/>
+
+<_d:InputVariable rdf:about="i151">
+  <_d:hasName rdf:resource="iPTRC_F3_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i53"/>
+  <_d:is_with_event rdf:resource="i149"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i213">
+  <_d:hasName rdf:resource="iPTRC_T_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i77"/>
+</_d:EventInput>
+
+<rdf:Description rdf:about="i8">
+  <_d:hasName rdf:resource="Substation_1"/>
+</rdf:Description>
+
+<_d:OutputVariable rdf:about="i170">
+  <_d:d_connect_to rdf:resource="i171"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+  <_d:is_with_event rdf:resource="i168"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i70">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i109">
+  <_d:hasName rdf:resource="iPIOC_F2_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i43">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i41"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i188">
+  <_d:e_connect_to rdf:resource="i189"/>
+  <_d:hasName rdf:resource="iTCTR_F4_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i62"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i113">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+</_d:EventInput>
+
+<_d:FunctionBlock rdf:about="i65">
+  <_d:hasName rdf:resource="fb_iXCBR_F4_1"/>
+  <_d:has_FB_type rdf:resource="iXCBR_F4_1"/>
+  <_d:is_mapped_to rdf:resource="i18"/>
+</_d:FunctionBlock>
+
+<_d:EventOutput rdf:about="i124">
+  <_d:e_connect_to rdf:resource="i125"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventOutput>
+
+<_d:StructureType rdf:about="i3">
+  <_d:hasName rdf:resource="DPL_1_PhyNam"/>
+</_d:StructureType>
+
+<_d:FunctionBlock rdf:about="i50">
+  <_d:hasName rdf:resource="fb_iTCTR_F3_1"/>
+  <_d:has_FB_type rdf:resource="iTCTR_F3_1"/>
+  <_d:is_mapped_to rdf:resource="i17"/>
+</_d:FunctionBlock>
+
+<_d:EventOutput rdf:about="i112">
+  <_d:e_connect_to rdf:resource="i113"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventOutput>
+
+<_d:FunctionBlock rdf:about="i26">
+  <_d:hasName rdf:resource="fb_iTCTR_F1_1"/>
+  <_d:has_FB_type rdf:resource="iTCTR_F1_1"/>
+  <_d:is_mapped_to rdf:resource="i15"/>
+</_d:FunctionBlock>
+
+<_d:OutputVariable rdf:about="i142">
+  <_d:d_connect_to rdf:resource="i143"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+  <_d:is_with_event rdf:resource="i140"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i49">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i134">
+  <_d:d_connect_to rdf:resource="i135"/>
+  <_d:hasName rdf:resource="iTCTR_F2_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i38"/>
+  <_d:is_with_event rdf:resource="i132"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i108">
+  <_d:e_connect_to rdf:resource="i109"/>
+  <_d:hasName rdf:resource="iPIOC_F2_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i198">
+  <_d:d_connect_to rdf:resource="i199"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+  <_d:is_with_event rdf:resource="i196"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i51">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i50"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i86">
+  <_d:d_connect_to rdf:resource="i87"/>
+  <_d:hasName rdf:resource="iPTRC_F1_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+  <_d:is_with_event rdf:resource="i84"/>
+</_d:OutputVariable>
+
+<_d:StructureType rdf:about="i4">
+  <_d:hasName rdf:resource="SAV_1_AmpSv"/>
+  <_d:has_structureVar rdf:resource="i6"/>
+</_d:StructureType>
+
+<_d:EventInput rdf:about="i73">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i191">
+  <_d:hasName rdf:resource="iTCTR_F4_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+  <_d:is_with_event rdf:resource="i189"/>
+</_d:InputVariable>
+
+<_d:EventOutput rdf:about="i176">
+  <_d:e_connect_to rdf:resource="i177"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventOutput>
+
+<_d:InputVariable rdf:about="i143">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+  <_d:is_with_event rdf:resource="i141"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i203">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i41"/>
+  <_d:is_with_event rdf:resource="i201"/>
+</_d:InputVariable>
+
+<_d:OutputVariable rdf:about="i106">
+  <_d:d_connect_to rdf:resource="i107"/>
+  <_d:hasName rdf:resource="iTCTR_F1_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i26"/>
+  <_d:is_with_event rdf:resource="i104"/>
+</_d:OutputVariable>
+
+<_d:OutputVariable rdf:about="i190">
+  <_d:d_connect_to rdf:resource="i191"/>
+  <_d:hasName rdf:resource="iTCTR_F4_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i62"/>
+  <_d:is_with_event rdf:resource="i188"/>
+</_d:OutputVariable>
+
+<rdf:Description rdf:about="i18">
+  <_d:hasName rdf:resource="IED4_D3_Q4.accessPoint1_LD1"/>
+</rdf:Description>
+
+<_d:FunctionBlock rdf:about="i71">
+  <_d:hasName rdf:resource="fb_iPTRC_Tr_1"/>
+  <_d:has_FB_type rdf:resource="iPTRC_Tr_1"/>
+  <_d:is_mapped_to rdf:resource="i19"/>
+</_d:FunctionBlock>
+
+<_d:EventOutput rdf:about="i42">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i41"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i66">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i65"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i180">
+  <_d:e_connect_to rdf:resource="i181"/>
+  <_d:hasName rdf:resource="iPTRC_F4_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i156">
+  <_d:e_connect_to rdf:resource="i157"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i110">
+  <_d:d_connect_to rdf:resource="i111"/>
+  <_d:hasName rdf:resource="iPIOC_F2_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+  <_d:is_with_event rdf:resource="i108"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i192">
+  <_d:e_connect_to rdf:resource="i193"/>
+  <_d:hasName rdf:resource="iPIOC_T_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i152">
+  <_d:e_connect_to rdf:resource="i153"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i40">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i38"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i115">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+  <_d:is_with_event rdf:resource="i113"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i189">
+  <_d:hasName rdf:resource="iTCTR_F4_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i28">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i26"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i25">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i93">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i126">
+  <_d:d_connect_to rdf:resource="i127"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+  <_d:is_with_event rdf:resource="i124"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i184">
+  <_d:e_connect_to rdf:resource="i185"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i45">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+</_d:EventOutput>
+
+<_d:FunctionBlock rdf:about="i35">
+  <_d:hasName rdf:resource="fb_iPTRC_F2_1"/>
+  <_d:has_FB_type rdf:resource="iPTRC_F2_1"/>
+  <_d:is_mapped_to rdf:resource="i16"/>
+</_d:FunctionBlock>
+
+<_d:EventInput rdf:about="i67">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i65"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i131">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+  <_d:is_with_event rdf:resource="i129"/>
+</_d:InputVariable>
+
+<_d:FunctionBlock rdf:about="i53">
+  <_d:hasName rdf:resource="fb_iXCBR_F3_1"/>
+  <_d:has_FB_type rdf:resource="iXCBR_F3_1"/>
+  <_d:is_mapped_to rdf:resource="i17"/>
+</_d:FunctionBlock>
+
+<_d:EventInput rdf:about="i55">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i53"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i194">
+  <_d:d_connect_to rdf:resource="i195"/>
+  <_d:hasName rdf:resource="iPIOC_T_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+  <_d:is_with_event rdf:resource="i192"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i141">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i83">
+  <_d:hasName rdf:resource="iPIOC_F1_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+  <_d:is_with_event rdf:resource="i81"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i217">
+  <_d:hasName rdf:resource="iTCTR_T_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i215">
+  <_d:hasName rdf:resource="iPTRC_T_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i77"/>
+  <_d:is_with_event rdf:resource="i213"/>
+</_d:InputVariable>
+
+<_d:OutputVariable rdf:about="i182">
+  <_d:d_connect_to rdf:resource="i183"/>
+  <_d:hasName rdf:resource="iPTRC_F4_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+  <_d:is_with_event rdf:resource="i180"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i209">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i65"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i101">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i212">
+  <_d:e_connect_to rdf:resource="i213"/>
+  <_d:hasName rdf:resource="iPTRC_T_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i90">
+  <_d:d_connect_to rdf:resource="i91"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+  <_d:is_with_event rdf:resource="i88"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i105">
+  <_d:hasName rdf:resource="iTCTR_F1_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i187">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+  <_d:is_with_event rdf:resource="i185"/>
+</_d:InputVariable>
+
+<_d:FunctionBlock rdf:about="i59">
+  <_d:hasName rdf:resource="fb_iPTRC_F4_1"/>
+  <_d:has_FB_type rdf:resource="iPTRC_F4_1"/>
+  <_d:is_mapped_to rdf:resource="i18"/>
+</_d:FunctionBlock>
+
+<_d:EventOutput rdf:about="i204">
+  <_d:e_connect_to rdf:resource="i205"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventOutput>
+
+<rdf:Description rdf:about="i19">
+  <_d:hasName rdf:resource="TransformerIED.accessPoint1_LD1"/>
+</rdf:Description>
+
+<_d:EventOutput rdf:about="i57">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+</_d:EventOutput>
+
+<_d:StructureType rdf:about="i1">
+  <_d:hasName rdf:resource="ACT_1_Tr"/>
+  <_d:has_structureVar rdf:resource="i5"/>
+</_d:StructureType>
+
+<_d:EventOutput rdf:about="i92">
+  <_d:e_connect_to rdf:resource="i93"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i200">
+  <_d:e_connect_to rdf:resource="i201"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i64">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i62"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i132">
+  <_d:e_connect_to rdf:resource="i133"/>
+  <_d:hasName rdf:resource="iTCTR_F2_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i38"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i164">
+  <_d:e_connect_to rdf:resource="i165"/>
+  <_d:hasName rdf:resource="iPIOC_F4_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i133">
+  <_d:hasName rdf:resource="iTCTR_F2_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i167">
+  <_d:hasName rdf:resource="iPIOC_F4_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+  <_d:is_with_event rdf:resource="i165"/>
+</_d:InputVariable>
+
+<_d:FunctionBlock rdf:about="i44">
+  <_d:hasName rdf:resource="fb_iPIOC_F3_1"/>
+  <_d:has_FB_type rdf:resource="iPIOC_F3_1"/>
+  <_d:is_mapped_to rdf:resource="i17"/>
+</_d:FunctionBlock>
+
+<_d:InputVariable rdf:about="i179">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+  <_d:is_with_event rdf:resource="i177"/>
+</_d:InputVariable>
+
+<_d:EventOutput rdf:about="i144">
+  <_d:e_connect_to rdf:resource="i145"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i61">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i155">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+  <_d:is_with_event rdf:resource="i153"/>
+</_d:InputVariable>
+
+<_d:EventOutput rdf:about="i48">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventOutput>
+
+<rdf:Description rdf:about="i14">
+  <_d:hasName rdf:resource="TransformerIED"/>
+</rdf:Description>
+
+<_d:InputVariable rdf:about="i171">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+  <_d:is_with_event rdf:resource="i169"/>
+</_d:InputVariable>
+
+<_d:OutputVariable rdf:about="i162">
+  <_d:d_connect_to rdf:resource="i163"/>
+  <_d:hasName rdf:resource="iTCTR_F3_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i50"/>
+  <_d:is_with_event rdf:resource="i160"/>
+</_d:OutputVariable>
+
+<_d:OutputVariable rdf:about="i206">
+  <_d:d_connect_to rdf:resource="i207"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+  <_d:is_with_event rdf:resource="i204"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i81">
+  <_d:hasName rdf:resource="iPIOC_F1_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventInput>
+
+<rdf:Description rdf:about="i15">
+  <_d:hasName rdf:resource="IED1_D3_Q1.accessPoint1_LD1"/>
+</rdf:Description>
+
+<_d:InputVariable rdf:about="i159">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+  <_d:is_with_event rdf:resource="i157"/>
+</_d:InputVariable>
+
+<rdf:Description rdf:about="i7">
+  <_d:hasName rdf:resource="Substation_1"/>
+</rdf:Description>
+
+<_d:EventInput rdf:about="i52">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i50"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i146">
+  <_d:d_connect_to rdf:resource="i147"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+  <_d:is_with_event rdf:resource="i144"/>
+</_d:OutputVariable>
+
+<_d:OutputVariable rdf:about="i150">
+  <_d:d_connect_to rdf:resource="i151"/>
+  <_d:hasName rdf:resource="iPTRC_F3_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+  <_d:is_with_event rdf:resource="i148"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i37">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i89">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i195">
+  <_d:hasName rdf:resource="iPIOC_T_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+  <_d:is_with_event rdf:resource="i193"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i125">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+</_d:EventInput>
+
+<_d:FunctionBlock rdf:about="i56">
+  <_d:hasName rdf:resource="fb_iPIOC_F4_1"/>
+  <_d:has_FB_type rdf:resource="iPIOC_F4_1"/>
+  <_d:is_mapped_to rdf:resource="i18"/>
+</_d:FunctionBlock>
+
+<_d:EventInput rdf:about="i169">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i63">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i62"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i24">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i69">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i137">
+  <_d:hasName rdf:resource="iPIOC_F3_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i145">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+</_d:EventInput>
+
+<rdf:Description rdf:about="i10">
+  <_d:hasName rdf:resource="IED2_D3_Q2"/>
+</rdf:Description>
+
+<_d:FunctionBlock rdf:about="i23">
+  <_d:hasName rdf:resource="fb_iPTRC_F1_1"/>
+  <_d:has_FB_type rdf:resource="iPTRC_F1_1"/>
+  <_d:is_mapped_to rdf:resource="i15"/>
+</_d:FunctionBlock>
+
+<_d:OutputVariable rdf:about="i118">
+  <_d:d_connect_to rdf:resource="i119"/>
+  <_d:hasName rdf:resource="iPTRC_F2_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+  <_d:is_with_event rdf:resource="i116"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i120">
+  <_d:e_connect_to rdf:resource="i121"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i172">
+  <_d:e_connect_to rdf:resource="i173"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i98">
+  <_d:d_connect_to rdf:resource="i99"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+  <_d:is_with_event rdf:resource="i96"/>
+</_d:OutputVariable>
+
+<_d:FunctionBlock rdf:about="i68">
+  <_d:hasName rdf:resource="fb_iPIOC_Tr_1"/>
+  <_d:has_FB_type rdf:resource="iPIOC_Tr_1"/>
+  <_d:is_mapped_to rdf:resource="i19"/>
+</_d:FunctionBlock>
+
+<_d:InputVariable rdf:about="i95">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+  <_d:is_with_event rdf:resource="i93"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i99">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+  <_d:is_with_event rdf:resource="i97"/>
+</_d:InputVariable>
+
+<_d:EventOutput rdf:about="i208">
+  <_d:e_connect_to rdf:resource="i209"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventOutput>
+
+<_d:InputVariable rdf:about="i175">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+  <_d:is_with_event rdf:resource="i173"/>
+</_d:InputVariable>
+
+<_d:EventOutput rdf:about="i78">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i77"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i130">
+  <_d:d_connect_to rdf:resource="i131"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+  <_d:is_with_event rdf:resource="i128"/>
+</_d:OutputVariable>
+
+<_d:EventInput rdf:about="i76">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i74"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i58">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i174">
+  <_d:d_connect_to rdf:resource="i175"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+  <_d:is_with_event rdf:resource="i172"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i60">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i214">
+  <_d:d_connect_to rdf:resource="i215"/>
+  <_d:hasName rdf:resource="iPTRC_T_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+  <_d:is_with_event rdf:resource="i212"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i80">
+  <_d:e_connect_to rdf:resource="i81"/>
+  <_d:hasName rdf:resource="iPIOC_F1_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i20"/>
+</_d:EventOutput>
+
+<_d:FunctionBlock rdf:about="i62">
+  <_d:hasName rdf:resource="fb_iTCTR_F4_1"/>
+  <_d:has_FB_type rdf:resource="iTCTR_F4_1"/>
+  <_d:is_mapped_to rdf:resource="i18"/>
+</_d:FunctionBlock>
+
+<_d:InputVariable rdf:about="i123">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+  <_d:is_with_event rdf:resource="i121"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i119">
+  <_d:hasName rdf:resource="iPTRC_F2_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i41"/>
+  <_d:is_with_event rdf:resource="i117"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i139">
+  <_d:hasName rdf:resource="iPIOC_F3_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+  <_d:is_with_event rdf:resource="i137"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i199">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i29"/>
+  <_d:is_with_event rdf:resource="i197"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i121">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i88">
+  <_d:e_connect_to rdf:resource="i89"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventOutput>
+
+<_d:StructureTypeVariable rdf:about="i6">
+  <_d:hasName rdf:resource="instMag"/>
+  <_d:has_var_type rdf:resource="AnalogueValue_1"/>
+</_d:StructureTypeVariable>
+
+<_d:EventInput rdf:about="i34">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i36">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i27">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i26"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i138">
+  <_d:d_connect_to rdf:resource="i139"/>
+  <_d:hasName rdf:resource="iPIOC_F3_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+  <_d:is_with_event rdf:resource="i136"/>
+</_d:OutputVariable>
+
+<_d:InputVariable rdf:about="i91">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+  <_d:is_with_event rdf:resource="i89"/>
+</_d:InputVariable>
+
+<rdf:Description rdf:about="i11">
+  <_d:hasName rdf:resource="IED3_D3_Q3"/>
+</rdf:Description>
+
+<_d:OutputVariable rdf:about="i166">
+  <_d:d_connect_to rdf:resource="i167"/>
+  <_d:hasName rdf:resource="iPIOC_F4_Op_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+  <_d:is_with_event rdf:resource="i164"/>
+</_d:OutputVariable>
+
+<_d:OutputVariable rdf:about="i218">
+  <_d:d_connect_to rdf:resource="i219"/>
+  <_d:hasName rdf:resource="iTCTR_T_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i74"/>
+  <_d:is_with_event rdf:resource="i216"/>
+</_d:OutputVariable>
+
+<_d:FunctionBlock rdf:about="i20">
+  <_d:hasName rdf:resource="fb_iPIOC_F1_1"/>
+  <_d:has_FB_type rdf:resource="iPIOC_F1_1"/>
+  <_d:is_mapped_to rdf:resource="i15"/>
+</_d:FunctionBlock>
+
+<_d:InputVariable rdf:about="i219">
+  <_d:hasName rdf:resource="iTCTR_T_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+  <_d:is_with_event rdf:resource="i217"/>
+</_d:InputVariable>
+
+<_d:EventOutput rdf:about="i216">
+  <_d:e_connect_to rdf:resource="i217"/>
+  <_d:hasName rdf:resource="iTCTR_T_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i74"/>
+</_d:EventOutput>
+
+<_d:InputVariable rdf:about="i147">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+  <_d:is_with_event rdf:resource="i145"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i103">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+  <_d:is_with_event rdf:resource="i101"/>
+</_d:InputVariable>
+
+<rdf:Description rdf:about="i17">
+  <_d:hasName rdf:resource="IED3_D3_Q3.accessPoint1_LD1"/>
+</rdf:Description>
+
+<_d:OutputVariable rdf:about="i114">
+  <_d:d_connect_to rdf:resource="i115"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_F1"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+  <_d:is_with_event rdf:resource="i112"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i84">
+  <_d:e_connect_to rdf:resource="i85"/>
+  <_d:hasName rdf:resource="iPTRC_F1_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i173">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i75">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i74"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i116">
+  <_d:e_connect_to rdf:resource="i117"/>
+  <_d:hasName rdf:resource="iPTRC_F2_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i165">
+  <_d:hasName rdf:resource="iPIOC_F4_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i102">
+  <_d:d_connect_to rdf:resource="i103"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+  <_d:is_with_event rdf:resource="i100"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i148">
+  <_d:e_connect_to rdf:resource="i149"/>
+  <_d:hasName rdf:resource="iPTRC_F3_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventOutput>
+
+<_d:InputVariable rdf:about="i211">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i65"/>
+  <_d:is_with_event rdf:resource="i209"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i193">
+  <_d:hasName rdf:resource="iPIOC_T_Op_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i160">
+  <_d:e_connect_to rdf:resource="i161"/>
+  <_d:hasName rdf:resource="iTCTR_F3_AmpSv_instMag_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i50"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i210">
+  <_d:d_connect_to rdf:resource="i211"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+  <_d:is_with_event rdf:resource="i208"/>
+</_d:OutputVariable>
+
+<rdf:Description rdf:about="i13">
+  <_d:hasName rdf:resource="IED5_D3_Q5"/>
+</rdf:Description>
+
+<_d:EventInput rdf:about="i201">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F2_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i41"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i178">
+  <_d:d_connect_to rdf:resource="i179"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+  <_d:is_with_event rdf:resource="i176"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i100">
+  <_d:e_connect_to rdf:resource="i101"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i168">
+  <_d:e_connect_to rdf:resource="i169"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i59"/>
+</_d:EventOutput>
+
+<_d:FunctionBlock rdf:about="i41">
+  <_d:hasName rdf:resource="fb_iXCBR_F2_1"/>
+  <_d:has_FB_type rdf:resource="iXCBR_F2_1"/>
+  <_d:is_mapped_to rdf:resource="i16"/>
+</_d:FunctionBlock>
+
+<_d:FunctionBlock rdf:about="i74">
+  <_d:hasName rdf:resource="fb_iTCTR_Tr_1"/>
+  <_d:has_FB_type rdf:resource="iTCTR_Tr_1"/>
+  <_d:is_mapped_to rdf:resource="i19"/>
+</_d:FunctionBlock>
+
+<_d:EventInput rdf:about="i185">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F4_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i68"/>
+</_d:EventInput>
+
+<_d:StructureType rdf:about="i2">
+  <_d:hasName rdf:resource="DPC_1_Pos"/>
+</_d:StructureType>
+
+<_d:OutputVariable rdf:about="i158">
+  <_d:d_connect_to rdf:resource="i159"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_T"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+  <_d:is_with_event rdf:resource="i156"/>
+</_d:OutputVariable>
+
+<_d:EventOutput rdf:about="i140">
+  <_d:e_connect_to rdf:resource="i141"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F1_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+</_d:EventOutput>
+
+<_d:OutputVariable rdf:about="i202">
+  <_d:d_connect_to rdf:resource="i203"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F2"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i71"/>
+  <_d:is_with_event rdf:resource="i200"/>
+</_d:OutputVariable>
+
+<rdf:Description rdf:about="i12">
+  <_d:hasName rdf:resource="IED4_D3_Q4"/>
+</rdf:Description>
+
+<_d:EventInput rdf:about="i79">
+  <_d:hasName rdf:resource="INIT"/>
+  <_d:is_part_of_FB rdf:resource="i77"/>
+</_d:EventInput>
+
+<_d:OutputVariable rdf:about="i154">
+  <_d:d_connect_to rdf:resource="i155"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F3_iPIOC_F4"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i47"/>
+  <_d:is_with_event rdf:resource="i152"/>
+</_d:OutputVariable>
+
+<_d:InputVariable rdf:about="i87">
+  <_d:hasName rdf:resource="iPTRC_F1_Tr_general"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i29"/>
+  <_d:is_with_event rdf:resource="i85"/>
+</_d:InputVariable>
+
+<_d:EventInput rdf:about="i205">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F3_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i53"/>
+</_d:EventInput>
+
+<_d:InputVariable rdf:about="i207">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_T_iXCBR_F3"/>
+  <_d:has_var_type rdf:resource="BOOLEAN"/>
+  <_d:is_part_of_FB rdf:resource="i53"/>
+  <_d:is_with_event rdf:resource="i205"/>
+</_d:InputVariable>
+
+<_d:InputVariable rdf:about="i163">
+  <_d:hasName rdf:resource="iTCTR_F3_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i44"/>
+  <_d:is_with_event rdf:resource="i161"/>
+</_d:InputVariable>
+
+<rdf:Description rdf:about="i9">
+  <_d:hasName rdf:resource="IED1_D3_Q1"/>
+</rdf:Description>
+
+<_d:EventOutput rdf:about="i39">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i38"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i30">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i29"/>
+</_d:EventOutput>
+
+<_d:EventInput rdf:about="i97">
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i56"/>
+</_d:EventInput>
+
+<_d:EventInput rdf:about="i181">
+  <_d:hasName rdf:resource="iPTRC_F4_Tr_general_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i65"/>
+</_d:EventInput>
+
+<_d:EventOutput rdf:about="i128">
+  <_d:e_connect_to rdf:resource="i129"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F2_iPIOC_T_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i35"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i96">
+  <_d:e_connect_to rdf:resource="i97"/>
+  <_d:hasName rdf:resource="Tr_general_iPTRC_F1_iPIOC_F4_Ev"/>
+  <_d:is_part_of_FB rdf:resource="i23"/>
+</_d:EventOutput>
+
+<_d:EventOutput rdf:about="i54">
+  <_d:hasName rdf:resource="INITO"/>
+  <_d:is_part_of_FB rdf:resource="i53"/>
+</_d:EventOutput>
+
+<rdf:Description rdf:about="i16">
+  <_d:hasName rdf:resource="IED2_D3_Q2.accessPoint1_LD1"/>
+</rdf:Description>
+
+<_d:InputVariable rdf:about="i135">
+  <_d:hasName rdf:resource="iTCTR_F2_AmpSv_instMag"/>
+  <_d:has_var_type rdf:resource="REAL"/>
+  <_d:is_part_of_FB rdf:resource="i32"/>
+  <_d:is_with_event rdf:resource="i133"/>
+</_d:InputVariable>
+
+</rdf:RDF>

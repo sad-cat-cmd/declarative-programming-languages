@@ -1,0 +1,1179 @@
+'AccessPoint'('a1:F1_1_AP_1').
+'AccessPoint'('a1:F2_1_AP_1').
+'AccessPoint'('a1:F3_1_AP_1').
+'AccessPoint'('a1:F4_1_AP_1').
+'AccessPoint'('a1:F5_1_AP_1').
+'AccessPoint'('a1:Tr_1_AP_1').
+'Address'('a1:F1_ConnectedAP_1_Address_1').
+'Address'('a1:F2_ConnectedAP_1_Address_1').
+'Address'('a1:F3_ConnectedAP_1_Address_1').
+'Address'('a1:F4_ConnectedAP_1_Address_1').
+'Address'('a1:F5_ConnectedAP_1_Address_1').
+'Address'('a1:Tr_ConnectedAP_1_Address_1').
+'BDA'('a1:AnalogueValue_1_BDA1').
+'BDA'('a1:AnalogueValue_1_BDA2').
+'ConnectedAP'('a1:F1_ConnectedAP_1').
+'ConnectedAP'('a1:F2_ConnectedAP_1').
+'ConnectedAP'('a1:F3_ConnectedAP_1').
+'ConnectedAP'('a1:F4_ConnectedAP_1').
+'ConnectedAP'('a1:F5_ConnectedAP_1').
+'ConnectedAP'('a1:Tr_ConnectedAP_1').
+'DA'('a1:ACT_1_Tr_1_DA1').
+'DA'('a1:DPC_1_Pos_1_DA1').
+'DA'('a1:DPL_1_PhyNam_1_DA1').
+'DA'('a1:SAV_1_AmpSV_1_DA1').
+'DAType'('a1:AnalogueValue_1_1').
+'DO'('a1:LLN01_1_DO1').
+'DO'('a1:LPHD1_1_DO1').
+'DO'('a1:iPIOC_1_DO1').
+'DO'('a1:iPTRC_1_DO1').
+'DO'('a1:iTCTR_1_DO1').
+'DO'('a1:iXCBR_1_DO1').
+'DOType'('a1:ACT_1_Tr_1').
+'DOType'('a1:DPC_1_Pos_1').
+'DOType'('a1:DPL_1_PhyNam_1').
+'DOType'('a1:SAV_1_AmpSv_1').
+'DataSet'('a1:F1_DataSet_1').
+'DataSet'('a1:F2_DataSet_1').
+'DataSet'('a1:F3_DataSet_1').
+'DataSet'('a1:F4_DataSet_1').
+'DataSet'('a1:F5_DataSet_1').
+'DataSet'('a1:Tr_DataSet_1').
+'DataSet'('a1:Tr_DataSet_2').
+'DataSet'('a1:Tr_DataSet_3').
+'DataSet'('a1:Tr_DataSet_4').
+'DataSet'('a1:Tr_DataSet_5').
+'DataSet'('a1:Tr_DataSet_6').
+'EnumType'('a1:Beh_1').
+'EnumType'('a1:Health_1').
+'EnumType'('a1:Mod_1').
+'EnumType'('a1:PhyHealth_1').
+'EnumType'('a1:ctlModel_1').
+'EnumVal'('a1:Beh_1_EnumVal1').
+'EnumVal'('a1:Beh_1_EnumVal2').
+'EnumVal'('a1:Beh_1_EnumVal3').
+'EnumVal'('a1:Beh_1_EnumVal4').
+'EnumVal'('a1:Beh_1_EnumVal5').
+'EnumVal'('a1:Health_1_EnumVal1').
+'EnumVal'('a1:Health_1_EnumVal2').
+'EnumVal'('a1:Health_1_EnumVal3').
+'EnumVal'('a1:Mod_1_EnumVal1').
+'EnumVal'('a1:Mod_1_EnumVal2').
+'EnumVal'('a1:Mod_1_EnumVal3').
+'EnumVal'('a1:Mod_1_EnumVal4').
+'EnumVal'('a1:Mod_1_EnumVal5').
+'EnumVal'('a1:PhyHealth_1_EnumVal1').
+'EnumVal'('a1:PhyHealth_1_EnumVal2').
+'EnumVal'('a1:PhyHealth_1_EnumVal3').
+'EnumVal'('a1:ctlModel_1_EnumVal1').
+'EnumVal'('a1:ctlModel_1_EnumVal2').
+'EnumVal'('a1:ctlModel_1_EnumVal3').
+'EnumVal'('a1:ctlModel_1_EnumVal4').
+'EnumVal'('a1:ctlModel_1_EnumVal5').
+'FCDA'('a1:F1_FeederTrip_FCDA_1').
+'FCDA'('a1:F2_FeederTrip_FCDA_1').
+'FCDA'('a1:F3_FeederTrip_FCDA_1').
+'FCDA'('a1:F4_FeederTrip_FCDA_1').
+'FCDA'('a1:F5_FeederTrip_FCDA_1').
+'FCDA'('a1:Tr_FeederTrip_FCDA_1').
+'FCDA'('a1:Tr_TripF1_FCDA_1').
+'FCDA'('a1:Tr_TripF2_FCDA_1').
+'FCDA'('a1:Tr_TripF3_FCDA_1').
+'FCDA'('a1:Tr_TripF4_FCDA_1').
+'FCDA'('a1:Tr_TripF5_FCDA_1').
+'IED'('a1:IED_Feeder_1').
+'IED'('a1:IED_Feeder_2').
+'IED'('a1:IED_Feeder_3').
+'IED'('a1:IED_Feeder_4').
+'IED'('a1:IED_Feeder_5').
+'IED'('a1:IED_Transformer_1').
+'LDevice'('a1:F1_1_LDevice_1').
+'LDevice'('a1:F2_1_LDevice_1').
+'LDevice'('a1:F3_1_LDevice_1').
+'LDevice'('a1:F4_1_LDevice_1').
+'LDevice'('a1:F5_1_LDevice_1').
+'LDevice'('a1:Tr_1_LDevice_1').
+'LN'('a1:F1_1_LDevice_1_LPHD1_1').
+'LN'('a1:F1_1_LDevice_1_iPIOC_1').
+'LN'('a1:F1_1_LDevice_1_iPTRC_1').
+'LN'('a1:F1_1_LDevice_1_iTCTR_1').
+'LN'('a1:F1_1_LDevice_1_iXCBR_1').
+'LN'('a1:F2_1_LDevice_1_LPHD1_1').
+'LN'('a1:F2_1_LDevice_1_iPIOC_1').
+'LN'('a1:F2_1_LDevice_1_iPTRC_1').
+'LN'('a1:F2_1_LDevice_1_iTCTR_1').
+'LN'('a1:F2_1_LDevice_1_iXCBR_1').
+'LN'('a1:F3_1_LDevice_1_LPHD1_1').
+'LN'('a1:F3_1_LDevice_1_iPIOC_1').
+'LN'('a1:F3_1_LDevice_1_iPTRC_1').
+'LN'('a1:F3_1_LDevice_1_iTCTR_1').
+'LN'('a1:F3_1_LDevice_1_iXCBR_1').
+'LN'('a1:F4_1_LDevice_1_LPHD1_1').
+'LN'('a1:F4_1_LDevice_1_iPIOC_1').
+'LN'('a1:F4_1_LDevice_1_iPTRC_1').
+'LN'('a1:F4_1_LDevice_1_iTCTR_1').
+'LN'('a1:F4_1_LDevice_1_iXCBR_1').
+'LN'('a1:F5_1_LDevice_1_LPHD1_1').
+'LN'('a1:F5_1_LDevice_1_iPIOC_1').
+'LN'('a1:F5_1_LDevice_1_iPTRC_1').
+'LN'('a1:F5_1_LDevice_1_iTCTR_1').
+'LN'('a1:F5_1_LDevice_1_iXCBR_1').
+'LN'('a1:Tr_1_LDevice_1_LPHD1_1').
+'LN'('a1:Tr_1_LDevice_1_iPIOC_1').
+'LN'('a1:Tr_1_LDevice_1_iPTRC_1').
+'LN'('a1:Tr_1_LDevice_1_iPTRC_2').
+'LN'('a1:Tr_1_LDevice_1_iPTRC_3').
+'LN'('a1:Tr_1_LDevice_1_iPTRC_4').
+'LN'('a1:Tr_1_LDevice_1_iPTRC_5').
+'LN'('a1:Tr_1_LDevice_1_iPTRC_6').
+'LN'('a1:Tr_1_LDevice_1_iTCTR_1').
+'LN'('a1:Tr_1_LDevice_1_iXCBR_1').
+'LN0'('a1:F1_LLN01').
+'LN0'('a1:F2_LLN01').
+'LN0'('a1:F3_LLN01').
+'LN0'('a1:F4_LLN01').
+'LN0'('a1:F5_LLN01').
+'LN0'('a1:Tr_LLN01').
+'LNConnections'('a1:LNC_iPIOC_F1_1').
+'LNConnections'('a1:LNC_iPIOC_F2_1').
+'LNConnections'('a1:LNC_iPIOC_F3_1').
+'LNConnections'('a1:LNC_iPIOC_F4_1').
+'LNConnections'('a1:LNC_iPIOC_F5_1').
+'LNConnections'('a1:LNC_iPIOC_T_1').
+'LNConnections'('a1:LNC_iPTRC_F1_1').
+'LNConnections'('a1:LNC_iPTRC_F1_2').
+'LNConnections'('a1:LNC_iPTRC_F1_3').
+'LNConnections'('a1:LNC_iPTRC_F1_4').
+'LNConnections'('a1:LNC_iPTRC_F1_5').
+'LNConnections'('a1:LNC_iPTRC_F1_6').
+'LNConnections'('a1:LNC_iPTRC_F2_1').
+'LNConnections'('a1:LNC_iPTRC_F2_2').
+'LNConnections'('a1:LNC_iPTRC_F2_3').
+'LNConnections'('a1:LNC_iPTRC_F2_4').
+'LNConnections'('a1:LNC_iPTRC_F2_5').
+'LNConnections'('a1:LNC_iPTRC_F2_6').
+'LNConnections'('a1:LNC_iPTRC_F3_1').
+'LNConnections'('a1:LNC_iPTRC_F3_2').
+'LNConnections'('a1:LNC_iPTRC_F3_3').
+'LNConnections'('a1:LNC_iPTRC_F3_4').
+'LNConnections'('a1:LNC_iPTRC_F3_5').
+'LNConnections'('a1:LNC_iPTRC_F3_6').
+'LNConnections'('a1:LNC_iPTRC_F4_1').
+'LNConnections'('a1:LNC_iPTRC_F4_2').
+'LNConnections'('a1:LNC_iPTRC_F4_3').
+'LNConnections'('a1:LNC_iPTRC_F4_4').
+'LNConnections'('a1:LNC_iPTRC_F4_5').
+'LNConnections'('a1:LNC_iPTRC_F4_6').
+'LNConnections'('a1:LNC_iPTRC_F5_1').
+'LNConnections'('a1:LNC_iPTRC_F5_2').
+'LNConnections'('a1:LNC_iPTRC_F5_3').
+'LNConnections'('a1:LNC_iPTRC_F5_4').
+'LNConnections'('a1:LNC_iPTRC_F5_5').
+'LNConnections'('a1:LNC_iPTRC_F5_6').
+'LNConnections'('a1:LNC_iPTRC_T_1').
+'LNConnections'('a1:LNC_iPTRC_T_2').
+'LNConnections'('a1:LNC_iPTRC_T_3').
+'LNConnections'('a1:LNC_iPTRC_T_4').
+'LNConnections'('a1:LNC_iPTRC_T_5').
+'LNConnections'('a1:LNC_iPTRC_T_6').
+'LNConnections'('a1:LNC_iTCTR_F1_1').
+'LNConnections'('a1:LNC_iTCTR_F2_1').
+'LNConnections'('a1:LNC_iTCTR_F3_1').
+'LNConnections'('a1:LNC_iTCTR_F4_1').
+'LNConnections'('a1:LNC_iTCTR_F5_1').
+'LNConnections'('a1:LNC_iTCTR_T_1').
+'LNodeType'('a1:LLN01_1').
+'LNodeType'('a1:LPHD1_1').
+'LNodeType'('a1:iPIOC_1').
+'LNodeType'('a1:iPTRC_1').
+'LNodeType'('a1:iTCTR_1').
+'LNodeType'('a1:iXCBR_1').
+'P'('a1:F1_Address_1_P_1').
+'P'('a1:F2_Address_1_P_1').
+'P'('a1:F3_Address_1_P_1').
+'P'('a1:F4_Address_1_P_1').
+'P'('a1:F5_Address_1_P_1').
+'P'('a1:Tr_Address_1_P_1').
+'Server'('a1:F1_1_Server_1').
+'Server'('a1:F2_1_Server_1').
+'Server'('a1:F3_1_Server_1').
+'Server'('a1:F4_1_Server_1').
+'Server'('a1:F5_1_Server_1').
+'Server'('a1:Tr_1_Server_1').
+'SubNetwork'('a1:SubNetwork_1').
+'IED'(X):-
+     has_AccessPoint(X,'_').
+'ConnectedAP'(X):-
+     has_Address(X,'_').
+'DAType'(X):-
+     has_BDA(X,'_').
+'SCL'(X):-
+     has_Communication(X,'_').
+'SubNetwork'(X):-
+     has_ConnectedAP(X,'_').
+'DOType'(X):-
+     has_DA(X,'_').
+'DOI'(X):-
+     has_DAI(X,'_').
+'SDI'(X):-
+     has_DAI(X,'_').
+'DataTypeTemplates'(X):-
+     has_DAType(X,'_').
+'LNodeType'(X):-
+     has_DO(X,'_').
+'AnyLN'(X):-
+     has_DOI(X,'_').
+'DataTypeTemplates'(X):-
+     has_DOType(X,'_').
+'AnyLN'(X):-
+     has_DataSet(X,'_').
+'SCL'(X):-
+     has_DataTypeTemplates(X,'_').
+'DataTypeTemplates'(X):-
+     has_EnumType(X,'_').
+'EnumType'(X):-
+     has_EnumVal(X,'_').
+'DataSet'(X):-
+     has_FCDA(X,'_').
+'SCL'(X):-
+     has_Header(X,'_').
+'SCL'(X):-
+     has_IED(X,'_').
+'Server'(X):-
+     has_LDevice(X,'_').
+'AccessPoint'(X):-
+     has_LN(X,'_').
+'LDevice'(X):-
+     has_LN(X,'_').
+'LDevice'(X):-
+     has_LN0(X,'_').
+'LN'(X):-
+     has_LNConnections(X,'_').
+'DataTypeTemplates'(X):-
+     has_LNodeType(X,'_').
+'Address'(X):-
+     has_P(X,'_').
+'SDI'(X):-
+     has_SD(X,'_').
+'DOI'(X):-
+     has_SDI(X,'_').
+'DOType'(X):-
+     has_SDO(X,'_').
+'AccessPoint'(X):-
+     has_Server(X,'_').
+'IED'(X):-
+     has_Services(X,'_').
+'Communication'(X):-
+     has_SubNetwork(X,'_').
+'SCL'(X):-
+     has_Substation(X,'_').
+'AbstractDataAttribute'(X):-
+     has_Val(X,'_').
+string(X):-
+     'a1_LNC_from'(_,X).
+string(X):-
+     'a1_LNC_name'(_,X).
+string(X):-
+     'a1_LNC_to'(_,X).
+string(X):-
+     'a1_LNC_type'(_,X).
+string(X):-
+     'a1_from_DA'(_,X).
+string(X):-
+     'a1_from_DO'(_,X).
+'AccessPoint'(X):-
+     has_AccessPoint(_,X).
+'Address'(X):-
+     has_Address(_,X).
+'BDA'(X):-
+     has_BDA(_,X).
+'Communication'(X):-
+     has_Communication(_,X).
+'ConnectedAP'(X):-
+     has_ConnectedAP(_,X).
+'DA'(X):-
+     has_DA(_,X).
+'DAI'(X):-
+     has_DAI(_,X).
+'DAType'(X):-
+     has_DAType(_,X).
+'DO'(X):-
+     has_DO(_,X).
+'DOI'(X):-
+     has_DOI(_,X).
+'DOType'(X):-
+     has_DOType(_,X).
+'DataSet'(X):-
+     has_DataSet(_,X).
+'DataTypeTemplates'(X):-
+     has_DataTypeTemplates(_,X).
+'EnumType'(X):-
+     has_EnumType(_,X).
+'EnumVal'(X):-
+     has_EnumVal(_,X).
+'FCDA'(X):-
+     has_FCDA(_,X).
+'Header'(X):-
+     has_Header(_,X).
+'IED'(X):-
+     has_IED(_,X).
+'LDevice'(X):-
+     has_LDevice(_,X).
+'LN'(X):-
+     has_LN(_,X).
+'LN0'(X):-
+     has_LN0(_,X).
+'LNConnections'(X):-
+     has_LNConnections(_,X).
+'LNodeType'(X):-
+     has_LNodeType(_,X).
+'P'(X):-
+     has_P(_,X).
+'SDI'(X):-
+     has_SD(_,X).
+'SDI'(X):-
+     has_SDI(_,X).
+'SDO'(X):-
+     has_SDO(_,X).
+'Server'(X):-
+     has_Server(_,X).
+'Services'(X):-
+     has_Services(_,X).
+'SubNetwork'(X):-
+     has_SubNetwork(_,X).
+'Substation'(X):-
+     has_Substation(_,X).
+'Val'(X):-
+     has_Val(_,X).
+string(X):-
+     'a1_has_Value'(_,X).
+string(X):-
+     'a1_has_apName'(_,X).
+string(X):-
+     'a1_has_bType'(_,X).
+string(X):-
+     'a1_has_cdc'(_,X).
+string(X):-
+     'a1_has_configVersion'(_,X).
+string(X):-
+     'a1_has_daName'(_,X).
+string(X):-
+     'a1_has_doName'(_,X).
+string(X):-
+     'a1_has_fc'(_,X).
+string(X):-
+     'a1_has_id'(_,X).
+string(X):-
+     'a1_has_iedName'(_,X).
+string(X):-
+     'a1_has_inst'(_,X).
+string(X):-
+     'a1_has_ldInst'(_,X).
+string(X):-
+     'a1_has_ldName'(_,X).
+string(X):-
+     'a1_has_lnClass'(_,X).
+string(X):-
+     'a1_has_lnInst'(_,X).
+string(X):-
+     'a1_has_manufacturer'(_,X).
+string(X):-
+     'a1_has_name'(_,X).
+integer(X):-
+     'a1_has_ord'(_,X).
+string(X):-
+     'a1_has_prefix'(_,X).
+string(X):-
+     'a1_has_revision'(_,X).
+string(X):-
+     'a1_has_type'(_,X).
+string(X):-
+     'a1_has_version'(_,X).
+'BDA'(X):-
+     'AbstractDataAttribute'(X).
+'UnNaming'(X):-
+     'AbstractDataAttribute'(X).
+'UnNaming'(X):-
+     'AccessPoint'(X).
+'Thing'(X):-
+     'a1_Address'(X).
+'UnNaming'(X):-
+     'AnyLN'(X).
+'AbstractDataAttribute'(X):-
+     'BDA'(X).
+'UnNaming'(X):-
+     'Communication'(X).
+'UnNaming'(X):-
+     'ConnectedAP'(X).
+'AbstractDataAttribute'(X):-
+     'DA'(X).
+'UnNaming'(X):-
+     'DAI'(X).
+'IDNaming'(X):-
+     'DAType'(X).
+'UnNaming'(X):-
+     'DO'(X).
+'UnNaming'(X):-
+     'DOI'(X).
+'IDNaming'(X):-
+     'DOType'(X).
+'UnNaming'(X):-
+     'DataSet'(X).
+'Thing'(X):-
+     'a1_DataTypeTemplates'(X).
+'IDNaming'(X):-
+     'EnumType'(X).
+'UnNaming'(X):-
+     'IED'(X).
+'UnNaming'(X):-
+     'LDevice'(X).
+'AnyLN'(X):-
+     'LN'(X).
+'AnyLN'(X):-
+     'LN0'(X).
+'IDNaming'(X):-
+     'LNodeType'(X).
+'PAddr'(X):-
+     'P'(X).
+'Thing'(X):-
+     'a1_SCL'(X).
+'UnNaming'(X):-
+     'SDI'(X).
+'UnNaming'(X):-
+     'SDO'(X).
+'UnNaming'(X):-
+     'Server'(X).
+'UnNaming'(X):-
+     'Services'(X).
+'Naming'(X):-
+     'SubNetwork'(X).
+'AbstractDataAttribute'(X):-
+     'UnNaming'(X).
+'LNC_from'('a1:LNC_iPIOC_F1_1',iPIOC_F1).
+'LNC_from'('a1:LNC_iPIOC_F2_1',iPIOC_F2).
+'LNC_from'('a1:LNC_iPIOC_F3_1',iPIOC_F3).
+'LNC_from'('a1:LNC_iPIOC_F4_1',iPIOC_F4).
+'LNC_from'('a1:LNC_iPIOC_F5_1',iPIOC_F5).
+'LNC_from'('a1:LNC_iPIOC_T_1',iPIOC_T).
+'LNC_from'('a1:LNC_iPTRC_F1_1',iPTRC_F1).
+'LNC_from'('a1:LNC_iPTRC_F1_2',iPTRC_F1).
+'LNC_from'('a1:LNC_iPTRC_F1_3',iPTRC_F1).
+'LNC_from'('a1:LNC_iPTRC_F1_4',iPTRC_F1).
+'LNC_from'('a1:LNC_iPTRC_F1_5',iPTRC_F1).
+'LNC_from'('a1:LNC_iPTRC_F1_6',iPTRC_F1).
+'LNC_from'('a1:LNC_iPTRC_F2_1',iPTRC_F2).
+'LNC_from'('a1:LNC_iPTRC_F2_2',iPTRC_F2).
+'LNC_from'('a1:LNC_iPTRC_F2_3',iPTRC_F2).
+'LNC_from'('a1:LNC_iPTRC_F2_4',iPTRC_F2).
+'LNC_from'('a1:LNC_iPTRC_F2_5',iPTRC_F2).
+'LNC_from'('a1:LNC_iPTRC_F2_6',iPTRC_F2).
+'LNC_from'('a1:LNC_iPTRC_F3_1',iPTRC_F3).
+'LNC_from'('a1:LNC_iPTRC_F3_2',iPTRC_F3).
+'LNC_from'('a1:LNC_iPTRC_F3_3',iPTRC_F3).
+'LNC_from'('a1:LNC_iPTRC_F3_4',iPTRC_F3).
+'LNC_from'('a1:LNC_iPTRC_F3_5',iPTRC_F3).
+'LNC_from'('a1:LNC_iPTRC_F3_6',iPTRC_F3).
+'LNC_from'('a1:LNC_iPTRC_F4_1',iPTRC_F4).
+'LNC_from'('a1:LNC_iPTRC_F4_2',iPTRC_F4).
+'LNC_from'('a1:LNC_iPTRC_F4_3',iPTRC_F4).
+'LNC_from'('a1:LNC_iPTRC_F4_4',iPTRC_F4).
+'LNC_from'('a1:LNC_iPTRC_F4_5',iPTRC_F4).
+'LNC_from'('a1:LNC_iPTRC_F4_6',iPTRC_F4).
+'LNC_from'('a1:LNC_iPTRC_F5_1',iPTRC_F5).
+'LNC_from'('a1:LNC_iPTRC_F5_2',iPTRC_F5).
+'LNC_from'('a1:LNC_iPTRC_F5_3',iPTRC_F5).
+'LNC_from'('a1:LNC_iPTRC_F5_4',iPTRC_F5).
+'LNC_from'('a1:LNC_iPTRC_F5_5',iPTRC_F5).
+'LNC_from'('a1:LNC_iPTRC_F5_6',iPTRC_F5).
+'LNC_from'('a1:LNC_iPTRC_T_1',iPTRC_T).
+'LNC_from'('a1:LNC_iPTRC_T_2',iPTRC_T).
+'LNC_from'('a1:LNC_iPTRC_T_3',iPTRC_T).
+'LNC_from'('a1:LNC_iPTRC_T_4',iPTRC_T).
+'LNC_from'('a1:LNC_iPTRC_T_5',iPTRC_T).
+'LNC_from'('a1:LNC_iPTRC_T_6',iPTRC_T).
+'LNC_from'('a1:LNC_iTCTR_F1_1',iTCTR_F1).
+'LNC_from'('a1:LNC_iTCTR_F2_1',iTCTR_F2).
+'LNC_from'('a1:LNC_iTCTR_F3_1',iTCTR_F3).
+'LNC_from'('a1:LNC_iTCTR_F4_1',iTCTR_F4).
+'LNC_from'('a1:LNC_iTCTR_F5_1',iTCTR_F5).
+'LNC_from'('a1:LNC_iTCTR_T_1',iTCTR_T).
+'LNC_name'('a1:LNC_iPIOC_F1_1',iPIOC_F1_Op_general).
+'LNC_name'('a1:LNC_iPIOC_F2_1',iPIOC_F2_Op_general).
+'LNC_name'('a1:LNC_iPIOC_F3_1',iPIOC_F3_Op_general).
+'LNC_name'('a1:LNC_iPIOC_F4_1',iPIOC_F4_Op_general).
+'LNC_name'('a1:LNC_iPIOC_F5_1',iPIOC_F5_Op_general).
+'LNC_name'('a1:LNC_iPIOC_T_1',iPIOC_T_Op_general).
+'LNC_name'('a1:LNC_iPTRC_F1_1',iPTRC_F1_Tr_general).
+'LNC_name'('a1:LNC_iPTRC_F1_2','Tr_general_iPTRC_F1_iPIOC_T').
+'LNC_name'('a1:LNC_iPTRC_F1_3','Tr_general_iPTRC_F1_iPIOC_F4').
+'LNC_name'('a1:LNC_iPTRC_F1_4','Tr_general_iPTRC_F1_iPIOC_F4').
+'LNC_name'('a1:LNC_iPTRC_F1_5','Tr_general_iPTRC_F1_iPIOC_F3').
+'LNC_name'('a1:LNC_iPTRC_F1_6','Tr_general_iPTRC_F1_iPIOC_F2').
+'LNC_name'('a1:LNC_iPTRC_F2_1',iPTRC_F2_Tr_general).
+'LNC_name'('a1:LNC_iPTRC_F2_2','Tr_general_iPTRC_F2_iPIOC_T').
+'LNC_name'('a1:LNC_iPTRC_F2_3','Tr_general_iPTRC_F2_iPIOC_F4').
+'LNC_name'('a1:LNC_iPTRC_F2_4','Tr_general_iPTRC_F2_iPIOC_F3').
+'LNC_name'('a1:LNC_iPTRC_F2_5','Tr_general_iPTRC_F2_iPIOC_F5').
+'LNC_name'('a1:LNC_iPTRC_F2_6','Tr_general_iPTRC_F2_iPIOC_F1').
+'LNC_name'('a1:LNC_iPTRC_F3_1',iPTRC_F3_Tr_general).
+'LNC_name'('a1:LNC_iPTRC_F3_2','Tr_general_iPTRC_F3_iPIOC_T').
+'LNC_name'('a1:LNC_iPTRC_F3_3','Tr_general_iPTRC_F3_iPIOC_F4').
+'LNC_name'('a1:LNC_iPTRC_F3_4','Tr_general_iPTRC_F3_iPIOC_F5').
+'LNC_name'('a1:LNC_iPTRC_F3_5','Tr_general_iPTRC_F3_iPIOC_F2').
+'LNC_name'('a1:LNC_iPTRC_F3_6','Tr_general_iPTRC_F3_iPIOC_F1').
+'LNC_name'('a1:LNC_iPTRC_F4_1',iPTRC_F4_Tr_general).
+'LNC_name'('a1:LNC_iPTRC_F4_2','Tr_general_iPTRC_F4_iPIOC_T').
+'LNC_name'('a1:LNC_iPTRC_F4_3','Tr_general_iPTRC_F4_iPIOC_F1').
+'LNC_name'('a1:LNC_iPTRC_F4_4','Tr_general_iPTRC_F4_iPIOC_F2').
+'LNC_name'('a1:LNC_iPTRC_F4_5','Tr_general_iPTRC_F4_iPIOC_F5').
+'LNC_name'('a1:LNC_iPTRC_F4_6','Tr_general_iPTRC_F4_iPIOC_F3').
+'LNC_name'('a1:LNC_iPTRC_F5_1',iPTRC_F5_Tr_general).
+'LNC_name'('a1:LNC_iPTRC_F5_2','Tr_general_iPTRC_F5_iPIOC_T').
+'LNC_name'('a1:LNC_iPTRC_F5_3','Tr_general_iPTRC_F5_iPIOC_F4').
+'LNC_name'('a1:LNC_iPTRC_F5_4','Tr_general_iPTRC_F5_iPIOC_F3').
+'LNC_name'('a1:LNC_iPTRC_F5_5','Tr_general_iPTRC_F5_iPIOC_F2').
+'LNC_name'('a1:LNC_iPTRC_F5_6','Tr_general_iPTRC_F5_iPIOC_F1').
+'LNC_name'('a1:LNC_iPTRC_T_1',iPTRC_T_Tr_general).
+'LNC_name'('a1:LNC_iPTRC_T_2','Tr_general_iPTRC_T_iXCBR_F1').
+'LNC_name'('a1:LNC_iPTRC_T_3','Tr_general_iPTRC_T_iXCBR_F2').
+'LNC_name'('a1:LNC_iPTRC_T_4','Tr_general_iPTRC_T_iXCBR_F3').
+'LNC_name'('a1:LNC_iPTRC_T_5','Tr_general_iPTRC_T_iXCBR_F4').
+'LNC_name'('a1:LNC_iPTRC_T_6','Tr_general_iPTRC_T_iXCBR_F5').
+'LNC_name'('a1:LNC_iTCTR_F1_1',iTCTR_F1_AmpSv_instMag).
+'LNC_name'('a1:LNC_iTCTR_F2_1',iTCTR_F2_AmpSv_instMag).
+'LNC_name'('a1:LNC_iTCTR_F3_1',iTCTR_F3_AmpSv_instMag).
+'LNC_name'('a1:LNC_iTCTR_F4_1',iTCTR_F4_AmpSv_instMag).
+'LNC_name'('a1:LNC_iTCTR_F5_1',iTCTR_F5_AmpSv_instMag).
+'LNC_name'('a1:LNC_iTCTR_T_1',iTCTR_T_AmpSv_instMag).
+'LNC_to'('a1:LNC_iPIOC_F1_1',iPTRC_F1).
+'LNC_to'('a1:LNC_iPIOC_F2_1',iPTRC_F2).
+'LNC_to'('a1:LNC_iPIOC_F3_1',iPTRC_F3).
+'LNC_to'('a1:LNC_iPIOC_F4_1',iPTRC_F4).
+'LNC_to'('a1:LNC_iPIOC_F5_1',iPTRC_F5).
+'LNC_to'('a1:LNC_iPIOC_T_1',iPTRC_T).
+'LNC_to'('a1:LNC_iPTRC_F1_1',iXCBR_F1).
+'LNC_to'('a1:LNC_iPTRC_F1_2',iPIOC_T).
+'LNC_to'('a1:LNC_iPTRC_F1_3',iPIOC_F4).
+'LNC_to'('a1:LNC_iPTRC_F1_4',iPIOC_F5).
+'LNC_to'('a1:LNC_iPTRC_F1_5',iPIOC_F3).
+'LNC_to'('a1:LNC_iPTRC_F1_6',iPIOF_F2).
+'LNC_to'('a1:LNC_iPTRC_F2_1',iXCBR_F2).
+'LNC_to'('a1:LNC_iPTRC_F2_2',iPIOC_T).
+'LNC_to'('a1:LNC_iPTRC_F2_3',iPIOC_F4).
+'LNC_to'('a1:LNC_iPTRC_F2_4',iPIOC_F3).
+'LNC_to'('a1:LNC_iPTRC_F2_5',iPIOC_F5).
+'LNC_to'('a1:LNC_iPTRC_F2_6',iPIOC_F1).
+'LNC_to'('a1:LNC_iPTRC_F3_1',iXCBR_F3).
+'LNC_to'('a1:LNC_iPTRC_F3_2',iPIOC_T).
+'LNC_to'('a1:LNC_iPTRC_F3_3',iPIOC_F4).
+'LNC_to'('a1:LNC_iPTRC_F3_4',iPIOC_F5).
+'LNC_to'('a1:LNC_iPTRC_F3_5',iPIOC_F2).
+'LNC_to'('a1:LNC_iPTRC_F3_6',iPIOC_1).
+'LNC_to'('a1:LNC_iPTRC_F4_1',iXCBR_F4).
+'LNC_to'('a1:LNC_iPTRC_F4_2',iPIOC_T).
+'LNC_to'('a1:LNC_iPTRC_F4_3',iPIOC_F1).
+'LNC_to'('a1:LNC_iPTRC_F4_4',iPIOC_F2).
+'LNC_to'('a1:LNC_iPTRC_F4_5',iPIOC_F5).
+'LNC_to'('a1:LNC_iPTRC_F4_6',iPIOC_F3).
+'LNC_to'('a1:LNC_iPTRC_F5_1',iXCBR_F5).
+'LNC_to'('a1:LNC_iPTRC_F5_2',iPIOC_T).
+'LNC_to'('a1:LNC_iPTRC_F5_3',iPIOC_F4).
+'LNC_to'('a1:LNC_iPTRC_F5_4',iPIOC_F3).
+'LNC_to'('a1:LNC_iPTRC_F5_5',iPIOC_F2).
+'LNC_to'('a1:LNC_iPTRC_F5_6',iPIOC_F1).
+'LNC_to'('a1:LNC_iPTRC_T_1',iXCBR_T).
+'LNC_to'('a1:LNC_iPTRC_T_2',iXCBR_F1).
+'LNC_to'('a1:LNC_iPTRC_T_3',iXCBR_F2).
+'LNC_to'('a1:LNC_iPTRC_T_4',iXCBR_F3).
+'LNC_to'('a1:LNC_iPTRC_T_5',iXCBR_F4).
+'LNC_to'('a1:LNC_iPTRC_T_6',iXCBR_F5).
+'LNC_to'('a1:LNC_iTCTR_F1_1',iPIOC_F1).
+'LNC_to'('a1:LNC_iTCTR_F2_1',iPIOC_F2).
+'LNC_to'('a1:LNC_iTCTR_F3_1',iPIOC_F3).
+'LNC_to'('a1:LNC_iTCTR_F4_1',iPIOC_F4).
+'LNC_to'('a1:LNC_iTCTR_F5_1',iPIOC_F5).
+'LNC_to'('a1:LNC_iTCTR_T_1',iPIOC_T).
+'LNC_type'('a1:LNC_iPIOC_F1_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPIOC_F2_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPIOC_F3_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPIOC_F4_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPIOC_F5_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPIOC_T_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F1_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F1_2','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F1_3','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F1_4','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F1_5','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F1_6','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F2_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F2_2','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F2_3','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F2_4','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F2_5','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F2_6','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F3_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F3_2','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F3_3','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F3_4','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F3_5','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F3_6','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F4_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F4_2','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F4_3','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F4_4','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F4_5','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F4_6','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F5_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F5_2','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F5_3','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F5_4','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F5_5','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_F5_6','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_T_1','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_T_2','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_T_3','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_T_4','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_T_5','BOOLEAN').
+'LNC_type'('a1:LNC_iPTRC_T_6','BOOLEAN').
+'LNC_type'('a1:LNC_iTCTR_F1_1','REAL').
+'LNC_type'('a1:LNC_iTCTR_F2_1','REAL').
+'LNC_type'('a1:LNC_iTCTR_F3_1','REAL').
+'LNC_type'('a1:LNC_iTCTR_F4_1','REAL').
+'LNC_type'('a1:LNC_iTCTR_F5_1','REAL').
+'LNC_type'('a1:LNC_iTCTR_T_1','REAL').
+from_DA('a1:ACT_1_Tr_1_DA1','ACT_1_Tr_1_DA1').
+from_DO('a1:iPIOC_1_DO1',iPIOC_1_DO1).
+has_AccessPoint('a1:IED_Feeder_1','a1:F1_1_AP_1').
+has_AccessPoint('a1:IED_Feeder_2','a1:F2_1_AP_1').
+has_AccessPoint('a1:IED_Feeder_3','a1:F3_1_AP_1').
+has_AccessPoint('a1:IED_Feeder_4','a1:F4_1_AP_1').
+has_AccessPoint('a1:IED_Transformer_1','a1:Tr_1_AP_1').
+has_Address('a1:F1_ConnectedAP_1','a1:F1_ConnectedAP_1_Address_1').
+has_Address('a1:F2_ConnectedAP_1','a1:F2_ConnectedAP_1_Address_1').
+has_Address('a1:F3_ConnectedAP_1','a1:F3_ConnectedAP_1_Address_1').
+has_Address('a1:F4_ConnectedAP_1','a1:F4_ConnectedAP_1_Address_1').
+has_Address('a1:F5_ConnectedAP_1','a1:F5_ConnectedAP_1_Address_1').
+has_Address('a1:Tr_ConnectedAP_1','a1:Tr_ConnectedAP_1_Address_1').
+has_BDA('a1:AnalogueValue_1_1','a1:AnalogueValue_1_BDA1').
+has_BDA('a1:SAV_1_AmpSV_1_DA1','a1:AnalogueValue_1_BDA1').
+has_ConnectedAP('a1:SubNetwork_1','a1:F1_ConnectedAP_1').
+has_ConnectedAP('a1:SubNetwork_1','a1:F2_ConnectedAP_1').
+has_ConnectedAP('a1:SubNetwork_1','a1:Tr_ConnectedAP_1').
+has_DA('a1:ACT_1_Tr_1','a1:ACT_1_Tr_1_DA1').
+has_DA('a1:DPC_1_Pos_1','a1:DPC_1_Pos_1_DA1').
+has_DA('a1:DPL_1_PhyNam_1','a1:DPL_1_PhyNam_1_DA1').
+has_DA('a1:SAV_1_AmpSv_1','a1:SAV_1_AmpSV_1_DA1').
+has_DO('a1:LLN01_1','a1:LLN01_1_DO1').
+has_DO('a1:LPHD1_1','a1:LPHD1_1_DO1').
+has_DO('a1:iPIOC_1','a1:iPIOC_1_DO1').
+has_DO('a1:iPTRC_1','a1:iPTRC_1_DO1').
+has_DO('a1:iTCTR_1','a1:iTCTR_1_DO1').
+has_DO('a1:iXCBR_1','a1:iXCBR_1_DO1').
+has_DO('a1:iXCBR_1_DO1','a1:iXCBR_1_DO1').
+has_DataSet('a1:F1_LLN01','a1:F1_DataSet_1').
+has_DataSet('a1:F2_LLN01','a1:F2_DataSet_1').
+has_DataSet('a1:F3_LLN01','a1:F3_DataSet_1').
+has_DataSet('a1:F4_LLN01','a1:F4_DataSet_1').
+has_DataSet('a1:F5_LLN01','a1:F5_DataSet_1').
+has_DataSet('a1:Tr_LLN01','a1:Tr_DataSet_1').
+has_DataSet('a1:Tr_LLN01','a1:Tr_DataSet_2').
+has_EnumVal('a1:Beh_1','a1:Beh_1_EnumVal1').
+has_EnumVal('a1:Beh_1','a1:Beh_1_EnumVal2').
+has_EnumVal('a1:Beh_1','a1:Beh_1_EnumVal3').
+has_EnumVal('a1:Beh_1','a1:Beh_1_EnumVal4').
+has_EnumVal('a1:Beh_1','a1:Beh_1_EnumVal5').
+has_EnumVal('a1:Health_1','a1:Health_1_EnumVal1').
+has_EnumVal('a1:Health_1','a1:Health_1_EnumVal2').
+has_EnumVal('a1:Health_1','a1:Health_1_EnumVal3').
+has_EnumVal('a1:Mod_1','a1:Mod_1_EnumVal1').
+has_EnumVal('a1:Mod_1','a1:Mod_1_EnumVal2').
+has_EnumVal('a1:Mod_1','a1:Mod_1_EnumVal3').
+has_EnumVal('a1:Mod_1','a1:Mod_1_EnumVal4').
+has_EnumVal('a1:Mod_1','a1:Mod_1_EnumVal5').
+has_EnumVal('a1:PhyHealth_1','a1:PhyHealth_1_EnumVal1').
+has_EnumVal('a1:PhyHealth_1','a1:PhyHealth_1_EnumVal2').
+has_EnumVal('a1:PhyHealth_1','a1:PhyHealth_1_EnumVal3').
+has_EnumVal('a1:ctlModel_1','a1:ctlModel_1_EnumVal1').
+has_EnumVal('a1:ctlModel_1','a1:ctlModel_1_EnumVal2').
+has_EnumVal('a1:ctlModel_1','a1:ctlModel_1_EnumVal3').
+has_EnumVal('a1:ctlModel_1','a1:ctlModel_1_EnumVal4').
+has_EnumVal('a1:ctlModel_1','a1:ctlModel_1_EnumVal5').
+has_FCDA('a1:F1_DataSet_1','a1:F1_FeederTrip_FCDA_1').
+has_FCDA('a1:F2_DataSet_1','a1:F2_FeederTrip_FCDA_1').
+has_FCDA('a1:F3_DataSet_1','a1:F3_FeederTrip_FCDA_1').
+has_FCDA('a1:F4_DataSet_1','a1:F4_FeederTrip_FCDA_1').
+has_FCDA('a1:F5_DataSet_1','a1:F5_FeederTrip_FCDA_1').
+has_FCDA('a1:Tr_DataSet_1','a1:Tr_FeederTrip_FCDA_1').
+has_FCDA('a1:Tr_DataSet_2','a1:Tr_TripF1_FCDA_1').
+has_FCDA('a1:Tr_DataSet_3','a1:Tr_TripF2_FCDA_1').
+has_FCDA('a1:Tr_DataSet_4','a1:Tr_TripF3_FCDA_1').
+has_FCDA('a1:Tr_DataSet_5','a1:Tr_TripF4_FCDA_1').
+has_FCDA('a1:Tr_DataSet_6','a1:Tr_TripF5_FCDA_1').
+has_LDevice('a1:F1_1_Server_1','a1:F1_1_LDevice_1').
+has_LDevice('a1:F2_1_Server_1','a1:F2_1_LDevice_1').
+has_LDevice('a1:F3_1_Server_1','a1:F3_1_LDevice_1').
+has_LDevice('a1:F4_1_Server_1','a1:F4_1_LDevice_1').
+has_LDevice('a1:F5_1_Server_1','a1:F5_1_LDevice_1').
+has_LDevice('a1:Tr_1_Server_1','a1:Tr_1_LDevice_1').
+has_LN('a1:F1_1_LDevice_1','a1:F1_1_LDevice_1_LPHD1_1').
+has_LN('a1:F1_1_LDevice_1','a1:F1_1_LDevice_1_iPIOC_1').
+has_LN('a1:F1_1_LDevice_1','a1:F1_1_LDevice_1_iPTRC_1').
+has_LN('a1:F1_1_LDevice_1','a1:F1_1_LDevice_1_iTCTR_1').
+has_LN('a1:F1_1_LDevice_1','a1:F1_1_LDevice_1_iXCBR_1').
+has_LN('a1:F2_1_LDevice_1','a1:F2_1_LDevice_1_LPHD1_1').
+has_LN('a1:F2_1_LDevice_1','a1:F2_1_LDevice_1_iPIOC_1').
+has_LN('a1:F2_1_LDevice_1','a1:F2_1_LDevice_1_iPTRC_1').
+has_LN('a1:F2_1_LDevice_1','a1:F2_1_LDevice_1_iTCTR_1').
+has_LN('a1:F2_1_LDevice_1','a1:F2_1_LDevice_1_iXCBR_1').
+has_LN('a1:F3_1_LDevice_1','a1:F3_1_LDevice_1_LPHD1_1').
+has_LN('a1:F3_1_LDevice_1','a1:F3_1_LDevice_1_iPIOC_1').
+has_LN('a1:F3_1_LDevice_1','a1:F3_1_LDevice_1_iPTRC_1').
+has_LN('a1:F3_1_LDevice_1','a1:F3_1_LDevice_1_iTCTR_1').
+has_LN('a1:F3_1_LDevice_1','a1:F3_1_LDevice_1_iXCBR_1').
+has_LN('a1:F4_1_LDevice_1','a1:F4_1_LDevice_1_LPHD1_1').
+has_LN('a1:F4_1_LDevice_1','a1:F4_1_LDevice_1_iPIOC_1').
+has_LN('a1:F4_1_LDevice_1','a1:F4_1_LDevice_1_iPTRC_1').
+has_LN('a1:F4_1_LDevice_1','a1:F4_1_LDevice_1_iTCTR_1').
+has_LN('a1:F4_1_LDevice_1','a1:F4_1_LDevice_1_iXCBR_1').
+has_LN('a1:F5_1_LDevice_1','a1:F5_1_LDevice_1_LPHD1_1').
+has_LN('a1:F5_1_LDevice_1','a1:F5_1_LDevice_1_iPIOC_1').
+has_LN('a1:F5_1_LDevice_1','a1:F5_1_LDevice_1_iPTRC_1').
+has_LN('a1:F5_1_LDevice_1','a1:F5_1_LDevice_1_iTCTR_1').
+has_LN('a1:F5_1_LDevice_1','a1:F5_1_LDevice_1_iXCBR_1').
+has_LN('a1:IED_Feeder_5','a1:F5_1_AP_1').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_LPHD1_1').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iPIOC_1').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iPTRC_1').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iPTRC_2').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iPTRC_3').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iPTRC_4').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iPTRC_5').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iPTRC_6').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iTCTR_1').
+has_LN('a1:Tr_1_LDevice_1','a1:Tr_1_LDevice_1_iXCBR_1').
+has_LN0('a1:F1_1_LDevice_1','a1:F1_LLN01').
+has_LN0('a1:F2_1_LDevice_1','a1:F2_LLN01').
+has_LN0('a1:F3_1_LDevice_1','a1:F3_LLN01').
+has_LN0('a1:F4_1_LDevice_1','a1:F4_LLN01').
+has_LN0('a1:F5_1_LDevice_1','a1:F5_LLN01').
+has_LN0('a1:Tr_1_LDevice_1','a1:Tr_LLN01').
+has_LNConnections('a1:F1_1_LDevice_1_iPIOC_1','a1:LNC_iPIOC_F1_1').
+has_LNConnections('a1:F1_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F1_1').
+has_LNConnections('a1:F1_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F1_2').
+has_LNConnections('a1:F1_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F1_3').
+has_LNConnections('a1:F1_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F1_4').
+has_LNConnections('a1:F1_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F1_5').
+has_LNConnections('a1:F1_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F1_6').
+has_LNConnections('a1:F1_1_LDevice_1_iTCTR_1','a1:LNC_iTCTR_F1_1').
+has_LNConnections('a1:F2_1_LDevice_1_iPIOC_1','a1:LNC_iPIOC_F2_1').
+has_LNConnections('a1:F2_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F2_1').
+has_LNConnections('a1:F2_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F2_2').
+has_LNConnections('a1:F2_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F2_3').
+has_LNConnections('a1:F2_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F2_4').
+has_LNConnections('a1:F2_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F2_5').
+has_LNConnections('a1:F2_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F2_6').
+has_LNConnections('a1:F2_1_LDevice_1_iTCTR_1','a1:LNC_iTCTR_F2_1').
+has_LNConnections('a1:F3_1_LDevice_1_iPIOC_1','a1:LNC_iPIOC_F3_1').
+has_LNConnections('a1:F3_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F3_1').
+has_LNConnections('a1:F3_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F3_2').
+has_LNConnections('a1:F3_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F3_3').
+has_LNConnections('a1:F3_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F3_4').
+has_LNConnections('a1:F3_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F3_5').
+has_LNConnections('a1:F3_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F3_6').
+has_LNConnections('a1:F3_1_LDevice_1_iTCTR_1','a1:LNC_iTCTR_F3_1').
+has_LNConnections('a1:F4_1_LDevice_1_iPIOC_1','a1:LNC_iPIOC_F4_1').
+has_LNConnections('a1:F4_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F4_1').
+has_LNConnections('a1:F4_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F4_2').
+has_LNConnections('a1:F4_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F4_3').
+has_LNConnections('a1:F4_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F4_4').
+has_LNConnections('a1:F4_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F4_5').
+has_LNConnections('a1:F4_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F4_6').
+has_LNConnections('a1:F4_1_LDevice_1_iTCTR_1','a1:LNC_iTCTR_F4_1').
+has_LNConnections('a1:F5_1_LDevice_1_iPIOC_1','a1:LNC_iPIOC_F5_1').
+has_LNConnections('a1:F5_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F5_1').
+has_LNConnections('a1:F5_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F5_2').
+has_LNConnections('a1:F5_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F5_3').
+has_LNConnections('a1:F5_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F5_4').
+has_LNConnections('a1:F5_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F5_5').
+has_LNConnections('a1:F5_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_F5_6').
+has_LNConnections('a1:F5_1_LDevice_1_iTCTR_1','a1:LNC_iTCTR_F5_1').
+has_LNConnections('a1:Tr_1_LDevice_1_iPIOC_1','a1:LNC_iPIOC_T_1').
+has_LNConnections('a1:Tr_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_T_1').
+has_LNConnections('a1:Tr_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_T_2').
+has_LNConnections('a1:Tr_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_T_3').
+has_LNConnections('a1:Tr_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_T_4').
+has_LNConnections('a1:Tr_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_T_5').
+has_LNConnections('a1:Tr_1_LDevice_1_iPTRC_1','a1:LNC_iPTRC_T_6').
+has_LNConnections('a1:Tr_1_LDevice_1_iTCTR_1','a1:LNC_iTCTR_T_1').
+has_P('a1:F1_ConnectedAP_1_Address_1','a1:F1_Address_1_P_1').
+has_P('a1:F2_ConnectedAP_1_Address_1','a1:F2_Address_1_P_1').
+has_P('a1:F3_ConnectedAP_1_Address_1','a1:F3_Address_1_P_1').
+has_P('a1:F4_ConnectedAP_1_Address_1','a1:F4_Address_1_P_1').
+has_P('a1:F5_ConnectedAP_1_Address_1','a1:F5_Address_1_P_1').
+has_P('a1:Tr_ConnectedAP_1_Address_1','a1:Tr_Address_1_P_1').
+has_Server('a1:F1_1_AP_1','a1:F1_1_Server_1').
+has_Server('a1:F2_1_AP_1','a1:F2_1_Server_1').
+has_Server('a1:F3_1_AP_1','a1:F3_1_Server_1').
+has_Server('a1:F4_1_AP_1','a1:F4_1_Server_1').
+has_Server('a1:F5_1_AP_1','a1:F5_1_Server_1').
+has_Server('a1:Tr_1_AP_1','a1:Tr_1_Server_1').
+has_Value('a1:F1_Address_1_P_1','192.168.1.1').
+has_Value('a1:F2_Address_1_P_1','192.168.1.1').
+has_Value('a1:F3_Address_1_P_1','192.168.1.1').
+has_Value('a1:F4_Address_1_P_1','192.168.1.1').
+has_Value('a1:F5_Address_1_P_1','192.168.1.1').
+has_Value('a1:Tr_Address_1_P_1','192.168.1.1').
+has_apName('a1:Tr_ConnectedAP_1',accessPoint1).
+has_bType('a1:AnalogueValue_1_BDA1','FLOAT32').
+has_bType('a1:AnalogueValue_1_BDA2','INT32').
+has_bType('a1:DPC_1_Pos_1_DA1','Dbpos').
+has_bType('a1:DPL_1_PhyNam_1_DA1','VisString255').
+has_cdc('a1:ACT_1_Tr_1','ACT').
+has_cdc('a1:DPC_1_Pos_1','DPC').
+has_cdc('a1:DPL_1_PhyNam_1','DPL').
+has_cdc('a1:SAV_1_AmpSv_1','SAV').
+has_daName('a1:F1_FeederTrip_FCDA_1',general).
+has_daName('a1:F2_FeederTrip_FCDA_1',general).
+has_daName('a1:F3_FeederTrip_FCDA_1',general).
+has_daName('a1:F4_FeederTrip_FCDA_1',general).
+has_daName('a1:F5_FeederTrip_FCDA_1',general).
+has_daName('a1:Tr_FeederTrip_FCDA_1',general).
+has_daName('a1:Tr_TripF1_FCDA_1',general).
+has_daName('a1:Tr_TripF2_FCDA_1',general).
+has_daName('a1:Tr_TripF3_FCDA_1',general).
+has_daName('a1:Tr_TripF4_FCDA_1',general).
+has_daName('a1:Tr_TripF5_FCDA_1',general).
+has_doName('a1:F1_FeederTrip_FCDA_1','Op').
+has_doName('a1:F2_FeederTrip_FCDA_1','Op').
+has_doName('a1:F3_FeederTrip_FCDA_1','Op').
+has_doName('a1:F4_FeederTrip_FCDA_1','Op').
+has_doName('a1:F5_FeederTrip_FCDA_1','Op').
+has_doName('a1:Tr_FeederTrip_FCDA_1','Op').
+has_doName('a1:Tr_TripF1_FCDA_1','Op').
+has_doName('a1:Tr_TripF2_FCDA_1','Op').
+has_doName('a1:Tr_TripF3_FCDA_1','Op').
+has_doName('a1:Tr_TripF4_FCDA_1','Op').
+has_doName('a1:Tr_TripF5_FCDA_1','Op').
+has_fc('a1:ACT_1_Tr_1_DA1','ST').
+has_fc('a1:DPC_1_Pos_1_DA1','ST').
+has_fc('a1:DPL_1_PhyNam_1_DA1','DC').
+has_fc('a1:F1_FeederTrip_FCDA_1','ST').
+has_fc('a1:F2_FeederTrip_FCDA_1','ST').
+has_fc('a1:F3_FeederTrip_FCDA_1','ST').
+has_fc('a1:F4_FeederTrip_FCDA_1','ST').
+has_fc('a1:F5_FeederTrip_FCDA_1','ST').
+has_fc('a1:SAV_1_AmpSV_1_DA1','MX').
+has_fc('a1:Tr_FeederTrip_FCDA_1','ST').
+has_fc('a1:Tr_TripF1_FCDA_1','ST').
+has_fc('a1:Tr_TripF2_FCDA_1','ST').
+has_fc('a1:Tr_TripF3_FCDA_1','ST').
+has_fc('a1:Tr_TripF4_FCDA_1','ST').
+has_fc('a1:Tr_TripF5_FCDA_1','ST').
+has_id('a1:ACT_1_Tr_1','ACT_1_Tr').
+has_id('a1:AnalogueValue_1_1','AnalogueValue_1').
+has_id('a1:Beh_1','Beh').
+has_id('a1:DPC_1_Pos_1','DPC_1_Pos').
+has_id('a1:DPL_1_PhyNam_1','DPL_1_PhyNam').
+has_id('a1:Health_1','Health').
+has_id('a1:LLN01_1','LLN01').
+has_id('a1:LPHD1_1','LPHD1').
+has_id('a1:Mod_1','Mod').
+has_id('a1:PhyHealth_1','PhyHealth').
+has_id('a1:SAV_1_AmpSv_1','SAV_1_AmpSv').
+has_id('a1:ctlModel_1',ctlModel).
+has_id('a1:iPIOC_1',iPIOC).
+has_id('a1:iPTRC_1',iPTRC).
+has_id('a1:iTCTR_1',iTCTR).
+has_id('a1:iXCBR_1',iXCBR).
+has_iedName('a1:F1_ConnectedAP_1','IED1_D3_Q1').
+has_iedName('a1:F2_ConnectedAP_1','IED2_D3_Q2').
+has_iedName('a1:F3_ConnectedAP_1','IED3_D3_Q3').
+has_iedName('a1:F4_ConnectedAP_1','IED4_D3_Q4').
+has_iedName('a1:F5_ConnectedAP_1','IED5_D3_Q5').
+has_iedName('a1:Tr_ConnectedAP_1','TransformerIED').
+has_inst('a1:F1_1_LDevice_1','LD1').
+has_inst('a1:F1_1_LDevice_1_LPHD1_1','1').
+has_inst('a1:F1_1_LDevice_1_iPIOC_1','1').
+has_inst('a1:F1_1_LDevice_1_iPTRC_1','1').
+has_inst('a1:F1_1_LDevice_1_iTCTR_1','1').
+has_inst('a1:F1_1_LDevice_1_iXCBR_1','1').
+has_inst('a1:F1_LLN01','1').
+has_inst('a1:F2_1_LDevice_1','LD1').
+has_inst('a1:F2_1_LDevice_1_LPHD1_1','1').
+has_inst('a1:F2_1_LDevice_1_iPIOC_1','1').
+has_inst('a1:F2_1_LDevice_1_iPTRC_1','1').
+has_inst('a1:F2_1_LDevice_1_iTCTR_1','1').
+has_inst('a1:F2_1_LDevice_1_iXCBR_1','1').
+has_inst('a1:F2_LLN01','1').
+has_inst('a1:F3_1_LDevice_1','LD1').
+has_inst('a1:F3_1_LDevice_1_LPHD1_1','1').
+has_inst('a1:F3_1_LDevice_1_iPIOC_1','1').
+has_inst('a1:F3_1_LDevice_1_iPTRC_1','1').
+has_inst('a1:F3_1_LDevice_1_iTCTR_1','1').
+has_inst('a1:F3_1_LDevice_1_iXCBR_1','1').
+has_inst('a1:F3_LLN01','1').
+has_inst('a1:F4_1_LDevice_1','LD1').
+has_inst('a1:F4_1_LDevice_1_LPHD1_1','1').
+has_inst('a1:F4_1_LDevice_1_iPIOC_1','1').
+has_inst('a1:F4_1_LDevice_1_iPTRC_1','1').
+has_inst('a1:F4_1_LDevice_1_iTCTR_1','1').
+has_inst('a1:F4_1_LDevice_1_iXCBR_1','1').
+has_inst('a1:F4_LLN01','1').
+has_inst('a1:F5_1_LDevice_1','LD1').
+has_inst('a1:F5_1_LDevice_1_LPHD1_1','1').
+has_inst('a1:F5_1_LDevice_1_iPIOC_1','1').
+has_inst('a1:F5_1_LDevice_1_iPTRC_1','1').
+has_inst('a1:F5_1_LDevice_1_iTCTR_1','1').
+has_inst('a1:F5_1_LDevice_1_iXCBR_1','1').
+has_inst('a1:F5_LLN01','1').
+has_inst('a1:Tr_1_LDevice_1','LD1').
+has_inst('a1:Tr_1_LDevice_1_LPHD1_1','1').
+has_inst('a1:Tr_1_LDevice_1_iPIOC_1','1').
+has_inst('a1:Tr_1_LDevice_1_iPTRC_1','1').
+has_inst('a1:Tr_1_LDevice_1_iPTRC_2','2').
+has_inst('a1:Tr_1_LDevice_1_iPTRC_3','3').
+has_inst('a1:Tr_1_LDevice_1_iPTRC_4','4').
+has_inst('a1:Tr_1_LDevice_1_iPTRC_5','5').
+has_inst('a1:Tr_1_LDevice_1_iPTRC_6','6').
+has_inst('a1:Tr_1_LDevice_1_iTCTR_1','1').
+has_inst('a1:Tr_1_LDevice_1_iXCBR_1','1').
+has_inst('a1:Tr_LLN01','1').
+has_ldInst('a1:F1_FeederTrip_FCDA_1','LD1').
+has_ldInst('a1:F2_FeederTrip_FCDA_1','LD1').
+has_ldInst('a1:F3_FeederTrip_FCDA_1','LD1').
+has_ldInst('a1:F4_FeederTrip_FCDA_1','LD1').
+has_ldInst('a1:F5_FeederTrip_FCDA_1','LD1').
+has_ldInst('a1:Tr_FeederTrip_FCDA_1','LD1').
+has_ldInst('a1:Tr_TripF1_FCDA_1','LD1').
+has_ldInst('a1:Tr_TripF2_FCDA_1','LD1').
+has_ldInst('a1:Tr_TripF3_FCDA_1','LD1').
+has_ldInst('a1:Tr_TripF4_FCDA_1','LD1').
+has_ldInst('a1:Tr_TripF5_FCDA_1','LD1').
+has_lnClass('a1:F1_1_LDevice_1_LPHD1_1','LPHD').
+has_lnClass('a1:F1_1_LDevice_1_iPIOC_1','PIOC').
+has_lnClass('a1:F1_1_LDevice_1_iPTRC_1','PTRC').
+has_lnClass('a1:F1_1_LDevice_1_iTCTR_1','TCTR').
+has_lnClass('a1:F1_1_LDevice_1_iXCBR_1','XCBR').
+has_lnClass('a1:F1_FeederTrip_FCDA_1','PIOC').
+has_lnClass('a1:F1_LLN01','LLN0').
+has_lnClass('a1:F2_1_LDevice_1_LPHD1_1','LPHD').
+has_lnClass('a1:F2_1_LDevice_1_iPIOC_1','PIOC').
+has_lnClass('a1:F2_1_LDevice_1_iPTRC_1','PTRC').
+has_lnClass('a1:F2_1_LDevice_1_iTCTR_1','TCTR').
+has_lnClass('a1:F2_1_LDevice_1_iXCBR_1','XCBR').
+has_lnClass('a1:F2_FeederTrip_FCDA_1','PIOC').
+has_lnClass('a1:F2_LLN01','LLN0').
+has_lnClass('a1:F3_1_LDevice_1_LPHD1_1','LPHD').
+has_lnClass('a1:F3_1_LDevice_1_iPIOC_1','PIOC').
+has_lnClass('a1:F3_1_LDevice_1_iPTRC_1','PTRC').
+has_lnClass('a1:F3_1_LDevice_1_iTCTR_1','TCTR').
+has_lnClass('a1:F3_1_LDevice_1_iXCBR_1','XCBR').
+has_lnClass('a1:F3_FeederTrip_FCDA_1','PIOC').
+has_lnClass('a1:F3_LLN01','LLN0').
+has_lnClass('a1:F4_1_LDevice_1_LPHD1_1','LPHD').
+has_lnClass('a1:F4_1_LDevice_1_iPIOC_1','PIOC').
+has_lnClass('a1:F4_1_LDevice_1_iPTRC_1','PTRC').
+has_lnClass('a1:F4_1_LDevice_1_iTCTR_1','TCTR').
+has_lnClass('a1:F4_1_LDevice_1_iXCBR_1','XCBR').
+has_lnClass('a1:F4_FeederTrip_FCDA_1','PIOC').
+has_lnClass('a1:F4_LLN01','LLN0').
+has_lnClass('a1:F5_1_LDevice_1_LPHD1_1','LPHD').
+has_lnClass('a1:F5_1_LDevice_1_iPIOC_1','PIOC').
+has_lnClass('a1:F5_1_LDevice_1_iPTRC_1','PTRC').
+has_lnClass('a1:F5_1_LDevice_1_iTCTR_1','TCTR').
+has_lnClass('a1:F5_1_LDevice_1_iXCBR_1','XCBR').
+has_lnClass('a1:F5_FeederTrip_FCDA_1','PIOC').
+has_lnClass('a1:F5_LLN01','LLN0').
+has_lnClass('a1:LLN01_1','LLN0').
+has_lnClass('a1:LPHD1_1','LPHD').
+has_lnClass('a1:Tr_1_LDevice_1_LPHD1_1','LPHD').
+has_lnClass('a1:Tr_1_LDevice_1_iPIOC_1','PIOC').
+has_lnClass('a1:Tr_1_LDevice_1_iPTRC_1','PTRC').
+has_lnClass('a1:Tr_1_LDevice_1_iPTRC_2','PTRC').
+has_lnClass('a1:Tr_1_LDevice_1_iPTRC_3','PTRC').
+has_lnClass('a1:Tr_1_LDevice_1_iPTRC_4','PTRC').
+has_lnClass('a1:Tr_1_LDevice_1_iPTRC_5','PTRC').
+has_lnClass('a1:Tr_1_LDevice_1_iPTRC_6','PTRC').
+has_lnClass('a1:Tr_1_LDevice_1_iTCTR_1','TCTR').
+has_lnClass('a1:Tr_1_LDevice_1_iXCBR_1','XCBR').
+has_lnClass('a1:Tr_FeederTrip_FCDA_1','PIOC').
+has_lnClass('a1:Tr_LLN01','LLN0').
+has_lnClass('a1:Tr_TripF1_FCDA_1','PTRC').
+has_lnClass('a1:Tr_TripF2_FCDA_1','PTRC').
+has_lnClass('a1:Tr_TripF3_FCDA_1','PTRC').
+has_lnClass('a1:Tr_TripF4_FCDA_1','PTRC').
+has_lnClass('a1:Tr_TripF5_FCDA_1','PTRC').
+has_lnClass('a1:iPIOC_1','PIOC').
+has_lnClass('a1:iPTRC_1','PTRC').
+has_lnClass('a1:iTCTR_1','TCTR').
+has_lnClass('a1:iXCBR_1','XCBR').
+has_lnInst('a1:F1_FeederTrip_FCDA_1','1').
+has_lnInst('a1:F2_FeederTrip_FCDA_1','1').
+has_lnInst('a1:F3_FeederTrip_FCDA_1','1').
+has_lnInst('a1:F4_FeederTrip_FCDA_1','1').
+has_lnInst('a1:F5_FeederTrip_FCDA_1','1').
+has_lnInst('a1:Tr_FeederTrip_FCDA_1','1').
+has_lnInst('a1:Tr_TripF1_FCDA_1','2').
+has_lnInst('a1:Tr_TripF2_FCDA_1','3').
+has_lnInst('a1:Tr_TripF3_FCDA_1','4').
+has_lnInst('a1:Tr_TripF4_FCDA_1','5').
+has_lnInst('a1:Tr_TripF5_FCDA_1','6').
+has_lnType('a1:F1_1_LDevice_1_LPHD1_1','LPHD1').
+has_lnType('a1:F1_1_LDevice_1_iPIOC_1',iPIOC).
+has_lnType('a1:F1_1_LDevice_1_iPTRC_1',iPTRC).
+has_lnType('a1:F1_1_LDevice_1_iTCTR_1',iTCTR).
+has_lnType('a1:F1_1_LDevice_1_iXCBR_1',iXCBR).
+has_lnType('a1:F1_LLN01','LLN01').
+has_lnType('a1:F2_1_LDevice_1_LPHD1_1','LPHD1').
+has_lnType('a1:F2_1_LDevice_1_iPIOC_1',iPIOC).
+has_lnType('a1:F2_1_LDevice_1_iPTRC_1',iPTRC).
+has_lnType('a1:F2_1_LDevice_1_iTCTR_1',iTCTR).
+has_lnType('a1:F2_1_LDevice_1_iXCBR_1',iXCBR).
+has_lnType('a1:F2_LLN01','LLN01').
+has_lnType('a1:F3_1_LDevice_1_LPHD1_1','LPHD1').
+has_lnType('a1:F3_1_LDevice_1_iPIOC_1',iPIOC).
+has_lnType('a1:F3_1_LDevice_1_iPTRC_1',iPTRC).
+has_lnType('a1:F3_1_LDevice_1_iTCTR_1',iTCTR).
+has_lnType('a1:F3_1_LDevice_1_iXCBR_1',iXCBR).
+has_lnType('a1:F3_LLN01','LLN01').
+has_lnType('a1:F4_1_LDevice_1_LPHD1_1','LPHD1').
+has_lnType('a1:F4_1_LDevice_1_iPIOC_1',iPIOC).
+has_lnType('a1:F4_1_LDevice_1_iPTRC_1',iPTRC).
+has_lnType('a1:F4_1_LDevice_1_iTCTR_1',iTCTR).
+has_lnType('a1:F4_1_LDevice_1_iXCBR_1',iXCBR).
+has_lnType('a1:F4_LLN01','LLN01').
+has_lnType('a1:F5_1_LDevice_1_LPHD1_1','LPHD1').
+has_lnType('a1:F5_1_LDevice_1_iPIOC_1',iPIOC).
+has_lnType('a1:F5_1_LDevice_1_iPTRC_1',iPTRC).
+has_lnType('a1:F5_1_LDevice_1_iTCTR_1',iTCTR).
+has_lnType('a1:F5_1_LDevice_1_iXCBR_1',iXCBR).
+has_lnType('a1:F5_LLN01','LLN01').
+has_lnType('a1:Tr_1_LDevice_1_LPHD1_1','LPHD1').
+has_lnType('a1:Tr_1_LDevice_1_iPIOC_1',iPIOC).
+has_lnType('a1:Tr_1_LDevice_1_iPTRC_1',iPTRC).
+has_lnType('a1:Tr_1_LDevice_1_iPTRC_2',iPTRC).
+has_lnType('a1:Tr_1_LDevice_1_iPTRC_3',iPTRC).
+has_lnType('a1:Tr_1_LDevice_1_iPTRC_4',iPTRC).
+has_lnType('a1:Tr_1_LDevice_1_iPTRC_5',iPTRC).
+has_lnType('a1:Tr_1_LDevice_1_iPTRC_6',iPTRC).
+has_lnType('a1:Tr_1_LDevice_1_iTCTR_1',iTCTR).
+has_lnType('a1:Tr_1_LDevice_1_iXCBR_1',iXCBR).
+has_lnType('a1:Tr_LLN01','LLN01').
+has_name('a1:ACT_1_Tr_1_DA1',general).
+has_name('a1:AnalogueValue_1_BDA1',f).
+has_name('a1:AnalogueValue_1_BDA2',i).
+has_name('a1:DPC_1_Pos_1_DA1',stVal).
+has_name('a1:DPL_1_PhyNam_1_DA1',vendor).
+has_name('a1:F1_1_AP_1',accessPoint1).
+has_name('a1:F1_DataSet_1','FeederTrip').
+has_name('a1:F2_1_AP_1',accessPoint1).
+has_name('a1:F2_DataSet_1','FeederTrip').
+has_name('a1:F3_1_AP_1',accessPoint1).
+has_name('a1:F3_DataSet_1','FeederTrip').
+has_name('a1:F4_1_AP_1',accessPoint1).
+has_name('a1:F4_DataSet_1','FeederTrip').
+has_name('a1:F5_1_AP_1',accessPoint1).
+has_name('a1:F5_DataSet_1','FeederTrip').
+has_name('a1:IED_Feeder_1','IED1_D3_Q1').
+has_name('a1:IED_Feeder_2','IED2_D3_Q2').
+has_name('a1:IED_Feeder_3','IED3_D3_Q3').
+has_name('a1:IED_Feeder_4','IED4_D3_Q4').
+has_name('a1:IED_Feeder_5','IED5_D3_Q5').
+has_name('a1:IED_Transformer_1','TransformerIED').
+has_name('a1:LLN01_1_DO1','Mod').
+has_name('a1:LPHD1_1_DO1','Beh').
+has_name('a1:SAV_1_AmpSV_1_DA1',instMag).
+has_name('a1:SubNetwork_1',subnetwork1).
+has_name('a1:Tr_1_AP_1',accessPoint1).
+has_name('a1:Tr_DataSet_1','FeederTrip').
+has_name('a1:Tr_DataSet_2','TripF1').
+has_name('a1:Tr_DataSet_3','TripF2').
+has_name('a1:Tr_DataSet_4','TripF3').
+has_name('a1:Tr_DataSet_5','TripF4').
+has_name('a1:Tr_DataSet_6','TripF5').
+has_name('a1:iPIOC_1_DO1','Tr').
+has_name('a1:iPTRC_1_DO1','Op').
+has_name('a1:iTCTR_1_DO1','AmpSv').
+has_name('a1:iXCBR_1_DO1','Mod').
+has_ord('a1:Beh_1_EnumVal1','1').
+has_ord('a1:Beh_1_EnumVal2','2').
+has_ord('a1:Beh_1_EnumVal3','3').
+has_ord('a1:Beh_1_EnumVal4','4').
+has_ord('a1:Beh_1_EnumVal5','5').
+has_ord('a1:Health_1_EnumVal1','1').
+has_ord('a1:Health_1_EnumVal2','2').
+has_ord('a1:Health_1_EnumVal3','3').
+has_ord('a1:Mod_1_EnumVal1','1').
+has_ord('a1:Mod_1_EnumVal2','2').
+has_ord('a1:Mod_1_EnumVal3','3').
+has_ord('a1:Mod_1_EnumVal4','4').
+has_ord('a1:Mod_1_EnumVal5','5').
+has_ord('a1:PhyHealth_1_EnumVal1','1').
+has_ord('a1:PhyHealth_1_EnumVal2','2').
+has_ord('a1:PhyHealth_1_EnumVal3','3').
+has_ord('a1:ctlModel_1_EnumVal1','0').
+has_ord('a1:ctlModel_1_EnumVal2','1').
+has_ord('a1:ctlModel_1_EnumVal3','2').
+has_ord('a1:ctlModel_1_EnumVal4','3').
+has_ord('a1:ctlModel_1_EnumVal5','4').
+has_prefix('a1:F1_1_LDevice_1_LPHD1_1','F1').
+has_prefix('a1:F1_1_LDevice_1_iPIOC_1','F1').
+has_prefix('a1:F1_1_LDevice_1_iPTRC_1','F1').
+has_prefix('a1:F1_1_LDevice_1_iTCTR_1','F1').
+has_prefix('a1:F1_1_LDevice_1_iXCBR_1','F1').
+has_prefix('a1:F1_FeederTrip_FCDA_1','F1').
+has_prefix('a1:F2_1_LDevice_1_LPHD1_1','F2').
+has_prefix('a1:F2_1_LDevice_1_iPIOC_1','F2').
+has_prefix('a1:F2_1_LDevice_1_iPTRC_1','F2').
+has_prefix('a1:F2_1_LDevice_1_iTCTR_1','F2').
+has_prefix('a1:F2_1_LDevice_1_iXCBR_1','F2').
+has_prefix('a1:F2_FeederTrip_FCDA_1','F2').
+has_prefix('a1:F3_1_LDevice_1_LPHD1_1','F3').
+has_prefix('a1:F3_1_LDevice_1_iPIOC_1','F3').
+has_prefix('a1:F3_1_LDevice_1_iPTRC_1','F3').
+has_prefix('a1:F3_1_LDevice_1_iTCTR_1','F3').
+has_prefix('a1:F3_1_LDevice_1_iXCBR_1','F3').
+has_prefix('a1:F3_FeederTrip_FCDA_1','F3').
+has_prefix('a1:F4_1_LDevice_1_LPHD1_1','F4').
+has_prefix('a1:F4_1_LDevice_1_iPIOC_1','F4').
+has_prefix('a1:F4_1_LDevice_1_iPTRC_1','F4').
+has_prefix('a1:F4_1_LDevice_1_iTCTR_1','F4').
+has_prefix('a1:F4_1_LDevice_1_iXCBR_1','F4').
+has_prefix('a1:F4_FeederTrip_FCDA_1','F4').
+has_prefix('a1:F5_1_LDevice_1_LPHD1_1','F5').
+has_prefix('a1:F5_1_LDevice_1_iPIOC_1','F5').
+has_prefix('a1:F5_1_LDevice_1_iPTRC_1','F5').
+has_prefix('a1:F5_1_LDevice_1_iTCTR_1','F5').
+has_prefix('a1:F5_1_LDevice_1_iXCBR_1','F5').
+has_prefix('a1:F5_FeederTrip_FCDA_1','F5').
+has_prefix('a1:Tr_1_LDevice_1_LPHD1_1','TIED1').
+has_prefix('a1:Tr_1_LDevice_1_iPIOC_1','TIED1').
+has_prefix('a1:Tr_1_LDevice_1_iPTRC_1','TIED1').
+has_prefix('a1:Tr_1_LDevice_1_iPTRC_2','F1').
+has_prefix('a1:Tr_1_LDevice_1_iPTRC_3','F2').
+has_prefix('a1:Tr_1_LDevice_1_iPTRC_4','F3').
+has_prefix('a1:Tr_1_LDevice_1_iPTRC_5','F4').
+has_prefix('a1:Tr_1_LDevice_1_iPTRC_6','F5').
+has_prefix('a1:Tr_1_LDevice_1_iTCTR_1','TIED1').
+has_prefix('a1:Tr_1_LDevice_1_iXCBR_1','TIED1').
+has_prefix('a1:Tr_FeederTrip_FCDA_1','TIED1').
+has_prefix('a1:Tr_TripF1_FCDA_1','F1').
+has_prefix('a1:Tr_TripF2_FCDA_1','F2').
+has_prefix('a1:Tr_TripF3_FCDA_1','F3').
+has_prefix('a1:Tr_TripF4_FCDA_1','F4').
+has_prefix('a1:Tr_TripF5_FCDA_1','F5').
+has_type('a1:ACT_1_Tr_1_DA1','BOOLEAN').
+has_type('a1:F1_Address_1_P_1','IP').
+has_type('a1:F2_Address_1_P_1','IP').
+has_type('a1:F3_Address_1_P_1','IP').
+has_type('a1:F4_Address_1_P_1','IP').
+has_type('a1:F5_Address_1_P_1','IP').
+has_type('a1:LLN01_1_DO1','ENC_1_Mod').
+has_type('a1:LPHD1_1_DO1','ENS_1_Beh').
+has_type('a1:SAV_1_AmpSV_1_DA1','AnalogueValue_1').
+has_type('a1:SubNetwork_1','8-MMS').
+has_type('a1:Tr_Address_1_P_1','IP').
+has_type('a1:iPIOC_1_DO1','ACT_1_Tr').
+has_type('a1:iPTRC_1_DO1','ACT_1_Tr').
+has_type('a1:iTCTR_1_DO1','SAV_1_AmpSv').
+has_type('a1:iXCBR_1_DO1','DPC_1_Pos').

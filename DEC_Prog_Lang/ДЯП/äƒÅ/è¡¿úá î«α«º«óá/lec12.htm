@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0068)lec12.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 12</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><!-- Meta http equivalent was here                                     -->
+<META content="MSHTML 6.00.2600.0" name=GENERATOR>
+<META content=D:\SOFT\OFFICE97\OFFICE\html.dot name=Template></HEAD>
+<BODY text=#000000 vLink=#800080 aLink=#0000ff link=blue bgColor=#c7d4ea><FONT
+face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 12</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Логические головоломки.</I></B> </FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT>
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание </FONT></H2>
+<DL>
+  <DD><FONT face="Arial Cyr"><IMG src="lec12.files/blueball.gif"><A
+  href="lec12.htm#Постановка_Задачи"><FONT
+  face="Arial Cyr"> 1. Постановка задачи</FONT></A></A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec12.files/blueball.gif"></FONT><A
+  href="lec12.htm#Решение"><FONT
+  face="Arial Cyr"> 2. Решение</FONT></A></FONT> </DD></DL>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec12.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center>1. Постановка <A name=Постановка_Задачи></A>задачи</H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec12.files/saqual.gif" width="80%"></FONT></P></FONT><FONT
+face="Arial Cyr">
+<P>В качестве последнего примера рассмотрим решение<FONT color=#800080><B>
+логической головоломки.</B></FONT> Поведение этой программы будет подобно
+поведению задачи о раскрашивании карты. Логическая головоломка состоит из
+нескольких фактов относительно небольшого числа объектов, которые имеют
+различные атрибуты. Минимальное число фактов относительно объектов и атрибутов
+связано с желанием выдать единственный вариант назначения атрибутов
+объектам.</P>
+<P>Метод решения логических головоломок опишем на следующем примере.</P>
+<P>Три друга заняли первое, второе и третье места в соревнованиях универсиады.
+Друзья - разной национальности, зовут их по-разному, и любят они разные виды
+спорта.</P>
+<P>Майкл предпочитает баскетбол и играет лучше чем американец. Израильтянин
+Саймон играет лучше теннисиста. Игрок в крикет занял первое место.</P>
+<P>Кто является австралийцем? Каким спортом занимается Ричард?</P></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec12.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center>2. Решен<A name=Решение></A>ие</H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec12.files/saqual.gif" width="80%"></FONT></P><FONT face="Arial Cyr">
+<P>Подобные логические головоломки изящно решаются посредством конкретизации
+значений подходящей структуры данных и выделения значения, приводящего к
+решению. Каждый ключ к загадке преобразуется в факт относительно структуры
+данных. Это может быть сделано с использованием абстракции данных до определения
+точной формы структуры данных. Проанализируем первый ключ к разгадке: "Майкл
+предпочитает баскетбол и играет лучше чем американец". Очевидно, речь идет о
+двух разных людях. Одного зовут Майкл и он занимается баскетболом, в то время
+как второй - американец. Кроме того, Майкл лучше играет в баскетбол чем
+американец. Предположим, что <B>Friends</B> - структура данных, подлежащая
+конкретизации, тогда наш ключ может быть выражен следующей конъюнкцией
+целей:</P></FONT><B><FONT face="Arial Cyr">(did_better(Man1Clue1, Man2Clue1,
+Friends) <BR>name_(Man1Clue1, michael), sport(Man1Clue1,basketball),
+<BR>nationality(Man2Clue1,american) </B></FONT><FONT face="Arial Cyr">
+<P>Аналогично второй ключ можно представить конъюнкцией
+целей:</P></FONT><B><FONT face="Arial Cyr">did_better(Man1Clue2, Man2Clue2,
+Friends) <BR>name_(Man1Clue2, simon), nationality(Man1Clue2,israeli),
+<BR>sport(Man2Clue2,tennis)). </B></FONT><FONT face="Arial Cyr">
+<P>Наконец третий ключ к разгадке выразится следующим образом:
+<P><B>first(Friends,ManClue3),sport(ManClue3,cricket)</B></P></B></FONT><FONT
+face="Arial Cyr">
+<P>Базовая программа для решения головоломок представлена программой 14.6.
+Вычислению подлежит отношение <B>solve_puzzle(</B><I>
+</I><B>Puzzle,Solution)</B></FONT><FONT face="Arial Cyr">, где <B>Solution</B>
+является решением головоломки <B>Puzzle</B><FONT face="Arial Cyr">. Головоломка
+представляется структурой<B> puzzle(Clues,Queries,Solution)</B></FONT><FONT
+face="Arial Cyr">, где структура данных, подлежащая конкретизации,
+представляется ключами и вопросами а получаемые значения определяются аргументом
+</FONT><B>Solution</B><FONT size=1>.</P></FONT><FONT face="Arial Cyr">
+<P>Программа </FONT><B>solve_puzzle</B><FONT face="Arial Cyr"> тривиальна. Все,
+что она делает, состоит в последовательном решении каждого ключа и вопроса,
+которые представляются как цели Пролога и выполняются с использованием
+метапеременных.</P></FONT><B><FONT
+face="Arial Cyr"><BR>solve_puzzle(puzzle(Clues,Queries,Solution),Solution) :-
+<BR>solve(Clues), <BR>solve(Queries). <BR>&nbsp; <BR>solve([Clue|Clues]) :-
+<BR>Clue, solve(Clues). <BR>solve([]). <BR>&nbsp; <BR>test_puzzle(Name,Solution)
+:- <BR>structure(Name,Structure), <BR>clues(Name,Structure,Clues),
+<BR>queries(Name,Structure,Queries,Solution),
+<BR>solve_puzzle(puzzle(Clues,Queries,Solution),Solution). <BR>&nbsp;
+<BR>structure(test,[friend(N1,C1,S1), friend(N2,C2,S2), friend(N3,C3,S3)]).
+<BR>&nbsp; <BR>clues(test,Friends, <BR>[(did_better(Man1Clue1, Man2Clue1,
+Friends), % Clue 1 <BR>name_(Man1Clue1, michael), sport(Man1Clue1,basketball),
+<BR>nationality(Man2Clue1,american)), <BR>(did_better(Man1Clue2, Man2Clue2,
+Friends), % Clue 2 <BR>name_(Man1Clue2, simon), nationality(Man1Clue2,israeli),
+<BR>sport(Man2Clue2,tennis)),
+<BR>(first(Friends,ManClue3),sport(ManClue3,cricket))]). <BR>&nbsp;
+<BR>queries(test, Friends, <BR>[ member(Q1,Friends), <BR>name_(Q1,Name),
+<BR>nationality(Q1,australian), % Query 1 <BR>member(Q2,Friends),
+<BR>name_(Q2,richard), <BR>sport(Q2,Sport) % Query 2], <BR>[['The Australian
+is', Name], ['Richard plays ', Sport]]). <BR>&nbsp; <BR>did_better(A,B,[A,B,C]).
+<BR>did_better(A,C,[A,B,C]). <BR>did_better(B,C,[A,B,C]). <BR>&nbsp;
+<BR>name_(friend(A,B,C),A). <BR>nationality(friend(A,B,C),B).
+<BR>sport(friend(A,B,C),C). <BR>&nbsp; <BR>first([X|Xs],X). </B></FONT><FONT
+face="Arial Cyr">
+<P>Ключи и вопросы для нашего примера даны в программе 14.7. Рассмотрим
+структуру, представляемую ключами, для решения этой головоломки. Каждый человек
+имеет три атрибута и может быть представлен структурой </FONT><B>friend(Name,
+Country , Sport)</B><FONT face="Arial Cyr">. Есть три друга, распределение мест
+которых в итоге соревнования имеет существенное значение. Это наводит на мысль
+выбрать в качестве структуры данных для решения задачи упорядоченную
+последовательность из трех элементов, т.е. список:</P></FONT><B>
+<P>[frienfd(N1, C1, S1), friend (N2, C2, S2), friend (N3, C3, S3)].</P></B><FONT
+face="Arial Cyr">
+<P>В программе 14.7 даны определения условий </FONT><B>did_better,name,
+nationality, sport</B> и <B>first</B>, которые, очевидно, легко
+программируются.</P><FONT face="Arial Cyr">
+<P>Объединение программ 14.6 и 14.7 дает нечто гиганское на тему "образовать и
+проверить". Каждая из целей </FONT><B>did_better</B> <FONT face="Arial Cyr">и
+<B>принадлежит</FONT> (member)</B> </FONT><FONT face="Arial Cyr">имеет дело с
+людьми, а остальные цели обращаются к атрибутам людей. Какие функции они
+выполняют - генерацию или проверку, зависит от того, конкретизированы их
+элементы или нет. Для любопытных сообщаем ответ нашей головоломки: Майкл -
+австралиец, а Ричард играет в теннис.</P></FONT>
+<P>&nbsp;</P>
+<P><!-- МЕНЮ -->
+</BODY></HTML>

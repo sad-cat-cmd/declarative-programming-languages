@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)lec3.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 3</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 aLink=#0000ff bgColor=#c7d4ea><FONT face="Arial Cyr "><!-- PUT BODY OF HTML DOCUMENT BELOW HERE --></FONT>
+<P><!-- center>
+<font face="Times New Roman Cyr"><img src="name_l3.gif"  heigh="300" width="90%"></font>
+  </center --><FONT face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 3</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Семантика Пролога.</I></B> </FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT>
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание</FONT></H2>
+<DL>
+  <DD><FONT face="Arial Cyr "><IMG src="lec3.files/blueball.gif"> <A
+  href="lec3.htm#L3.1">3.1
+  Декларативная семантика Пролог-программ</A> </FONT>
+  <DD><FONT face="Arial Cyr "><IMG src="lec3.files/blueball.gif"> <A
+  href="lec3.htm#L3.2">3.2
+  Дизъюнкция целей</A> </FONT>
+  <DD><FONT face="Arial Cyr "><IMG src="lec3.files/blueball.gif"> <A
+  href="lec3.htm#L3.3">3.3
+  Процедурная семантика</A> </FONT>
+  <DD><FONT face="Arial Cyr "><IMG src="lec3.files/blueball.gif"> <A
+  href="lec3.htm#L3.3.1">3.3.1
+  Пример вычисления</A> </FONT>
+  <DD><FONT face="Arial Cyr "><IMG src="lec3.files/blueball.gif"> <A
+  href="lec3.htm#L3.3.2">3.3.2
+  Формальное описание процедуры вычисления целей</A> </FONT>
+  <DD><FONT face="Arial Cyr "><IMG src="lec3.files/blueball.gif"> <A
+  href="lec3.htm#L3.4">3.4
+  Соотношение между процедурным и декларативным смыслом</A> </FONT></DD></DL>
+<P align=center><FONT face="Arial Cyr "><IMG height=8
+src="lec3.files/saqual.gif" width="90%"></FONT></P>
+<P><FONT color=#000080>
+<H2 align=center><FONT face="Arial Cyr "><A name=L3.1>3.1 Декларативная
+семантика Пролог-программ</A></FONT></H2></FONT>
+<CENTER><FONT face="Arial Cyr "><IMG height=8 src="lec3.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr ">Различают<FONT color=#800080><B>
+декларативную</FONT></B></FONT> <FONT face="Arial Cyr ">и<FONT color=#800080>
+<B>процедурную семантику</FONT></B> (смысл, понимание)
+пролог-программ.<BR>Рассмотрим декларативный смысл более
+подробно.<BR>Декларативный смысл, касается только отношений, определенных в
+программе.</FONT>
+<P><FONT face="Arial Cyr "><B><FONT color=#800080>Декларативная
+семантика</FONT></B> определяет, что должно быть результатом работы про- граммы,
+не вдаваясь в подробности, как это достигается.</FONT>
+<P><FONT face="Arial Cyr ">Пусть задано <B>P:-Q, R.</B></FONT>
+<P>
+<CENTER><FONT face="Arial Cyr "><IMG src="lec3.files/l31.gif"></FONT> </CENTER>
+<P><FONT face="Arial Cyr ">где <B>P, Q, R -термы.</B></FONT>
+<P><FONT face="Arial Cyr ">Тогда с точки зрения декларативного смысла это
+предложение читается:<B>" P-истиино, если Q R истинны."</B></FONT> <FONT
+face="Arial Cyr ">Или <B>" Из Q и R cледует Р."</B></FONT> <FONT
+face="Arial Cyr ">Т.е. определяются логические связи между головой предложения и
+целями в его теле.</FONT>
+<P><FONT face="Arial Cyr ">Таким образом ,<B><FONT color=#800080> декларативный
+смысл программы</FONT></B> определяет, является ли данная цель истинной
+(достижимой), и если - да, то при каких значениях переменных она
+достигается.</FONT>
+<P><FONT face="Arial Cyr " color=#800080><B>Конкретизацией I предложения С
+</B></FONT><FONT face="Arial Cyr ">называется результат подстановки в него на
+место каждой переменной некоторого терма.</FONT>
+<P><FONT face="Arial Cyr ">Заметим , что это отличается от конкретизации
+переменной.</FONT>
+<P><FONT face="Arial Cyr ">Пример:</FONT>
+<P><FONT face="Arial Cyr "><B>haschild( X ):-parent( X ,Y).<BR></B></FONT><B>
+<P><FONT face="Arial Cyr "><BR>Предложение С.</FONT> </B>
+<P>
+<CENTER><FONT face="Arial Cyr "><IMG src="lec3.files/l311.gif"></FONT> </CENTER>
+<P><FONT face="Arial Cyr " color=#800080><B>Определение.</B></FONT>
+<P><FONT face="Arial Cyr ">Пусть дана некоторая программа и цель<B><FONT
+color=#800000> G</FONT></B>, тогда в соответствии с декларативной семантикой,
+можно утверждать, что:<BR>Цель<B><FONT color=#800000> G</FONT></B> истинна (т,
+е. достижима или логически следует из программы) тогда и только тогда,
+когда<BR><B>(1)</B> В программе существует предложение<B> С</B>, такое,
+что<BR><B>(2)</B> существует такая его <B>(С) </B>конкретизация <FONT
+color=#800000><B>I</B></FONT>, что<BR>(а) голова<FONT color=#800000>
+<B>I</B></FONT> cовпадает с<B><FONT color=#800000> G </FONT></B>и<BR>(b) все
+цели в теле <B><FONT color=#800000>I</FONT></B> истинны.</FONT>
+<P>
+<CENTER>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><IMG src="lec3.files/l313.gif">
+    <TD align=left></TD>
+  <TR></TR></TBODY></TABLE></CENTER><FONT face="Arial Cyr ">Пример
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=left colSpan=2><BR><B>C(I):<BR>C:</B>
+    <TD align=left><B>female(ann).<BR>parent(ann, bob).
+      <P>mother(ann):-parent(ann, Y), female(ann).<BR>mother(X) :-parent(X, Y),
+      female(X).
+      <P></B></P></TD>
+  <TR></TR></TBODY></TABLE>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><IMG alt="" src="lec3.files/COMPUT.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><FONT color=#800010><B>?-</B></FONT><B> mother(ann).
+      <BR></B></TD>
+  <TR></TR></TBODY></TABLE></FONT><FONT face="Arial Cyr ">Это определение можно
+распространить на вопросы следующим образом. В общем случае вопрос - список
+целей, разделенных запятыми.</FONT>
+<P><FONT face="Arial Cyr "><B><FONT color=#800080>Список целей называется
+истинным (достижимымм)</FONT></B>, если все цели в этом списке истинны,
+достижимы, при одинаковых конкретизациях переменных.</FONT>
+<P><FONT face="Arial Cyr ">Запятая между целями означает конъюнкцию целей, и они
+должны быть все истинны. <BR></FONT>
+<P align=center><FONT face="Arial Cyr "><IMG height=8
+src="lec3.files/saqual.gif" width="90%"></FONT></P><FONT color=#000080>
+<H2 align=center><FONT face="Arial Cyr "><A name=L3.2>3.2 Дизъюнкция
+целей</A></FONT></H2></FONT>
+<CENTER><FONT face="Arial Cyr "><IMG height=8 src="lec3.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr ">Возможна дизъюнкция целей: истинна должна быть по
+крайней мере одна из целей. <BR>Дизъюнкция обозначается точкой с запятой
+"<B><FONT color=#800000>;</FONT></B>".</FONT>
+<P><FONT face="Arial Cyr ">Например</FONT>
+<P><FONT face="Arial Cyr "><B>P:-Q;R.</B> </FONT>
+<P><FONT face="Arial Cyr ">Читается:<B> Р истина, если Q - истина или R -
+истинна.<BR></B></FONT><FONT face="Arial Cyr ">Т.е это то же самое, что </FONT>
+<P><FONT face="Arial Cyr "><B>P:-R.<BR>P:-Q. </B></FONT>
+<P><FONT face="Arial Cyr ">Запятая связывает цели сильнее, чем точка с
+запятой.<BR>Таким образом предложение </FONT>
+<P><FONT face="Arial Cyr "><B>P:-Q, R;S, T, U.</B> </FONT>
+<P><FONT face="Arial Cyr ">понимается как </FONT>
+<P><FONT face="Arial Cyr "><B>P:-(Q, R);(S, T, U).</B> </FONT>
+<P><FONT face="Arial Cyr ">и имеет смысл </FONT><B>
+<P><FONT face="Arial Cyr ">P:-Q, R.<BR>P:-S, T, U.</FONT> </B>
+<P align=center><FONT face="Arial Cyr "><IMG height=8
+src="lec3.files/saqual.gif" width="90%"></FONT> <FONT color=#000080>
+<H2 align=center><FONT face="Arial Cyr "><A name=L3.3>3.3 Процедурная
+семантика</A></FONT></H2></FONT>
+<P></P>
+<CENTER><FONT face="Arial Cyr "><IMG height=8 src="lec3.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr "><B><FONT color=#800080>Процедурная семантика
+(процедурный смысл) пролог-программы</FONT></B> определяет , как
+пролог-программа отвечает на вопросы.<BR>Ответитиь на вопрос -зто значит
+удовлетворить цели.</FONT>
+<P><FONT face="Arial Cyr ">Поэтому <B><FONT color=#800080>процедурная
+семантика</FONT></B> пролога -это процедура вычисления списка целей с учетом
+программы.</FONT>
+<P>
+<CENTER>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><IMG src="lec3.files/an27.gif">
+    <TD align=left>
+      <P></P></TD>
+  <TR></TR></TBODY></TABLE></CENTER>
+<P align=center><FONT face="Arial Cyr "><IMG height=5
+src="lec3.files/saqual.gif" width="70%"></FONT></P>
+<P><FONT color=#000080>
+<H3 align=center><FONT face="Arial Cyr "><A name=L3.3.1>3.3.1 Пример
+вычисления</A></FONT></H3></FONT>
+<P align=center><FONT face="Arial Cyr "><IMG height=5
+src="lec3.files/saqual.gif" width="70%"></FONT></P>
+<P><FONT face="Arial Cyr ">Рассмотрим программу и на ее примере - процедуру
+вычисления списка целей.</FONT>
+<P><FONT face="Arial Cyr ">Программа 1.</FONT>
+<P><FONT
+face="Arial Cyr "><B>1.большой(медведь).<BR>2.большой(слон).<BR>3.маленький
+(кот).<BR>4.бурый(медведь).<BR>5.черный(кот).<BR>6.серый(слон).<BR>7.темный(Z):-черный(Z).<BR>7.1<BR>8.темный(Z):-бурый(Z).<BR>8.1<BR>9.?-темный(X),большой(X).<BR>9.1
+9.2</B></FONT>
+<P><FONT face="Arial Cyr ">Предложения пронумерованы для удобства</FONT>
+<P>
+<CENTER><FONT face="Arial Cyr "><IMG src="lec3.files/tree.gif"></FONT> </CENTER>
+<P>
+<CENTER></CENTER><FONT face="Arial Cyr ">Таким образом для вычисления целей
+потребовалось 7 сопоставлений и один откат. </FONT>
+<P align=center><FONT face="Arial Cyr "><IMG height=5
+src="lec3.files/saqual.gif" width="70%"></FONT></P><FONT color=#000080>
+<H3 align=center><FONT face="Arial Cyr "><A name=L3.3.2>3.3.2 Формальное
+описание процедуры вычисления целей.</A></FONT></H3></FONT>
+<P align=center><FONT face="Arial Cyr "><IMG height=5
+src="lec3.files/saqual.gif" width="70%"></FONT></P>
+<P>
+<CENTER><FONT face="Arial Cyr ">Пусть список целей</FONT> </CENTER>
+<P>
+<CENTER></CENTER>
+<CENTER><FONT face="Arial Cyr "><IMG alt="" src="lec3.files/l332.gif"></FONT>
+</CENTER>
+<P><FONT face="Arial Cyr "><B>1</B>.Если список целей пуст, вычисление дает
+успех, если нет, то выполнятся пункт 2.</FONT>
+<P><FONT face="Arial Cyr "><B>2</B>.Берется первая цель <FONT
+color=#800000><B>G1</B></FONT></FONT> <FONT face="Arial Cyr ">из списка. Пролог
+выбирает в базе данных, просматривая сначала, первое предложение<FONT
+color=#800000><B> С</B></FONT>,<BR><FONT color=#800000><B>С: H :- B1, B2, ...,
+Bn</B></FONT>.<BR>голова которого, сопоставляется с целью<FONT color=#800000><B>
+G1</B></FONT>.<BR>Если такого предложения нет, то неудача.<BR>Если есть, то
+переменные конкретизируются и цель<FONT color=#800000><B> G1</B></FONT></FONT>
+<FONT face="Arial Cyr ">заменяется на список целей </FONT>
+<P>
+<CENTER><FONT face="Arial Cyr "><IMG src="lec3.files/l3321.gif"></FONT>
+</CENTER>
+<P><FONT face="Arial Cyr ">с конкретизированными значениями переменных.</FONT>
+<P><FONT face="Arial Cyr "><B>3</B>.Рассматривается рекурсивно через п.2 новый
+список целей.</FONT>
+<P>
+<CENTER><FONT face="Arial Cyr "><IMG src="lec3.files/l3322.gif"></FONT>
+</CENTER>
+<P><FONT face="Arial Cyr ">Если <FONT color=#800000><B>С</B></FONT> -факт, то
+новый список короче на одну цель.(n=0)<BR>Если вычисление нового списка
+оканчивается успешно, то и исходный список целей выполняется успешно.<BR>Если
+нет, то новый список целей отбрасывается, снимается конкретизация переменных и
+происходит возврат к просмотру программы, но начиная с предложения следующего за
+предложением<FONT color=#800000><B> С</B></FONT>.<BR>Описанный процесс возврата
+называется <FONT color=#800080><B>бэктрекинг</B></FONT><B>. <FONT
+color=#800080>(backtracking)</FONT></B>. </FONT>
+<P align=center><FONT face="Arial Cyr "><IMG height=8
+src="lec3.files/saqual.gif" width="90%"></FONT></P><FONT color=#000080>
+<H2 align=center><FONT face="Arial Cyr "><A name=L3.4>3.4 Соотношение между
+процедурным и декларативным смыслом</A></FONT></H2></FONT>
+<CENTER><FONT face="Arial Cyr "><IMG height=8 src="lec3.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr ">Создавая пролог программы всегда надо помнить о <FONT
+color=#800080><B>процедурном </FONT></B>и<FONT color=#800080><B> декларативном
+смысле</B></FONT>.</FONT>
+<P><FONT face="Arial Cyr " color=#800080><B>Декларативный смысл</B></FONT> <FONT
+face="Arial Cyr ">касается отношений , определенных в программе. Т.е.
+декларативный смысл определяет, что должно быть результатом программы.</FONT>
+<P><FONT face="Arial Cyr ">С другой стороны,<FONT color=#800080><B> процедурный
+смысл</B></FONT></FONT> <FONT face="Arial Cyr ">определяет , как этот результат
+может быть достигнут, т.е., как реально отношения обрабатываются
+прологом.<BR></FONT>
+<CENTER>
+<P>
+<HR align=left width="75%" noShade SIZE=1>
+</BODY></HTML>

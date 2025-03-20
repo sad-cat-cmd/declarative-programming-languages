@@ -1,0 +1,532 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)lec1.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 1</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 aLink=#0000ff link=blue bgColor=#c7d4ea>
+<P><FONT face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 1</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Общий обзор языка Пролог.</I></B> </FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT><!--center>
+  <font face="Times New Roman Cyr"><img src="lec1.gif"  heigh="300" width="90%"></font>
+  </center -->
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание </FONT></H2>
+<DL>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.1">1.1
+  Пример программы: родственные отношения.</A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.2">1.2
+  Факты. </A></FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.3">1.3
+  Вопросы. </A></FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.4">1.4
+  Переменные.</A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.5">1.5
+  Конъюнкция целей.</A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.6">1.6
+  Правила. </A></FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.7">1.7
+  Конъюнкция в правилах.</A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.8">1.8
+  Переменные в теле правила. </A></FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec1.files/blueball.gif"> <A
+  href="lec1.htm#Lec1.9">1.9
+  Cтруктура пролог-программы.</A> </FONT></DD></DL>
+<P>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P>
+<CENTER>
+<TABLE cellSpacing=0 width="85%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD vAlign=top align=top width="25%"><FONT color=#970000
+      size=6><B><I>Пролог - </B></I></FONT>
+    <TD><FONT color=#3f007d size=5><I><B>это язык программирования,
+      используемый для решения задач, в которых действуют объекты и отношения
+      между этими объектами.</I></B></FONT></TD></TR></TBODY></TABLE></CENTER>
+<P><FONT face="Arial Cyr" size=4><I>Программа на прологе состоит из предложений,
+которые могут быть фактами, правилами или вопросами.</FONT></I></P><!-- IMG SRC="opredel.gif" -->
+<P>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER><A name=Lec1.1></A>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.1 Пример программы:
+родственные отношения. </FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT>
+<P>
+<CENTER><FONT face="Arial Cyr">Рассмотрим <B>дерево родственных отношений :</B>
+</CENTER><IMG alt=tree src="lec1.files/alltree.gif" border=0 SPACE="20"> <FONT
+face="Arial Cyr"><A name=Lec1.2></A></FONT><FONT face="Arial Cyr"><IMG height=8
+src="lec1.files/saqual.gif" width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.2 Факты.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">Введем <FONT color=#800080><B>отношение</FONT>
+-родитель- (parent)</B> между объектами.<BR><B>parent (tom, bob).</B> <BR>Это
+факт, определяющий , что <B>Том</B> является родителем <B>Боба</B>. </FONT>
+<P><FONT face="Arial Cyr"><B>parent</B> - имя отношения, <B>tom, bob</B> - его
+аргументы. Теперь можно записать программу, описывающую все дерево родственных
+отношений.
+<P>
+<TABLE width=450 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=middle colSpan=3 height=23>
+    <TD align=left width=204 height=23><B>parent (pam, bob).<BR>parent (tom,
+      bob).<BR>parent (tom, liz).<BR>parent (bob, ann).<BR>parent (bob,
+      pat).<BR>parent (mary, ann).<BR>parent (pat, juli).</B>
+    <TD vAlign=top align=middle width=138 height=23><IMG
+      src="lec1.files/tree1.gif" align=center>
+      <P></P></TD><BR></TR></TBODY></TABLE></FONT>
+<P>&nbsp;</P>
+<P><FONT face="Arial Cyr">Эта программа состоит из семи <B>предложений
+(утверждений), clause(клоз).</B><BR>Каждый клоз записан фактом в виде отношения
+<B>parent.</B><BR>При записи фактов надо соблюдать следующие <FONT
+color=#800080><B>правила</B></FONT>: </FONT></P>
+<P>
+<UL>
+  <LI><FONT face="Arial Cyr">Имена всех отношений и объектов с маленькой буквы.
+  </FONT>
+  <LI><FONT face="Arial Cyr">Сначала записывается имя отношения, затем в круглых
+  скобках через запятую объекты. </FONT>
+  <LI><FONT face="Arial Cyr">В конце ставится точка. </FONT></LI></UL>
+<P><FONT face="Arial Cyr">Еще пример факта:
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20 -->
+      <P></P>
+    <TD align=left><B>like (bob, pam).</B>
+      <P></P></TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr">Совокупность фактов в прологе называют <FONT
+color=#800080><B>базой даннах</B></FONT>. </FONT>
+<P>
+<P><FONT face="Arial Cyr"><A name=Lec1.3></A></FONT>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.3 Вопросы.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">К составленной базе данных можно задать <FONT
+color=#800080><B>вопросы.</B> </FONT>. </FONT>
+<P><FONT face="Arial Cyr">Вопрос в обычном прологе начинается с <B><FONT
+color=#800010>?-</FONT></B> <BR>Вопрос записывается также, как и
+факт.<BR>Например:
+<P>
+<TABLE width=900 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP width=300><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left width=300><B><FONT color=#800010>? - </FONT>parent (bob,
+      pat).
+      <P>yes </B></P>
+    <TD align=left><IMG src="lec1.files/bob_pat.gif">
+</TD></TR></TBODY></TABLE></FONT><FONT face="Arial Cyr">Когда пролог получает
+вопрос, он пытается сопоставить его с базой данных. Такой факт находится,
+ответ:<B> да (yes).</B></FONT>
+<P><FONT face="Arial Cyr">На вопрос
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>parent (bob,mary).
+      <P>no </B></P>
+    <TD align=left><IMG src="lec1.files/onlybob.gif">
+</TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr">Ответ будет <B>нет (no)</B>, так как такого факта в
+базе данных нет.</FONT>
+<P>
+<P><FONT face="Arial Cyr"><A name=Lec1.4></A></FONT>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.4
+Переменные.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">Можно задать вопрос и узнать кто родитель <B>liz</B>:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=3><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>parent (X, liz).
+      <P>X= tom </B></P>
+    <TD align=left><IMG alt="" src="lec1.files/tom_liz.gif" border=0
+      SPACE="20"> </TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr">Здесь <B>X</B> - <FONT
+color=#800080><B>переменная</B></FONT>. Ее величина неизвестна и она может
+принимать значения. В данном случае ее значением будет объект, для которого это
+утверждение истинно. </FONT>
+<P><FONT face="Arial Cyr">Вопрос :
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=4><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+    <TD align=left><B><FONT color=#800010>?-</FONT>parent (X, bob).
+      <P>X=tom <BR>X=pam </B></P>
+    <TD align=middle><IMG src="lec1.files/bobxx_1.gif"><BR>
+    <TD align=middle><IMG
+src="lec1.files/bobxx_2.gif"><BR></TD></TR></TBODY></TABLE></FONT><FONT
+face="Arial Cyr">Можно задать вопрос, кто является чьим родителем.<BR>Или найти
+такие <B>X</B> и <B>Y</B>, что <B>X</B> является родителем <B>Y</B>.
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>parent (X, Y).
+      <P>X= pam <BR>Y= bob <BR>Y= tom <BR>X= bob <BR>и т.д. </B></P>
+    <TD align=left><IMG src="lec1.files/alltree.gif">
+</TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr"><A name=Lec1.5></A></FONT>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.5 Конъюнкция
+целей.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">Можно задать более общий вопрос: Кто является
+родителем родителя <B>juli</B>. Так как нет отношения <B>grandparent</B>, то
+можно разбить на <B>два вопроса:</B> <BR></FONT>
+<OL>
+  <LI><FONT face="Arial Cyr">кто родитель <B>juli</B>. Предположим-
+  <B>Y</B>.</FONT>
+  <LI><FONT face="Arial Cyr">кто родитель <B>Y</B>. Предположим-
+  <B>X</B>.</FONT> </LI></OL><FONT face="Arial Cyr"><BR>Тогда составной вопрос:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=3><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>parent (Y, juli), parent
+      (X, Y). <BR>X=bob <BR>Y=pat</B>
+    <TD align=left><IMG src="lec1.files/juli.gif"> </TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr">При поиске решения сначала находится <B>Y</B> , а
+затем по второму условию <B>Х</B>.<BR><B>Вопрос: </B>Кто внуки тома?:
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=3><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>parent (tom, Y), parent (Y,
+      X).
+      <P>Y=bob <BR>X=ann <BR>Y=bob <BR>X=pat </B></P>
+    <TD align=left><IMG src="lec1.files/tom_bob.gif">
+</TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr">И наконец, есть ли у <B>ann</B> и <B>pat</B> общий
+родитель?
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=3><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>parent (Y, ann), parent(Y,
+      pat).
+      <P>Y=bob </B></P>
+    <TD align=left><IMG src="lec1.files/sister.gif">
+</TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr"><A name=Lec1.6></A></FONT>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.6 Правила.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">Введем отношение peбенок <B>child</B>, обратное к
+<B>parent</B> "родитель". <BR>Можно было бы определить аналогично:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20 -->
+      <P></P>
+    <TD align=left><B>child (liz, tom).</B>
+      <P></P></TD></TR></TBODY></TABLE></FONT><FONT face="Arial Cyr">Но можно
+использовать, что отношение <B>child</B> обратно к <B>parent</B> и записать в
+виде утверждения- <FONT color=#800080><B>правила</B> </FONT>:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20 -->
+      <P></P>
+    <TD align=left><B>child(Y, X):-parent (X, Y).</B>
+      <P></P></TD></TR></TBODY></TABLE></FONT><FONT face="Arial Cyr">Правило читается
+так:</FONT>
+<P><FONT face="Arial Cyr"><B>Для всех X и Y <BR>Y -child X, если<BR>X -parent
+Y.</B></FONT>
+<P><FONT face="Arial Cyr">Правило отличается от факта тем, что факт всегда
+истина, а правило описывает утверждение, которое будет истинной, если выполнено
+некоторое условие. Поэтому в правиле выделяют: заключение условие
+<P>
+<TABLE width=450 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><PRE>           </PRE>
+      <P></P></TD><BR>
+    <TD align=left><B>child(Y, X) :- parent (X, Y).</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle colSpan=2><B>голова <PRE>        </PRE>head</B></TD><BR>
+          <TD align=left><PRE>        </PRE></TD>
+          <TD align=left><B>тело <PRE>        </PRE>body</B></TD><BR></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FONT>
+<P>&nbsp;</P>
+<P><FONT face="Arial Cyr">Если условие <B>parent (X, Y)</B>. выполняется, то
+логическим следствием из него будет утверждение <B>child(Y, X)</B>.</FONT> </P>
+<P><FONT face="Arial Cyr" color=#800080><B>Как правило используется прологом
+:</B></FONT>
+<P><FONT face="Arial Cyr">Зададим вопрос
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=left><B><FONT color=#800010>?-</FONT>child(liz, tom). </B>
+    <TD align=left><IMG src="lec1.files/tom_liz.gif">
+</TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr">В программе нет данных о <B>child</B>.<BR>Но есть
+правило, которое верно для всех <B>X Y</B>, в том числе для <B>liz</B> и
+<B>tom</B>.<BR>Мы должны применить правило для этих значений.<BR>Для этого надо
+подставить в правило вместо <B>X</B>- <B>tom</B>, a вместо <B>Y</B> -
+<B>liz</B>.</FONT>
+<P><FONT face="Arial Cyr">Говорят, что переменные будут связаны, а операция
+будет называться <FONT color=#000080>подстановкой. </FONT><BR>Получаем
+конкретный случай для правила</FONT>
+<P><FONT face="Arial Cyr"><B>child(liz, tom):-parent (tom, liz).</B> </FONT>
+<P><FONT face="Arial Cyr">Условная часть приняла вид <BR><B>parent (tom,
+liz).</B> <BR>Теперь надо выяснить выполняется ли это условие. Исходная цель
+<B>child(liz,tom)</B> заменяется подцелью <B>parent (tom, liz).</B>, которая
+выполняется, поэтому пролог ответит <B>"yes".</B> </FONT>
+<P>
+<P><FONT face="Arial Cyr"><A name=Lec1.7></A></FONT>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.7 Конъюнкция в
+правилах.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">Добавим еще одно отношение в базу данных, унарное,
+определяющее пол.
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><!-- IMG SRC="yellow.gif"   ALT="" BORDER=0 SPACE=20 -->
+      <P></P>
+    <TD
+      align=left><B>male(tom).<BR>male(bob).<BR>male(jim).<BR>female(liz).<BR>female(pam).<BR>female(pat).<BR>female(ann).</B>
+
+      <P></P></TD></TR></TBODY></TABLE></FONT><FONT face="Arial Cyr">Теперь определим
+отношение <B>mother</B>. Оно описывается следующим образом: </FONT>
+<P><FONT face="Arial Cyr"><B>Для всех X Y <BR>X -mother Y, if <BR>X- parent Y и
+<BR>X -female.</B> </FONT>
+<P><FONT face="Arial Cyr">Таким образом правило будет
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><!-- IMG SRC="yellow.gif"   ALT="" BORDER=0 SPACE=20 -->
+      <P></P>
+    <TD align=left><B>mother(X, Y):-parent(X, Y), female(X). </B>
+      <P></P></TD></TR></TBODY></TABLE></FONT><FONT face="Arial Cyr">Можно записать
+<P>
+<TABLE width=450 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><!-- IMG ALIGN=CENTER SRC="yellow.gif" -->
+      <P></P></TD><BR>
+    <TD align=left><B>mother(X, Y):-parent(X, Y),</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle colSpan=2><PRE>             </PRE>
+          <TD
+  align=left><B>female(X).</B></TD><BR></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FONT><FONT
+face="Arial Cyr"><BR>или <BR>
+<TABLE width=450 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><!-- IMG ALIGN=CENTER SRC="yellow.gif" -->
+      <P></P></TD><BR>
+    <TD align=left><B>mother(X, Y):-</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=left colSpan=2><PRE>   </PRE>
+          <TD align=left><B>parent(X, Y),<BR>female(X).</B>
+      </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FONT><FONT
+face="Arial Cyr">Запятая между двумя условиями означает конъюнкцию целей. Это
+означает, что два условия должны быть выполнены одновремено. <BR>Как система
+ответит на вопрос?
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><IMG alt="" src="lec1.files/comput.gif"
+      border=0 SPACE="20">
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>mother (pam, bob).
+      <P>yes </B></P>
+    <TD align=left><IMG src="lec1.files/pam_bob.gif">
+</TD></TR></TBODY></TABLE></FONT><FONT face="Arial Cyr">Находится правило
+<B>mother</B>, производится подстановка </FONT>
+<P><FONT face="Arial Cyr"><B>X=pam <BR>Y=bob</B> </FONT>
+<P><FONT face="Arial Cyr">Получаем правило </FONT>
+<P><FONT face="Arial Cyr"><B>mother(pam, bob):- <BR>parent(pam, bob),
+<BR>female(pam).</B> </FONT>
+<P><FONT face="Arial Cyr">Сначала удовлетворяются <B>parent</B> , а затем
+<B>female</B></FONT>
+<P><FONT face="Arial Cyr">Пролог отвечает: <B>yes</B> <BR>Вопрос :
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=left><B><FONT color=#800010>?-</FONT>mother (X, bob).
+      <P>X=pam </B></P>
+    <TD align=left><IMG src="lec1.files/mother.gif">
+</TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr"><A name=Lec1.8></A></FONT>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.8 Переменные в теле
+правила.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">Определим отношение <B>sister</B></FONT>
+<P><FONT face="Arial Cyr"><B>Для любых X и Y <BR>X sister Y, if <BR>у X и Y есть
+общий родитель, <BR>и X female </B></FONT>
+<P><FONT face="Arial Cyr">Запишем правило на прологе
+<P>
+<TABLE width=450 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><!-- IMG ALIGN=CENTER SRC="yellow.gif" -->
+      <P></P></TD><BR>
+    <TD align=left><B>sister (X, Y):- parent(Z,X),</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=left colSpan=2><PRE>             </PRE>
+          <TD align=left><B>parent(Z,Y), <BR>female(X).
+      </B></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FONT>
+<P>&nbsp;</P>
+<P><FONT face="Arial Cyr">Здесь <B>Z</B>-общий родитель. <B>Z</B>-некоторый,
+любой. <BR>Можно спросить </P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=left><B><FONT color=#800010>?-</FONT>sister(ann, pat).
+      <P>yes
+      <P>
+      <P><FONT color=#800010>?-</FONT>sister(pat, pat).
+      <P>yes </B></P>
+    <TD align=left><IMG src="lec1.files/sister.gif">
+</TD></TR></TBODY></TABLE></FONT>
+<P>&nbsp;</P>
+<P><FONT face="Arial Cyr">Ответ будет <B>"yes"</B>. Так как мы не потребовали,
+чтобы <B>X</B> и <B>Y</B> были разные.</FONT> </P>
+<P><FONT face="Arial Cyr">Добавим отношение <B>different (X, Y)</B>, которое
+указывает ,что <B>X</B> и <B>Y</B> разные.
+<P>
+<TABLE width=450 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=2><!-- IMG ALIGN=CENTER SRC="yellow.gif" -->
+      <P></P></TD><BR>
+    <TD align=left><B>sister (X, Y):- parent(Z,X),</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=left colSpan=2><PRE>             </PRE>
+          <TD align=left><B>parent(Z,X), <BR>female(X), <BR>different (X,
+            Y).</B> </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FONT>
+<P><FONT face="Arial Cyr"><A name=Lec1.9></A></FONT>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1.9 Cтруктура
+пролог-программы.</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec1.files/saqual.gif"
+width="90%"></FONT> </CENTER></FONT>
+<P><B><FONT face="Arial Cyr" color=#970000 size=5>
+<TABLE cellPadding=10 align=center>
+  <TBODY>
+  <TR align=middle><!-- Row 1 -->
+    <TD><B><FONT face="Arial Cyr" color=#970000
+    size=3>предложение</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>- </FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>факт,</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>правило,</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>вопрос</FONT></B></TD></TR>
+  <TR align=middle><!-- Row 2 -->
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>clause</FONT></B></TD>
+    <TD></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>fact,</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>rule,</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>goal</FONT></B></TD></TR>
+  <TR align=middle><!-- Row 3 -->
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>состав</FONT></B></TD>
+    <TD></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>head</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>head</FONT></B></TD>
+    <TD></TD></TR>
+  <TR align=middle><!-- Row 4 -->
+    <TD></TD>
+    <TD></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>.</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>..</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>?</FONT></B></TD></TR>
+  <TR align=middle><!-- Row 5 -->
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>|</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>|</FONT></B></TD></TR>
+  <TR align=middle><!-- Row 6 -->
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>body</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>body</FONT></B></TD></TR>
+  <TR align=middle><!-- Row 6 -->
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000 size=3>.</FONT></B></TD>
+    <TD><B><FONT face="Arial Cyr" color=#970000
+  size=3>.</FONT></B></TD></TR></TBODY></TABLE></B></FONT>
+<P>
+<HR align=left width="75%" noShade SIZE=1>
+
+</BODY></HTML>

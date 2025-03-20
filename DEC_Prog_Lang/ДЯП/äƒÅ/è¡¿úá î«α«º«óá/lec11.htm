@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0068)lec11.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 11</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content=D:\SOFT\OFFICE97\OFFICE\html.dot name=Template>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#800080 aLink=#0000ff link=blue bgColor=#c7d4ea><FONT
+face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 11</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Задача о двух кувшинах. </I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT>
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание</FONT></H2><FONT
+face="Arial Cyr">
+<DL>
+  <DD><IMG src="lec11.files/blueball.gif"> <A
+  href="lec11.htm#Постановка">1.
+  Постановка задачи</A>
+  <DD><IMG src="lec11.files/blueball.gif"> <A
+  href="lec11.htm#Решение">2.
+  Решение</A> </DD></DL><FONT face="Arial Cyr">
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec11.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center>Постановка зада<A name=Постановка></A>чи</H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec11.files/saqual.gif" width="80%"></FONT></P>
+<P><FONT face="Arial Cyr">
+<P>Задача о кувшинах воды состоит в следующем:</P>
+<P>В кувшин А вмещается 5 литров, а в кувшин B входит 2 литра. </P>
+<P>При старте 5-литровый кувшин полный, вы можете лить воду </P>
+<P>из одного кувшина в другой или на землю, полностью наполнять </P>
+<P>кувшины водой. Это делается до тех пор пока </P>
+<P>вы не уверены, что кувшин B содержит ровно 1 литр.</P><FONT face="Arial Cyr"
+color=#800080 size=2>
+<CENTER><I><B>две емкости</CENTER></FONT></I></B><BR>
+<TABLE height=20 cellSpacing=0 cellPadding=0 width=50 align=center border=0>
+  <TBODY>
+  <TR align=middle>
+    <TD align=middle width=500 colSpan=2><IMG src="lec11.files/vals.gif"
+      border=0 SPACE="20"></IMG></TD></TR>
+  <P>
+  <TR align=middle>
+    <TD align=middle width=0 height=20 cellpadding="0" cellspacing="0"
+    border="0"><FONT color=#800080 size=-1><B>5 л</FONT></B>
+    <TD align=middle width=0 height=20 cellpadding="0" cellspacing="0"
+    border="0"><FONT color=#800080 size=-1><B>2 л</FONT></B> </B></TD>
+    <CENTER></CENTER></P></TBODY></TABLE></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec11.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center>Решение зада<A name=Решение></A>чи</H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec11.files/saqual.gif" width="80%"></FONT></P>
+<P><FONT face="Arial Cyr">
+<P>Каждое состояние представляется парой </P></FONT><B>
+<P>Aamout:Bamount </P></B><FONT face="Arial Cyr">
+<P>которая описывает сколько воды содержится в каждом кувшине.</P>
+<P>Рассмотрим программу </P></FONT><B>
+<P>?-op(100,yfx,':'). <BR></B><FONT face="Arial Cyr">определить : как
+лево-ассоциативный оператор </P>
+<P>Главный предикат: </P></FONT><B>
+<P>solve(Current_state, Goal_state, Traversed_path, Solution_path).
+</P></B><FONT face="Arial Cyr">
+<P>где </FONT><B>Traversed_path</B><FONT face="Arial Cyr"> - список сделанных
+пока разливаний </P></FONT><B>
+<P>solve(Goal, Goal, Path, Path). </P></B><FONT face="Arial Cyr">
+<P>Если текущее состояние - искомое состояние, то выводят путь к 4-ому параметру
+</P></FONT><B>
+<P>solve(Current, Goal, Path, Solution) :- edge(Step, Current, New),
+</P></B><FONT face="Arial Cyr">
+<P>/* Найти 4 способа литья - 'Step' */ </P></FONT><B>
+<P>not marked(solve(New, Goal, _, _)), </P></B><FONT face="Arial Cyr">
+<P>/* Поиск графа требует проверки не искали ли мы этот узлел прежде */
+</P></FONT><B>
+<P>solve(New, Goal, Path:Step, Solution).</P></B><FONT face="Arial Cyr">
+<P>/* Используйте рекурсию для поиска в глубину. При откате вернуться к 'pour'.
+*/ </P></FONT><B>
+<P>edge(pour_a_down_drain, A:B , 0:B). </P>
+<P>edge(pour_b_down_drain, A:B , A:0). </P>
+<P>edge(pour_a_into_b, A:B, C:D) :- </P>
+<P>A&gt;0, B&lt;2, T is A+B, (T&gt;=2, C is T-2, D=2 ; T&lt;2, C=0, D=T) . </P>
+<P>edge(pour_b_into_a, A:B, C:D) :- </P>
+<P>B0, A&lt;5, T is A+B, (T=5, D is T-5, C=5 ; T&lt;5, C=T, D=0) . </P></B><FONT
+face="Arial Cyr">
+<P>/*Проверяет, искался ли узел ранее. Правило </P></FONT><B>
+<P>marked(X) :- asserta((marked(X):- !)), fail. </P></B><FONT face="Arial Cyr">
+<P>помечает узел, если это не было сделано ранее, и делает откат. Следующая
+проверка этого узла пройдет успешно, так как узел был уже помечен. Reset_marked
+разрешает рекурсии быть выполненной несколько раз. </P></FONT><B>
+<P>reset_marked :- retractall(marked(_)),</P>
+<P>asserta( (marked(X) :- asserta((marked(X):- !)), fail) ). </P>
+<P>jug_problem(X,Y,Z) :- reset_marked, solve(X,Y,start,Z). </P>
+<P>?-jug_problem(5:0, A:1, Answer). </P>
+<P>Answer = start :</P>
+<P>pour_a_down_drain:(O:0)</P>
+<P>fill_up_a :(5:0) </P>
+<P>pour_a_into_b :(3:2) </P>
+<P>pour_a_down_drain :(0:2) </P>
+<P>pour_b_into_a :(2:0) </P>
+<P>fill_up_b :(2:2) </P>
+<P>pour_b_into_a:(4:0)</P>
+<P>fill_up_b: (4:2) </P>
+<P>pour_b_into_a (5:1)</P></B>
+<P>
+<HR align=left width="75%" noShade SIZE=1>
+
+</BODY></HTML>

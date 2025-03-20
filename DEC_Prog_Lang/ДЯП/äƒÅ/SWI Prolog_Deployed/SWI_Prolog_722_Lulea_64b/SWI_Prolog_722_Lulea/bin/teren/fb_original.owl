@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+]>
+
+<rdf:RDF
+    xmlns:owl="&owl;"
+    xmlns:rdf="&rdf;"
+>
+<owl:Ontology rdf:about="http://example.org#"/>
+
+<ns1:event rdf:about="event_ctrl_1_inito">
+  <ns1:connected_with rdf:resource="event_ctrl_2_init"/>
+  <ns1:has_name rdf:resource="inito"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_straight">
+  <ns1:connected_with rdf:resource="event_ctrl_2_inc"/>
+  <ns1:has_name rdf:resource="straight"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_divert">
+  <ns1:has_name rdf:resource="divert"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_init">
+  <ns1:has_name rdf:resource="init"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_inc">
+  <ns1:has_name rdf:resource="inc"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_dec">
+  <ns1:has_name rdf:resource="dec"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_cnf_dvrt">
+  <ns1:has_name rdf:resource="cnf_dvrt"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_is_bag">
+  <ns1:has_name rdf:resource="is_bag"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_1_pusho">
+  <ns1:has_name rdf:resource="pusho"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_inito">
+  <ns1:connected_with rdf:resource="event_ctrl_3_init"/>
+  <ns1:connected_with rdf:resource="event_ctrl_4_init"/>
+  <ns1:has_name rdf:resource="inito"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_straight">
+  <ns1:connected_with rdf:resource="event_ctrl_3_inc"/>
+  <ns1:has_name rdf:resource="straight"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_divert">
+  <ns1:connected_with rdf:resource="event_ctrl_4_inc"/>
+  <ns1:has_name rdf:resource="divert"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_init">
+  <ns1:has_name rdf:resource="init"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_inc">
+  <ns1:has_name rdf:resource="inc"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_dec">
+  <ns1:has_name rdf:resource="dec"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_cnf_dvrt">
+  <ns1:has_name rdf:resource="cnf_dvrt"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_is_bag">
+  <ns1:has_name rdf:resource="is_bag"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_2_pusho">
+  <ns1:connected_with rdf:resource="event_diverter_2_push"/>
+  <ns1:has_name rdf:resource="pusho"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_inito">
+  <ns1:has_name rdf:resource="inito"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_straight">
+  <ns1:has_name rdf:resource="straight"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_divert">
+  <ns1:has_name rdf:resource="divert"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_init">
+  <ns1:has_name rdf:resource="init"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_inc">
+  <ns1:has_name rdf:resource="inc"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_dec">
+  <ns1:has_name rdf:resource="dec"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_cnf_dvrt">
+  <ns1:has_name rdf:resource="cnf_dvrt"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_is_bag">
+  <ns1:has_name rdf:resource="is_bag"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_3_pusho">
+  <ns1:has_name rdf:resource="pusho"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_inito">
+  <ns1:has_name rdf:resource="inito"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_straight">
+  <ns1:has_name rdf:resource="straight"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_divert">
+  <ns1:has_name rdf:resource="divert"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_init">
+  <ns1:has_name rdf:resource="init"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_inc">
+  <ns1:has_name rdf:resource="inc"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_dec">
+  <ns1:has_name rdf:resource="dec"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_cnf_dvrt">
+  <ns1:has_name rdf:resource="cnf_dvrt"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_is_bag">
+  <ns1:has_name rdf:resource="is_bag"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_ctrl_4_pusho">
+  <ns1:has_name rdf:resource="pusho"/>
+  <ns1:is_part_of_interface rdf:resource="interface_ctrl_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_photo_eye_control_1_change">
+  <ns1:connected_with rdf:resource="event_ctrl_1_dec"/>
+  <ns1:has_name rdf:resource="change"/>
+  <ns1:is_part_of_interface rdf:resource="interface_photo_eye_control_1"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_photo_eye_control_2_change">
+  <ns1:connected_with rdf:resource="event_ctrl_2_dec"/>
+  <ns1:has_name rdf:resource="change"/>
+  <ns1:is_part_of_interface rdf:resource="interface_photo_eye_control_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_photo_eye_control_3_change">
+  <ns1:connected_with rdf:resource="event_ctrl_3_dec"/>
+  <ns1:has_name rdf:resource="change"/>
+  <ns1:is_part_of_interface rdf:resource="interface_photo_eye_control_3"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_photo_eye_control_4_change">
+  <ns1:connected_with rdf:resource="event_ctrl_4_dec"/>
+  <ns1:has_name rdf:resource="change"/>
+  <ns1:is_part_of_interface rdf:resource="interface_photo_eye_control_4"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_photo_eye_divert_2_change">
+  <ns1:connected_with rdf:resource="event_ctrl_2_is_bag"/>
+  <ns1:has_name rdf:resource="change"/>
+  <ns1:is_part_of_interface rdf:resource="interface_photo_eye_divert_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_diverter_2_push">
+  <ns1:has_name rdf:resource="push"/>
+  <ns1:is_part_of_interface rdf:resource="interface_diverter_2"/>
+</ns1:event>
+
+<ns1:event rdf:about="event_diverter_2_cnf">
+  <ns1:connected_with rdf:resource="event_ctrl_2_cnf_dvrt"/>
+  <ns1:has_name rdf:resource="cnf"/>
+  <ns1:is_part_of_interface rdf:resource="interface_diverter_2"/>
+</ns1:event>
+
+<ns1:fb_control_block rdf:about="ctrl_1">
+  <ns1:has_id rdf:resource="1"/>
+  <ns1:has_interface rdf:resource="interface_ctrl_1"/>
+</ns1:fb_control_block>
+
+<ns1:fb_control_block rdf:about="ctrl_2">
+  <ns1:has_id rdf:resource="2"/>
+  <ns1:has_interface rdf:resource="interface_ctrl_2"/>
+</ns1:fb_control_block>
+
+<ns1:fb_control_block rdf:about="ctrl_3">
+  <ns1:has_id rdf:resource="3"/>
+  <ns1:has_interface rdf:resource="interface_ctrl_3"/>
+</ns1:fb_control_block>
+
+<ns1:fb_control_block rdf:about="ctrl_4">
+  <ns1:has_id rdf:resource="4"/>
+  <ns1:has_interface rdf:resource="interface_ctrl_4"/>
+</ns1:fb_control_block>
+
+<ns1:fb_photo_eye rdf:about="photo_eye_control_1">
+  <ns1:has_id rdf:resource="1"/>
+  <ns1:has_interface rdf:resource="interface_photo_eye_control_1"/>
+  <ns1:has_name rdf:resource="control"/>
+</ns1:fb_photo_eye>
+
+<ns1:fb_photo_eye rdf:about="photo_eye_control_2">
+  <ns1:has_id rdf:resource="2"/>
+  <ns1:has_interface rdf:resource="interface_photo_eye_control_2"/>
+  <ns1:has_name rdf:resource="control"/>
+</ns1:fb_photo_eye>
+
+<ns1:fb_photo_eye rdf:about="photo_eye_control_3">
+  <ns1:has_id rdf:resource="3"/>
+  <ns1:has_interface rdf:resource="interface_photo_eye_control_3"/>
+  <ns1:has_name rdf:resource="control"/>
+</ns1:fb_photo_eye>
+
+<ns1:fb_photo_eye rdf:about="photo_eye_control_4">
+  <ns1:has_id rdf:resource="4"/>
+  <ns1:has_interface rdf:resource="interface_photo_eye_control_4"/>
+  <ns1:has_name rdf:resource="control"/>
+</ns1:fb_photo_eye>
+
+<ns1:fb_photo_eye rdf:about="photo_eye_divert_2">
+  <ns1:has_id rdf:resource="2"/>
+  <ns1:has_interface rdf:resource="interface_photo_eye_divert_2"/>
+  <ns1:has_name rdf:resource="divert"/>
+</ns1:fb_photo_eye>
+
+<ns1:fb_diverter rdf:about="diverter_2">
+  <ns1:has_id rdf:resource="2"/>
+  <ns1:has_interface rdf:resource="interface_diverter_2"/>
+</ns1:fb_diverter>
+
+<ns1:interface rdf:about="interface_ctrl_1"/>
+
+<ns1:interface rdf:about="interface_ctrl_2"/>
+
+<ns1:interface rdf:about="interface_ctrl_3"/>
+
+<ns1:interface rdf:about="interface_ctrl_4"/>
+
+<ns1:interface rdf:about="interface_photo_eye_control_1"/>
+
+<ns1:interface rdf:about="interface_photo_eye_control_2"/>
+
+<ns1:interface rdf:about="interface_photo_eye_control_3"/>
+
+<ns1:interface rdf:about="interface_photo_eye_control_4"/>
+
+<ns1:interface rdf:about="interface_photo_eye_divert_2"/>
+
+<ns1:interface rdf:about="interface_diverter_2"/>
+
+</rdf:RDF>

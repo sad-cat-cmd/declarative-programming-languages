@@ -1,0 +1,711 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)lec4.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 4</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 aLink=#0000ff bgColor=#c7d4ea>
+<P>
+<CENTER><FONT face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 4</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Списки. Встроенные предикаты.</I></B> </FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT></CENTER>
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание</FONT></H2>
+<DL>
+  <DD><FONT face="Arial Cyr"><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.1">4.1
+  Списки</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.1.1">4.1.1
+  Представление списка диаграммой</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.1.2">4.1.2
+  Выделение головы и хвоста списка</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.1.3">4.1.3
+  Шаблоны списков</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.1.4">4.1.4
+  Определения отношений через cons форму списка</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.2">4.2
+  Процедуры обработки списков</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.2.1">4.2.1
+  member</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.2.2">4.2.2
+  append</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.2.3">4.2.3
+  Применение append</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.2.4">4.2.4
+  reverse</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.2.5">4.2.5
+  Длина списка</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.3">4.3
+  Встроенные предикаты</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.3.1">4.3.1
+  Простые встроенные предикаты ввода-вывода.</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.3.2">4.3.2
+  Процедурный смысл встроенных предикатов ввода-вывода.</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.4">4.4
+  Ввод-вывод списков.</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.4.1">4.4.1
+  Ввод-вывод списка как терма.</A>
+  <DD><IMG src="lec4.files/blueball.gif"> <A
+  href="lec4.htm#Lec4.4.2">4.4.2
+  Поэлементный ввод-вывод списка.</A> </DD></DL></FONT>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P><FONT face="Arial Cyr"><A name=Lec4.1>
+<H2 align=center><FONT color=#000080>4.1 Списки</FONT></H2></A>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P>
+<P><FONT color=#800080><B>Списки</B></FONT> - такая же важная структура данных в
+Прологе, как и в Лиспе. </P>
+<P>Список в Лиспе <B>(a b c d) (1 2 (3))</B> <BR>записывается на Прологе
+<B>[a,b,c,d] [1,2,[3]]</B>
+<P>т.е. элементы записываются в квадратных скобках через запятую.
+<P><B>Элементами списка</B> могут быть любые термы.
+<P><B>Пустой список</B> - не <B>nil</B> , а <B>[ ]</B>.
+<P><A name=Lec4.1.1>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.1.1 Представление списка
+диаграммой.</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Список в лиспе можно представить через функцию <B>cons</B> <BR><IMG
+src="lec4.files/conslisp.gif"></IMG> <BR>В Прологе функции <B>cons</B>
+соответствует функтор <B>"." (точка)</B>.</P>
+<P><B>.(a,[]) </B>соответствует <B>[a] </B>, это другая форма записи <BR>или
+<BR><IMG src="lec4.files/consprol.gif"> <BR>Ответственно список <B>[a,b,c]</B>
+представляется как структура <B>.(а ,.(b,.(c,[])</B><BR>или в виде дерева, или
+диаграммой "виноградная лоза"
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/derevo.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><PRE>     </PRE>
+    <TD align=left><IMG src="lec4.files/loza.gif">
+</A></TD></TD></TR></TBODY></TABLE>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2>
+    <TD align=left>В лиспе :
+      <P></P>
+    <TD align=TOP><IMG alt="" src="lec4.files/sp_lisp.gif" align=right
+      border=0 SPACE="20"></IMG>
+      <P></A></P></TD></TD></TR></TBODY></TABLE>Для вложенных списков
+<B>[a,b,[c,d]]</B>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/vl_spis.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD vAlign=top align=TOP>
+      <P>- на верхнем уровне три элемента
+      <P><PRE>   </PRE>- на втором уровне два элемента.
+</A></TD></TD></TR></TBODY></TABLE><A name=Lec4.1.2>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.1.2 Выделение головы и хвоста
+списка</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/headtail.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><PRE>     </PRE>
+    <TD align=left><IMG src="lec4.files/texthead.gif">
+</A></TD></TD></TR></TBODY></TABLE>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2>Главной операцией при работе<BR>со списками
+      является <B>расщепление списка на голову и хвост</B>.
+    <TD align=left><PRE>     </PRE>
+    <TD align=left><IMG src="lec4.files/raschep.gif">
+</A></TD></TD></TR></TBODY></TABLE>В Лиспе для этого используются функции
+<B>car</B> и <B>cdr.</B>
+<P>В Прологе имеется специальная форма представления списка, называемая
+<B>cons</B>-формой записи:
+<P><B>[Head|Tail] или [H|T] [a|[]] = [а]</B>
+<P>При конкретизации формы списком <B>H</B> сопоставляется с головой списка, а
+<B>Т</B> - с хвостом.
+<P>Например
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>р([a,b,c]).</B> </A></TD></TD></TR></TBODY></TABLE>
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>p([X|Y]). <BR>yes <BR>X=a
+      <BR>Y=[b,c] </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>Таким образом выделяются одновременно голова списка и хвост.
+<P>Рассмотрим сопоставление двух списков :
+<P>
+<TABLE border=1>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2>
+      <CENTER><IMG src="lec4.files/spisok1.gif"></CENTER></TR></TBODY></TABLE>
+<TABLE border=1>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2>
+      <CENTER><IMG src="lec4.files/spisok2.gif"></CENTER></TR></TBODY></TABLE>
+<P>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P><A name=Lec4.1.3>
+<H3 align=center><FONT color=#000080>4.1.3 Шаблоны списков.</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P><FONT color=#800080><B>Шаблон (образец) списка</B></FONT> -это форма описания
+множества (семейства)списков, обладающих определенными свойствами.
+<P>Например:
+<P><B>Шаблон списка [X|Y]</B> описывает любой список,состоящий не менее чем из
+одного элемента.
+<P><B>Шаблон [X,Y|Z]</B> - список, состоящий не менее чем из двух элементов.
+<P><B>Шаблон [b|Z]</B> - список, первым элементом которого является b.
+<P><B>Шаблон [Y,X,Z]</B> - список из трех элементов.
+<P>Шаблоны списка используются при описании процедур работы со списками.
+<P><A name=Lec4.1.4>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.1.4 Определения отношений через cons
+форму списка</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P><FONT color=#800080><B>Задача 1:</B></FONT> Определить отношение
+<B>replace_first</B>, которое заменяет первый элемент списка новым
+<P>Например
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>replace_first([a,b,с],w,X).
+      <BR>X=[w,b,c] </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>Это отношение: <BR>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>replace_first([H|T],A,[A|T]).</B> или
+      <BR><B>replace_first([_|T],A,[A|T]).</B> </A></TD></TD></TR></TBODY></TABLE>
+<P>Что будет ответом для следующего вопроса ?
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT
+      color=#800010>?-</FONT>replace_first([_|T],A,[a,b,c]). </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P><A name=Lec4.2>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P>
+<H2 align=center><FONT color=#000080>4.2 Процедуры обработки
+списков</FONT></H2></A>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P>
+<P><FONT color=#800080><B>Процедура в прологе</B></FONT> - это совокупность
+предложений с головами, представленными одинаковыми термами.
+<P>Для обработки списков используются типовые процедуры, аналогичные функциям
+лиспа.
+<P><A name=Lec4.2.1>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.2.1 member</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Проверяет принадлежность элемента списку.
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>member(X, L)</B> </A></TD></TD></TR></TBODY></TABLE>
+<P>Если <B>X</B> принадлежит <B>L</B>, то истина и ложь в противном случае.
+<P>С точки зрения декларативного смысла: <BR>
+<OL>
+  <LI><B>X</B> принадлежит списку, если <B>X</B> совпадает с головой списка.
+  <LI><B>X</B> принадлежит списку, если <B>X</B> принадлежит хвосту списка.
+</LI></OL>
+<P>Можно записать:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>member(X, [X|T]). <BR>member(X, [H|T]) :-member(X,
+      T).</B> </A></TD></TD></TR></TBODY></TABLE>
+<P>С точки зрения процедурного смысла - это <B>рекурсивная процедура.</B>
+<P>Первое предложение терминальное условие. <BR>Когда хвост будет равен
+<B>[]</B> проверка остановиться.
+<P>Второе предложение рекурсивное. <BR>Сокращение списка происходит за счет
+взятия хвоста <B>(cdr-рекурсия)</B>.
+<P>Примеры применения
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif"
+      border=0 SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>member(a, [a, b, с]).
+      <BR>Yes <BR><FONT color=#800010>?-</FONT>member(X, [a, b, с]). <BR>Yes
+      <BR>X = a<BR>X = b<BR>X = c </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>Ответьте на вопрос:
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>member(a, X).
+    </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P><A name=Lec4.2.2>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.2.2 append</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Используется для соединения двух списков. т.е
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!--IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>append (L1, L2, L3)</B> </A></TD></TD></TR></TBODY></TABLE>
+<P><B>L1</B> и <B>L2</B> - списки, а <B>L3</B> - их соединение.
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>append ([a, b], [c],
+      [a,b,c]). <BR>Yes </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE><IMG src="lec4.files/append.gif">
+<P>Для определения процедуры <B>append</B> используем два предложения:
+<P>
+<OL>
+  <LI>Если присоединить пустой список <B>[]</B> к списку <B>L</B>, то получим
+  список <B>L</B>.
+  <TABLE width=600 border=0>
+    <TBODY>
+    <TR>
+      <TD align=TOP colSpan=2><!--IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+        <P></P>
+      <TD align=left><B>append([], L, L).</B> <BR><B>append([X|L1], L2,
+        [X|L3]):- append(L1, L2, L3).</B> </A></TD></TD></TR></TBODY></TABLE>
+  <LI>Если присоединить не пустой список <B>[X|L1]</B> к списку <B>L2</B>, то
+  результатом будет список <B>[X|L3]</B>, где <B>L3</B> получаeтся соединением
+  <B>L1</B> к <B>L2</B> :<BR>
+  <TABLE width=600 border=1>
+    <TBODY>
+    <TR>
+      <TD align=TOP><PRE><B>     |X|      L1       |      L2       |    </B><BR>
+           ----------------------------------------  <BR>
+<B>     |X|              L3                |     </B><P></P></PRE></A></TD></TR></TBODY></TABLE></LI></OL>
+<P>С точки зрения процедурной семантики <BR>первое предложение - <B>терминальное
+условие</B>, <BR>второе - <B>рекурсивное с хвостовой рекурсией</B>.
+<P>Рассмотрим примеры применения
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif"
+      border=0 SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>append([a], [b, c], L).
+      <BR>L=[a, b, c]
+      <P><FONT color=#800010>?-</FONT>append([a], L, [a, b, c]). <BR>L=[b, c]
+      <P><FONT color=#800010>?-</FONT>append(L, [b, c], [a, b, c]). <BR>L=[a]
+      </B></A></P></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>Можно использовать для разбиения
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif"
+      border=0 SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>append(L1, L2, [a, b, c]).
+      <BR>L1=[] <BR>L2=[a, b, c]; <BR>L1=[a] <BR>L2=[b, c]; <BR>L1=[a, b]
+      <BR>L2=[c]; <BR>L1=[a, b, c] <BR>L2=[] </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P><A name=Lec4.2.3>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.2.3 Применение append</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Процедуру <B>арреnd</B> можно использовать для поиска комбинаций
+элементов.<BR>Например можно выделить списки слева и справа от элемента
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>append(L, [3|R], [1, 2, 3,
+      4, 5]). <BR>L=[1, 2] <BR>R=[4, 5] </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>Можно удалить все, что следует за данным элементом и этот элемент тоже:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>L1=[a, b, c, d, e],
+      append(L2, [c|_], L1). <BR>L1=[a, b, c, d, e] <BR>L2=[a, b]
+    </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>Можно определить процедуру ,выделяющую последний элемент в списке:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>last(X, L):-append(_, [X], L).</B>
+  </A></TD></TD></TR></TBODY></TABLE>
+<P><A name=Lec4.2.4>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.2.4 reverse</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Процедура <B>reverse</B> обращает список.
+<P><IMG src="lec4.files/reverse.gif">
+<P>
+<OL>
+  <LI>Пустой список после обращения - пустой.
+  <TABLE width=600 border=0>
+    <TBODY>
+    <TR>
+      <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+        <P></P>
+      <TD align=left><B>reverse([], []).</B> </A></TD></TD></TR></TBODY></TABLE>
+  <LI>Обратить список <B>[X|L1]</B> и получить список <B>L2</B> можно, если
+  обратить список <B>L1</B> в <B>L3</B> и в хвост ему добавить <B>X</B>
+  <TABLE width=600 border=0>
+    <TBODY>
+    <TR>
+      <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+        <P></P>
+      <TD align=left><B>reverse([X|L1], L2):-reverse(L1, L3), <BR>append( L3,
+        [X], L2).</B> </A></TD></TD></TR></TBODY></TABLE><B>reverse([X|L1],
+  L2):-reverse(L1, L3), <BR>append( L3, [X], L2).</B> </LI></OL><A name=Lec4.2.5>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.2.5 Длина списка</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Можно, используя рекурсивный вызов, легко посчитать длину списка:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>length([], 0). <BR>length([X|L], N):-length(L, M), N is
+      M+1.</B> </A></TD></TD></TR></TBODY></TABLE>
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>length([a, b, c], N).
+      <BR>N=3 </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE><IMG src="lec4.files/length.gif">
+<P><A name=Lec4.3>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P>
+<H2 align=center><FONT color=#000080>4.3 Встроенные предикаты</FONT></H2></A>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P>
+<P>До сих пор мы получали ответы в форме предлагаемой прологом:
+<P>
+<OL>
+  <LI>печатались значения переменных присутствующих в вопросе;
+  <LI>вопросы полностью записывались после запроса "<B>?-</B>". </LI></OL>
+<P>Однако можно задавать вопросы и получать ответы в произвольной форме.
+<P>Для этого достаточно использовать т.н. встроенные предикаты.
+<P><FONT color=#800080><B>Встроенные предикаты </B></FONT>- предикаты исходно
+определенные в прологе, для которых не существует процедур в базе данных.
+<P>Когда интерпретатор встречает цель, которая сравнивается с встроенным
+предикатом, он вызывает встроенную процедуру.
+<P>Встроенные предикаты обычно выполняют функции не связанные с логическим
+выводом.
+<P>При сопоставлении строенные предикаты обычно дают побочный эффект,который не
+устраняется при бэктрекинге.
+<P><A name=Lec4.3.1>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.3.1 Простые встроенные предикаты
+ввода-вывода.</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Встроенные предикаты обеспечивают возможности ввода-вывода информации:
+<P>
+<OL>
+  <LI><A name=l_write><FONT color=#800080><B>write/1</B></FONT></A> - этот
+  предикат всегда успешен. Когда вызывается, то побочным эффектом будет вывод
+  значения аргумента на экран. При бэктрекинге предикат дает неудачу. Бэктрекинг
+  не сбрасывает побочный эффект.
+  <P></P>
+  <LI><A name=l_nl><FONT color=#800080><B>nl/0 </B></FONT></A>- этот предикат
+  всегда успешен. Когда вызывается, то побочным эффектом будет перевод на
+  следующую строку. При бэктрекинге предикат дает неудачу. Бэктрекинг не
+  сбрасывает побочный эффект.
+  <P></P>
+  <LI><A name=l_tab><FONT color=#800080><B>tab/1</B></FONT></A> - этот предикат
+  всегда успешен. Когда вызывается, то побочным эффектом будет печать коли-
+  чество пробелов заданное аргументом. Аргумент должен быть целым. При
+  бэктрекинге предикат дает неудачу. Бэктрекинг не сбрасывает побочный эффект.
+  <P></P>
+  <LI><A name=l_read><FONT color=#800080><B>read/1</B></FONT></A> - этот
+  предикат читает терм , который вводится с клавиатуры и заканчивается точкой.
+  Этот терм сопоста- вляется с аргументом. При бэктрекинге предикат дает
+  неудачу. Бэктрекинг не сбрасывает побочный эффект. </LI></OL>
+<P>Например,
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>pr1:- read(X),nl,write('X='),tab(2),write(X).</B>
+      <P></A></P></TD></TD></TR></TBODY></TABLE>
+<P>При вызове
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>pr1. </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>последовательность термов читает значение <B>X</B>,переводит строку,печатает
+<B>'X='</B>,пропускает два пробела и печатает значение <B>X</B>. <A
+name=Lec4.3.2>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.3.2 Процедурный смысл встроенных
+предикатов ввода-вывода.</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Определяя встроенные предикаты мы писали: "этот предикат всегда успешен.
+Когда вызывается, то побочным эффектом будет... При бэктрекинге предикат дает
+неудачу. Бэктрекинг не сбрасывает побочный эффект."
+<P>Обычно в прологе вход в цель возможен через<B> "call" </B>при вызове и
+через<B> "redo"</B> при бэктрекинге.
+<P>Цель имеет внутреннею структуру:
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/pic1.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><PRE>     </PRE>
+    <TD align=left><B>Первый ромб</B> - решение при вызове <B>call</B>.
+      <BR><B>Второй ромб</B> - решение при сбросе <B>redo</B>.
+  </A></TD></TD></TR></TBODY></TABLE>Для встроенных предикатов нет внутренних
+точек решения внутри цели. <BR>Она представляется в виде:
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/pic2.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><PRE>     </PRE>
+    <TD align=left>Таким образом проход через встроенный предикат будет :
+      <BR>или <B>call - exit</B>, <BR>или <B>redo - fail</B>.
+  </A></TD></TD></TR></TBODY></TABLE><A name=Lec4.4>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P>
+<H2 align=center><FONT color=#000080>4.4 Ввод-вывод списков.</FONT></H2></A>
+<P align=center><IMG height=8 src="lec4.files/saqual.gif" width="90%">
+<CENTER></CENTER>
+<P></P>
+<P>Для ввода-вывода списков возможны следующие два способа.
+<P><A name=Lec4.4.1>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.4.1 Ввод-вывод списка как
+терма.</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>При этом способе список рассматривается как один терм.
+<P>Например, процедура:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>pr:-write('Введите список L:'),nl,</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=left colSpan=2><PRE>  </PRE>
+          <TD align=left><B>read(L),nl, <BR>write('Список L='), <BR>tab(2),
+            write(L),nl.</B>
+</A></TD></TR></TBODY></TABLE></A></TD></TD></TD></TR></TBODY></TABLE>
+<P>При вызове цели
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT color=#800010>?-</FONT>pr. </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>она будет выполнятся следующим образом:
+<P><B>Введите список L: <BR>[a,b,c,d]. <BR>Список L= [a,b,c,d]</B> <A
+name=Lec4.4.2>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<H3 align=center><FONT color=#000080>4.4.2 Поэлементный ввод-вывод
+списка.</FONT></H3></A>
+<P align=center><IMG height=5 src="lec4.files/saqual.gif" width="70%">
+<CENTER></CENTER>
+<P></P>
+<P>Данный способ может быть организован с помощью рекурсивно определенных
+процедур.
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>read_list([X|T]):-write('Введите элемент: '),</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=left colSpan=2><PRE>             </PRE>
+          <TD align=left><B>read(X), <BR>X\==end,!, <BR>read_list(T).
+          </B></A></TD></TR></TBODY></TABLE></TD></TD></TR></TBODY></TABLE><B>end</B> -
+терм , означающий конец списка.
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=TOP colSpan=2><!-- IMG SRC="yellow.gif"  ALT="" BORDER=0 SPACE=20></IMG -->
+      <P></P>
+    <TD align=left><B>read_list([]). <BR>write_list([]):-nl.
+      <BR>write_list([H|T]):-write(H),</B>
+      <TABLE width=450 border=0>
+        <TBODY>
+        <TR>
+          <TD align=left colSpan=2><PRE>              </PRE>
+          <TD align=left><B>tab(2), <BR>write_list(T).
+    </B></TR></TBODY></TABLE></A></TD></TD></TR></TBODY></TABLE>
+<P>Тогда после вызова цели:
+<P>
+<TABLE width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=TOP colSpan=2><IMG alt="" src="lec4.files/comput.gif" border=0
+      SPACE="20"></IMG>
+      <P></P>
+    <TD align=left><B><FONT
+      color=#800010>?-</FONT>read_list(L),nl,write('Список='),nl, write_list(L).
+      </B></A></TD></TD>
+  <TR></TR></TBODY></TABLE>
+<P>Возникает следующий диалог:
+<P><B>Введите элемент: a.<BR>Введите элемент: b.<BR>Введите элемент:
+c.<BR>Введите элемент: d.<BR>Введите элемент: end.
+<P>Список= a b c d
+<P></B></FONT>
+<CENTER>
+<P>
+<HR align=left width="75%" noShade SIZE=1>
+</BODY></HTML>

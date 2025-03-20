@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0068)lec14.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 14</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 aLink=#0000ff link=blue bgColor=#c7d4ea>
+<P><FONT face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 14</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Игровые программы.</I></B> </FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT><!--center>
+  <font face="Times New Roman Cyr"><img src="lec1.gif"  heigh="300" width="90%"></font>
+  </center -->
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание </FONT></H2>
+<DL>
+  <DD><FONT face="Arial Cyr"><IMG src="lec14.files/blueball.gif"> <A
+  href="lec14.htm#Lec14.1">1.
+  Игровые программы.</A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec14.files/blueball.gif"> <A
+  href="lec14.htm#Lec14.2">1.2
+  Правила игра "Быки и Коровы". </A></FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec14.files/blueball.gif"> <A
+  href="lec14.htm#Lec14.3">2.
+  Программа "Быки и Коровы". </A></DD></DL>
+<P>Разработка игровых программ является развлечением, а также хорошим способом
+показа того, как использовать Пролог для создания неэлементарных программ.
+</FONT>
+<P>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec14.files/saqual.gif"
+width="90%"></FONT> </CENTER><A name=Lec14.1></A>
+<H2 align=center><FONT face="Arial Cyr" color=#000080>1. Игровые программы.
+</FONT></H2>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec14.files/saqual.gif"
+width="90%"></FONT> </CENTER>
+<P><FONT face="Arial Cyr">В игровых программах описывается стратегия, приводящая
+к выигрышу игры. Для игры с двумя игроками возможны варианты: <B>человек-машина,
+машина-машина.</B> Это программа разгадывает секретный код. Другое название этой
+игры <FONT color=#800080><B>"Быки и коровы".</B></FONT> Она является хорошим
+примером того, как без особых размышлений легко запрограммировать на Прологе. <A
+name=#Lec14.2>
+<P><FONT color=#800080><B>Правила</A> игры:</B></FONT><BR>Игрок <B>А</B>
+выбирает секретный код, представляющий из себя последовательность из N различных
+десятичных цифр (обычно N устанавливается равным 4). Игрок <B>В</B> пытается
+угадать задуманный код и спрашивает игрока А о числе "быков" (<FONT
+color=#800080><B>число "быков"</B></FONT> - количество совпадающих цифр в
+одинаковых позициях предполагаемого и задуманного кодов; <FONT
+color=#800080><B>число "коров" </B></FONT>- количество совпадающих цифр,
+входящих в предполагаемый и задуманный код, но находящихся на разных позициях).
+<P>Код угадан если число быков равно N.
+<P><FONT color=#800080><B>Алгоритм</B></FONT> в общем описывается следующим
+образом: <BR>Вводится некоторый порядок на множестве допустимых правилами
+предложений; выдвижение очередных предположений учитывает, накопленную к тому
+времени информмацию, и так до тех пор пока секретный код не будет раскрыт.
+<BR>Рассмотренный алгоритм позволяет решить задачу - раскрыть код за 4-6 попыток
+( как опытный игрок ).
+<P>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec14.files/saqual.gif"
+width="90%"></FONT> </CENTER><A name=Lec14.1></A>
+<H2 align=center><FONT face="Arial Cyr" color=#000080><A name=#Lec14.3>2.
+Программа "Быки и Коровы".</FONT></H2></A>
+<CENTER><FONT face="Arial Cyr"><IMG height=8 src="lec14.files/saqual.gif"
+width="90%"></FONT>
+<P><A
+href="program.htm"><IMG
+height=83 alt="Программа 'Быки и коровы'" src="lec14.files/bullcow.gif"
+width=154 border=0> </A></P></CENTER>
+<P>
+<HR align=left width="75%" noShade SIZE=1>
+
+</BODY></HTML>

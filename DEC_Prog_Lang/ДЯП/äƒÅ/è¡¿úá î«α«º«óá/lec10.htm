@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0068)lec10.htm -->
+<HTML><HEAD><TITLE>Логическое и функциональное программирование. Лекция 10</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#800080 aLink=#0000ff link=blue bgColor=#c7d4ea><FONT
+face="Arial Cyr">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR><!-- Row 1 -->
+    <TD width=10 bgColor=#8181c0>
+    <TD vAlign=center align=left width="65%" bgColor=#8181c0><FONT
+      color=#c6c6ff size=4><B><I>Лекция 10</I></B></FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD>
+  <TR><!-- Row 2 -->
+    <TD width=10 bgColor=#a3a3d1><FONT color=#8181c9></FONT>
+    <TD vAlign=center align=middle width="65%" bgColor=#a3a3d1 height=20><FONT
+      color=#004080 size=5><B><I>Грамматические правила.</I></B> </FONT>
+    <TD bgColor=#c7d4ea>
+    <TD bgColor=#c7d4ea></TD></TR></TBODY></TABLE></FONT>
+<H2><FONT face="Arial Cyr" color=#004080>Cодержание </FONT></H2><!-- H2 ALIGN=CENTER><FONT COLOR=red>  <A NAME = "A4">C о д е р ж а н и е</CENTER></FONT></H2 -->
+<DL>
+  <DD><FONT face="Arial Cyr"><IMG src="lec10.files/blueball.gif"><A
+  href="lec10.htm#A1">
+  1 Постановка задачи и определения</A> </FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec10.files/blueball.gif"><A
+  href="lec10.htm#A2">
+  2 Пример грамматики</A></FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec10.files/blueball.gif"><A
+  href="lec10.htm#A3">
+  3 Пример разбора в ручную</A></FONT>
+  <DD><FONT face="Arial Cyr"><IMG src="lec10.files/blueball.gif"><A
+  href="lec10.htm#A4">
+  4 Реализация грамматического разбора на Прологе.</A></FONT> </DD></DL><BR>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center><A name=A1>1. Постановка задачи</A></H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="80%"></FONT></P><FONT
+face="Arial Cyr">Постановка задачи грамматического разбора заключается в
+следущем. Для заданной последовательности слов необходимо установить, является
+ли она предложением языка, а так же, если это так, построить структуру этого
+предложения. <BR>
+<P>Представление такой структуры - <I>Дерево разбора</I> для предложения данного
+языка.
+<P><FONT color=#800080><B>Грамматика - </B></FONT>это множество правил,
+определяющих способ построения предложений языка. На Прологе разбор
+осуществляется через использование
+<P><I>Грамматик, задаваемых определенными предложениями </I>
+<P>definite clause grammer <B>DCG </B>
+<P><B>DCG - </B>является обобщением контекстно-свободных грамматик.
+<P>Грамматика <B>DCG </B>определяется через запись определенных предложений,
+которые показывают, как могут быть соединены эти компоненты.
+<P>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center><A name=A2>2. Пример грамматики</A></H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="80%"></FONT></P><FONT size=+1><PRE> <B>
+Sentence          -&gt; noun_phrase, verb_phrase
+noun_phrase       -&gt; article, noun
+verb_phrase       -&gt; intransitive_verb
+article(singular) -&gt; "a"
+article(singular) -&gt; "the"
+article(plural)   -&gt; "the"
+noun(singular)    -&gt; "turtle"
+noun(plural)      -&gt; "turtles"
+intransitive_verb(singular) -&gt; "sleeps"
+intransitive_verb(plural)   -&gt; "sleep"
+</B></PRE></FONT>Предложение состоит из noun phrase и за ним следует verb phrase
+компоненты, представляющие грамматические категории языка, называются <FONT
+color=#800080><B>нетерминальными символами.</B></FONT>
+<P><FONT color=#800080><B>Терминальные символы - </B></FONT>конечные компоненты
+языка. В данном случае это слова. Они записываются в ковычках ( " " ). В
+грамматике есть один выделенный нетерминальный символ, который называется
+<I>начальным. </I>Он описывает все компоненты языка.<BR>В грамматике должно быть
+по крайне мере одно правило, с левой части которого находится <I>начальный
+</I>символ.<BR>В данной грамматике это Sentence -"предложение".
+<P>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="80%"></FONT></P><FONT color=#000080>
+<H2 align=center><A name=A3>3. Пример разбора в ручную.</A></H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="80%"></FONT></P><FONT
+color=#800080><B>Cтратегия разбора : </B></FONT>Начиная с начального
+нетерминального символа левые части заменяются правыми, до тех пор пока не
+выстроится последовательность нетерминальных символов, совпадающих с заданной
+последовательностью слов. Если это произошло - последовательность слов
+принадлежит языку и анализ закончен. <BR><IMG height=350
+src="lec10.files/t2.gif" width=575>
+<P>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="85%"></FONT></P><FONT color=#000080>
+<H2 align=center><A name=A4>4. Реализация грамматического разбора на
+Прологе.</A></H2></FONT>
+<P align=center><FONT face="Arial Cyr"><IMG height=7
+src="lec10.files/saqual.gif" width="85%"></FONT></P>Грамматическое правило - это
+структура с функтором --&gt; и размерностью 2.<BR>Компоненты структуры - это
+левая и правая части правила.
+<P><FONT color=#800080><B>Нетерминальные символы - </B></FONT>атомы
+Пролога.<BR><FONT color=#800080><B>Терминальные символы - </B></FONT>атомы или
+переменные и заключаются вквадратные скобки.
+<P>При загрузке в Пролог - ,систему утверждения с функтором --&gt; преобразуются
+в утверждения стандартного Пролога.
+<P>Перепишем в этой форме наши правила.
+<P><FONT size=+1><PRE><B>
+Sentence          -&gt; noun_phrase<N>, verb_phrase<N>.
+noun_phrase       -&gt; article<N>, noun<N>.
+verb_phrase       -&gt; intransitive_verb<N>.
+article(singular) -&gt; [a].
+article(singular) -&gt; [the].
+article(plural)   -&gt; [the].
+noun(singular)    -&gt; [turtle].
+noun(plural)      -&gt; [turtles].
+intransitive_verb(singular) -&gt; [sleeps].
+intransitive_verb(plural)   -&gt; [sleep].
+</B></PRE></FONT>
+<P><FONT color=#800080><B>
+<CENTER>Как должны выглядеть утверждения Пролога ?</CENTER></FONT></B>
+<P>Надо чтобы каждое правило могло анализировать слова и передавать информацию
+на дальнейшую обработку.
+<P><FONT color=#880403><B>Отступление :</B></FONT> <FONT color=#800080><B>
+<CENTER>Запоминание состояния в Прологе.</FONT></B></CENTER>Иногда надо
+некоторое <I>значение </I>передавать в ходе обработки от одного предиката к
+другому в ходе вычислений.
+<P>Передача может быть :
+<UL>
+  <LI>immutable неизменной
+  <LI>mutable переменной </LI></UL>
+<P><B>immutable<BR>G(.. , S, ..):- g(.. , S, ..), .. h(.. , S, ..).
+<P>mutable</B><BR>добавляется пара: "старое значение, новое значение"<BR>иногда
+называют : "аккомулирующие пары"
+<P><FONT size=+1><PRE>
+<B>G(.. , S0,Sn):-
+         g(.. , S0,S1),
+              ...
+         h(.. , Sm,Sn).
+Length([],L,L).
+Length([_|List],L0,L):-
+         L1 is L0+1,
+         Length(List,L1,L).
+</B>
+</PRE></FONT><FONT color=#800080><B>
+<CENTER>Аналогично для DCG проводится</B></FONT></CENTER>
+<P>
+<UL><FONT color=#800080>
+  <LI>Для одной цели</FONT> <FONT size=+1><PRE><B>          P(X)--&gt;G(X).
+          P(X,S0,S):-G(X,S0,S).
+</PRE></B></FONT><FONT color=#800080>
+  <LI>Для нескольких целей </FONT><FONT size=+1><PRE><B>          P(X,Y)--&gt;G(X),
+                   R(X,Y),
+                   S(Y).
+          P(X,Y,S0,S):-G(X,S0,S1),
+                       R(X,Y,S1,S2),
+                       S(Y,S2,S).
+</PRE></B></FONT></LI></UL></B>
+<P>Грамматическое правило, которое раскрывает нетерминальный символ, заменяя его
+на другие нетерминальные символы, преобразуется в правило Пролога, заголовок
+которого соответствует левой части грамматического правила, а тело состоит из
+символов правой части, представляющий собой соединенные подцели.
+<P>При этом каждый предикат дополняется двумя аргументами. Первый аргумент
+заголовка правила представляет анализируемую цепочку. Он передается в качестве
+первого аргумента первой подцели.
+<P>В каждой подцели первый аргумент представляет цепочку, оставленную
+неразобранной предыдущими подцелями, а второй аргумент - остаток этой цепочки
+после ее разбора данным компонентом.
+<P><I>Например правую </I>
+<P><B>noun_phrase(N) -&gt; article(N), noun(N).
+<P>Заменяет на
+<P>noun_phrase(N,S0,S2) -&gt; article(N,S0,S1), noun(N,S1,S2).
+<P></B>Подвергаемая грамматическому разбору цепочка слов, а также та цепочка,
+которая остается после разбора, представляются в виде списков.
+<P><I>Интерпретация рассмотренного правила такова :</I>
+<P>Список S0 начинается с noun_phrase(N), а S2 это то что остается от S0 после
+удаления из него noun_phrase(N),<BR>если :<BR>
+<UL>
+  <LI>Cписок S0 начинается с article(N), а список S1 - это то, что остается от
+  S0 после удаления артикля,
+  <LI>Cписок S1 начинается с noun(N), а список S2 - это то, что остается от S1
+  после удаления noun(N). </LI></UL>
+<P>Грамматическое правило, которое раскрывает символ, заменяя его на
+терминальный символ, преобразуется в правило Пролога, тело которого представляет
+собой вызов встроенного предиката 'C', имеющего следующее определение :
+<BR><B>'C'/3</B><BR>Цель успешно согласуется, если ее первый аргумент - список,
+а второй - голова этого списка, а третий - его хвост.
+<P><B>article(singular):-'c'(s0,the,s1)</B>
+<P>Пример преобразования грамматического правила DCG:
+<P><B>p-- &gt; q, [r], t, [u].<BR>p(s0,s4):-q(s0,s1),
+'c'(s1,r,s2),t(s2,s3),'c'(s3,u,s4). </B>
+<P>
+<HR align=left width="75%" noShade SIZE=1>
+
+</BODY></HTML>
