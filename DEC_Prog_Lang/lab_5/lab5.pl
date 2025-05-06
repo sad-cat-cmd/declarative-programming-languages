@@ -1,32 +1,23 @@
-% Предикат замены термов
-replace(Old, New, Old, New) :- !.  
-replace(_Old, _New, Term, Term) :- atomic(Term), !.  
-replace(Old, New, Term, NewTerm) :-
-    Term =.. [F|Args],
-    replace_list(Old, New, Args, NewArgs),
-    NewTerm =.. [F|NewArgs].
+% Предикат для замены подтерма
+replace(Term, Old, New, Result) :-
+    Term == Old, !,
+    Result = New.
+replace(Term, _, _, Term) :-
+    atomic(Term), !.
+replace(Term, Old, New, Result) :-
+    compound(Term),
+    Term =.. [Functor|Args],
+    replace_list(Args, Old, New, NewArgs),
+    Result =.. [Functor|NewArgs].
 
-% Замена в списке аргументов
-replace_list(_, _, [], []).
-replace_list(Old, New, [H|T], [NH|NT]) :-
-    replace(Old, New, H, NH),
-    replace_list(Old, New, T, NT).
+% Предикат для замены в списке аргументов
+replace_list([], _, _, []).
+replace_list([H|T], Old, New, [NewH|NewT]) :-
+    replace(H, Old, New, NewH),
+    replace_list(T, Old, New, NewT).
 
-% Тестовый запрос
-test :-
-    % Исходная формула
-    Source = plus(plus(plus(plus(mult(a,pow(x,4)), mult(b,pow(x,3))), 
-             mult(c,pow(x,2))), mult(d,x)), e),
-    
-    % Заменяемая формула (шаблон для поиска)
-    Old = mult(A,B),
-    
-    % Замещающая формула
-    New = mult(inv(B),A),
-    
-    % Выполняем замену
-    replace(Old, New, Source, Result),
-    write('Результат: '), write(Result), nl.
+% Основной предикат для трансформации формулы
+transform(Formula, Old, New, Result) :-
+    replace(Formula, Old, New, Result).
 
-% Запуск теста
-:- test.
+
